@@ -1,0 +1,104 @@
+<configs>
+
+<!--NO TRADER PROTECTION THROUGH SCORE-->
+<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPrefabFeatures']/property[@name='DisableTraderProtection']/@value">true</set>
+<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPrefabFeatures']/property[@name='AllowBuildingInTraderArea']/@value">true</set>
+
+<!--REMOVES WALL VOLUME AT TRADER COUNTER-->
+<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPrefabFeatures']/property[@name='DisableWallVolume']/@value">true</set>
+
+<!--CRAFT FROM CONTAINERS 20 BLOCKS AWAY INCLUDING THE STORAGE CONTAINER. GOES BASED OFF PLAYER LOCATION NOT BLOCK LOCATION, NOT REPAIR, THROUGH SCORE-->
+<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedRecipes']/property[@name='ReadFromContainers']/@value">true</set>
+<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedRecipes']/property[@name='Distance']/@value">20</set>
+<!--STORAGE CONTAINER FOR INSTANT TRANSFERS-->
+<append xpath="/blocks">	
+<block name="cntIronWritableDropBox">
+	<property name="CustomIcon" value="cntIronWritableCrate"/>
+    <property name="Class" value="DropBoxContainer, SCore"/>
+    <property name="CustomIconTint" value="008000"/>
+    <property name="TintColor" value="008000"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CompositeTileEntity"/>
+<property class="CompositeFeatures">
+<property class="TEFeatureStorage">
+	<property name="LootList" value="playerSteelWritableStorage"/>
+</property>
+	<property class="TEFeatureLockable"/>
+<property class="TEFeatureSignable">
+	<property name="FontSize" value="90"/>
+	<property name="LineCount" value="3"/>
+	<property name="LineWidth" value="0.55"/>
+</property>
+</property>
+	<property name="DescriptionKey" value="cntIronWritableDropBoxDesc"/>
+    <property name="DropBox" value="true" />
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/LootContainers/ironWritableCratePrefab.prefab"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Path" value="solid"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="AllowedRotations" value="Basic90"/>
+	<property name="FuelValue" value="300"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="MaxDamage" value="5000"/>
+<property class="RepairItems">
+	<property name="resourceForgedIron" value="2"/>
+</property>
+	<drop event="Destroy" name="resourceScrapIron" count="10,30"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="SortOrder1" value="B106"/>
+	<property name="SortOrder2" value="0002"/>
+	<property name="Group" value="Basics,Building,advBuilding"/>
+	<property name="Tags" value="timecharge"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>		
+</append>
+
+<!--DISABLES DOUBLE CROUCH, THROUGH SCORE FILES-->
+<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='OneBlockCrouch']/@value">false</set>
+
+<!--AUTO REDEEMS CHALLENEGES-->
+<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPlayerFeatures']/property[@name='AutoRedeemChallenges']/@value">true</set>
+
+<!--GIVE ZOMBIES RANDOM WALK TYPES-->
+<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedZombieFeatures']/property[@name='RandomWalk']/@value">true</set>
+
+<!--ALLOWS TRADERS TO DIE-->
+<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedNPCFeatures']/property[@name='MakeTraderVulnerable']/@value">true</set>
+
+<!--SPAWNS UNDERGROUND CAVES-->
+<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='CaveConfiguration']/property[@name='CaveEnabled']/@value">true</set>
+
+<!--FIRE SPREAD MOD FOR ENDZ, THROUGH SCORE FILES-->
+<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FireManagement']/property[@name='FireEnable']/@value">true</set>
+<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FireManagement']/property[@name='CheckInterval']/@value">30</set>
+<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FireManagement']/property[@name='SmokeTime']/@value">1</set>
+<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FireManagement']/property[@name='FireDamage']/@value">50</set>
+<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FireManagement']/property[@name='ChanceToExtinguish']/@value">.1</set>		
+<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FireManagement']/property[@name='MaterialDamage']/@value">wood, cloth, corn, grass, plastic, leaves, cactus, mushroom, hay, paper, trash, backpack, organic</set>
+<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FireManagement']/property[@name='MaterialSurface']/@value">wood, cloth, corn, grass, plastic, leaves, cactus, mushroom, hay, paper, trash, backpack, organic</set>
+
+<append xpath="/blocks">
+<block name="endzfireextLLBlock">
+	<property name="Material" value="Mmetal"/>
+	<property name="IsTerrainDecoration" value="true"/>	
+	<property name="Shape" value="ModelEntity"/>	
+	<property name="Model" value="#@modfolder:Resources/EndZfireblockLL1.unity3d?EndZfireblockLL.Prefab"/>
+	<property name="Place" value="TowardsPlacerInverted"/>			
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
+	<property name="Stabilitysupport" value="true"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="Group" value="Basics,Building"/>
+	<property name="DescriptionKey" value="endzfireextLLBlockDesc"/>
+	<property name="FilterTags" value="fdecor,felectrical"/>
+	<property name="SortOrder1" value="70a0"/>
+	<property name="CanPickup" value="true" param1="endzfireextLLitem"/>
+</block>
+</append>
+
+</configs>
+
+

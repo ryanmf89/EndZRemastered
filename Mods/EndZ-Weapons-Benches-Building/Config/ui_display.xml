@@ -1,0 +1,17 @@
+<configs>
+
+<!--AMMO BENCH-->
+<append xpath="/ui_display_info/crafting_category_display">	
+<crafting_category_list display_type="endzAmmobench">
+	<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_ammopress" display_name="lblCategoryAmmoPress" />
+	<crafting_category name="Arrows" icon="ui_game_symbol_ammobench_arrowammo" display_name="lblCategoryAmmoPressarrow"/>
+	<crafting_category name="RegularAmmo" icon="ui_game_symbol_ammopress_regularammo" display_name="lblCategoryAmmoPressRegularAmmo"/>
+	<crafting_category name="HPAmmo" icon="ui_game_symbol_ammopress_hpammo" display_name="lblCategoryAmmoPressHPAmmo"/>
+	<crafting_category name="APAmmo" icon="ui_game_symbol_ammopress_apammo" display_name="lblCategoryAmmoPressAPAmmo"/>
+	<crafting_category name="explosive" icon="ui_game_symbol_ammobench_explosive" display_name="lblCategoryAmmoPressexplosive"/>
+	<crafting_category name="firedexplosive" icon="ui_game_symbol_ammobench_fireexplosive" display_name="lblCategoryAmmoPressfiredexplosive"/>
+	<crafting_category name="vanillapartscategory" icon="ui_game_symbol_armorParts" display_name="lblCategoryAmmoPressvanillapartscategory"/>
+</crafting_category_list>	
+</append>
+<!--END OF AMMO BENCH-->	
+</configs>

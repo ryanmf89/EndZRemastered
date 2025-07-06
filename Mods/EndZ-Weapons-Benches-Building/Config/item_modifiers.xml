@@ -1,0 +1,73 @@
+<configs>
+
+<!--NICD BATTERY MOD-->
+<append xpath="/item_modifiers">
+<item_modifier name="modGunMeleeNiCdBattery" installable_tags="weapon,tool" modifier_tags="none1" blocked_tags="noMods" type="attachment">
+	<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="EconomicValue" value="5678"/>
+	<property name="TraderStageTemplate" value="modsTier2"/>
+	<!-- <property name="UnlockedBy" value="modGunMeleeNiCdBatterySchematic"/> -->
+
+	<!-- Changes damage type to electric -->
+	<item_property_overrides name="*">
+		<property name="DamageType" value="Electrical"/>
+	</item_property_overrides>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffShocked">
+		    <requirement name="RandomRoll" seed_type="Random" target="other" min_max="0,100" operation="LTE" value="10"/>
+		</triggered_effect>
+	</effect_group>
+</item_modifier>
+</append>
+<!--END OF NICD BATTERY MOD-->
+
+<!--FLAMMABLE OIL MOD-->
+<append xpath="/item_modifiers">
+<item_modifier name="modGunMeleeFlammableOil" installable_tags="weapon,tool" modifier_tags="none1" blocked_tags="noMods" type="attachment">
+	<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="EconomicValue" value="6678"/>
+	<property name="TraderStageTemplate" value="modsTier2"/>
+	<!-- <property name="UnlockedBy" value="modGunMeleeFlammableOilSchematic"/> -->
+
+
+	<!-- Changes damage type to heat -->
+	<item_property_overrides name="*">
+		<property name="DamageType" value="Heat"/>
+	</item_property_overrides>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement">
+		    <requirement name="RandomRoll" seed_type="Random" target="other" min_max="0,100" operation="LTE" value="25"/>
+		</triggered_effect>
+	</effect_group>
+	</item_modifier>
+</append>
+<!--END OF FLAMMABLE OIL MOD-->
+
+<!--LIQUID NITROGEN MOD-->
+<append xpath="/item_modifiers">
+<item_modifier name="modGunMeleeLiquidNitrogen" installable_tags="weapon,tool" modifier_tags="none1" blocked_tags="noMods" type="attachment">
+	<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="EconomicValue" value="7678"/>
+	<property name="TraderStageTemplate" value="modsTier2"/>
+	<!-- <property name="UnlockedBy" value="modGunMeleeLiquidNitrogenSchematic"/> -->
+
+	<!-- Changes damage type to cold -->
+	<item_property_overrides name="*">
+		<property name="DamageType" value="Cold"/>
+	</item_property_overrides>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffElementFreezing,buffp_snoweffect">
+		    <requirement name="RandomRoll" seed_type="Random" target="other" min_max="0,100" operation="LTE" value="10"/>
+		</triggered_effect>
+	</effect_group>
+</item_modifier>
+</append>
+<!--END OF LIQUID NITROGEN MOD-->
+
+</configs>

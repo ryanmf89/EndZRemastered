@@ -1,0 +1,44 @@
+<configs>
+
+<!--HONEY SETS TO CURE MODDED INFECTION AT 2% PER JAR-->
+<set xpath="/items/item[@name='foodHoney']/effect_group/triggered_effect[@trigger='onSelfPrimaryActionEnd' and @buff='buffInfectionAddCure']/@buff">buffInfectionAddCureserum</set>
+<set xpath="/items/item[@name='foodHoney']/effect_group/triggered_effect[@trigger='onSelfPrimaryActionEnd' and @cvar='$buffInfectionAddCurePerc']/@value">4</set>
+<set xpath="/items/item[@name='foodHoney']/effect_group/display_value[@name='dCureInfection']/@value">.04</set>
+
+<!--HERBAL ANTIBIOTICS SETS TO CURE MODDED INFECTION AT 5% PER PILL-->
+<set xpath="/items/item[@name='drugHerbalAntibiotics']/effect_group/triggered_effect[@trigger='onSelfPrimaryActionEnd' and @buff='buffInfectionAddCure']/@buff">buffInfectionAddCureserum</set>
+<set xpath="/items/item[@name='drugHerbalAntibiotics']/effect_group/display_value[@name='dCureInfection']/@value">.07</set>
+<set xpath="/items/item[@name='drugHerbalAntibiotics']/effect_group/triggered_effect[@trigger='onSelfPrimaryActionEnd' and @cvar='$buffInfectionAddCurePerc']/@value">7</set>
+
+<!--ANTIBIOTICS SETS TO CURE MODDED INFECTION AT 8% PER PILL-->
+<set xpath="/items/item[@name='drugAntibiotics']/effect_group/triggered_effect[@trigger='onSelfPrimaryActionEnd' and @buff='buffInfectionAddCure']/@buff">buffInfectionAddCureserum</set>
+<set xpath="/items/item[@name='drugAntibiotics']/effect_group/display_value[@name='dCureInfection']/@value">.10</set>
+<set xpath="/items/item[@name='drugAntibiotics']/effect_group/triggered_effect[@trigger='onSelfPrimaryActionEnd' and @cvar='$buffInfectionAddCurePerc']/@value">10</set>
+
+<!--SERUM SETS TO CURE MODDED INFECTION AT 11% PER VILE-->
+<append xpath="/items">
+<item name="serumLL">
+	<property name="DescriptionKey" value="serumLLDesc"/>
+	<property name="Tags" value="food,medical,medicalSkill"/>
+	<property name="HoldType" value="3"/>
+	<property name="DisplayType" value="serumdisplay"/>
+	<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="EconomicValue" value="80"/>
+	<property name="Stacknumber" value="50"/>
+	<property name="Group" value="Science,CFChemicals,Medical,TCMedical"/>
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Sound_start" value="player_drinking"/>
+	</property>
+	<effect_group tiered="false" name="Food Tier 0">
+		<display_value name="dCureInfection" value=".13"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="13"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInfectionAddCureserum"/>
+		<display_value name="dStopsBleeding" value="1"/>
+	</effect_group>
+</item>
+</append>
+</configs>

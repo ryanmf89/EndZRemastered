@@ -1,0 +1,150 @@
+<configs>
+
+<!--REMOVES VANILLA BIOME PROGRESSION-->
+<remove xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group/triggered_effect[@trigger='onSelfEnteredGame' and @buff='buffBiomeProgressionCheck']"/>
+<remove xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group/triggered_effect[@trigger='onSelfLeaveGame' and @cvar='$BiomeProgressionOn']"/>
+<remove xpath="/buffs/buff[@name='buffBurnt_Hazard']"/>
+<remove xpath="/buffs/buff[@name='buffDesert_Hazard']"/>
+<remove xpath="/buffs/buff[@name='buffSnow_Hazard']"/>
+<remove xpath="/buffs/buff[@name='buffWasteland_Hazard']"/>
+
+<append xpath="/buffs">
+<buff name="buffnobiomebuffondeath" hidden="false" name_key="Biome Protection" description_key="HA-HA you died! Looks like you couldnt hack it. Luckily for you, you now have a protection from the biome effects(Burnt Forest, Desert, Snow, and Wasteland) for 5 minutes." icon="ui_game_symbol_biome_protect">    
+    <stack_type value="effect"/>   
+    <duration value="300"/> 
+	<!--display_value value=".buffnobiomebuffondeathDisplay"/-->
+	<display_value_key value="{0}"/> 
+    <effect_group name="burntforestbuff">
+		<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffburntforestLL"/>
+		<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffburntforestLL">
+			<requirement name="CVarCompare" cvar="biome4var" operation="Equals" value="0" />	
+		</triggered_effect>
+	</effect_group>	
+    <effect_group name="desertbuff">
+		<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffdesertheatLL"/>
+		<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffdesertheatLL">
+			<requirement name="CVarCompare" cvar="biome1var" operation="Equals" value="0" />	
+		</triggered_effect>
+	</effect_group>
+	<effect_group name="snowbuff">
+        <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="bufffrozensnowLL"/>
+	    <triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="bufffrozensnowLL">
+			<requirement name="CVarCompare" cvar="biome2var" operation="Equals" value="0" />		
+		</triggered_effect>		
+	</effect_group>
+	<effect_group name="wastelandbuff">
+	    <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffradiationwasteLL"/>
+		<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffradiationwasteLL">
+			<requirement name="CVarCompare" cvar="biome3var" operation="Equals" value="0" />		
+		</triggered_effect>
+    </effect_group>
+</buff>
+</append>
+
+<!--BURNT FOREST BIOME BUFF-->
+<append xpath="/buffs">
+<buff name="buffburntforestLL" hidden="false" name_key="buffburntforestLLName" description_key="buffburntforestLLDesc" tooltip_key="buffburntforestLLTooltip" icon="ui_game_symbol_oxygen" icon_color="89, 90, 92" icon_blink="false" tags="buffburntforestLL">
+	<stack_type value="ignore"/>	
+<effect_group name="burntforestLL">
+	<requirement name="InBiome" biome="09"/>
+	<requirement name="HasBuff" buff="buffburntforestLL"/>
+	<requirement name="!HasBuff" buff="buffnobiomebuffondeath"/>
+	<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value="5"/>
+	<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="10" fade="3" effect_name="Smoke"/>
+	<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="10" effect_name="Smoke"/>
+	<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Smoke" intensity="0" fade="0"/>
+	<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffburntforestLL"/>
+</effect_group>
+</buff>
+</append>
+
+<!--DESERT BIOME BUFF-->
+<append xpath="/buffs">
+<buff name="buffdesertheatLL" hidden="false" name_key="buffdesertheatLLName" description_key="buffdesertheatLLDesc" tooltip_key="buffdesertheatLLTooltip" icon="ui_game_symbol_hot" icon_color="255, 0, 0" icon_blink="false" tags="buffdesertheatLL">
+	<stack_type value="ignore"/>	
+<effect_group name="superheatLL">
+	<requirement name="InBiome" biome="05"/>
+	<requirement name="HasBuff" buff="buffdesertheatLL"/>
+	<requirement name="!HasBuff" buff="buffnobiomebuffondeath"/>
+	<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value="5"/>
+	<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="10" fade="3" effect_name="Hot"/>
+	<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="10" effect_name="Hot"/>
+	<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Hot" intensity="0" fade="0"/>
+	<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffdesertheatLL"/>
+</effect_group>
+</buff>
+</append>
+
+<append xpath="/buffs">
+<buff name="buffhotsandharvest" hidden="true">
+	<stack_type value="ignore"/>
+	<duration value="0"/>
+
+	<effect_group>
+		<passive_effect name="HarvestCount" operation="base_add" value="3,6" tags="resourcesnowLL"/>
+	</effect_group>
+</buff>
+</append>
+
+<!--SNOW BIOME BUFF-->
+<append xpath="/buffs">
+<buff name="bufffrozensnowLL" hidden="false" name_key="bufffrozensnowLLName" description_key="bufffrozensnowLLDesc" tooltip_key="bufffrozensnowLLTooltip" icon="ui_game_symbol_cold" icon_color="0, 115, 255" icon_blink="false" tags="bufffrozensnowLL">
+	<stack_type value="ignore"/>
+	<tags value="bufffrozensnowLL" />
+
+<effect_group name="frozensnowLL">
+	<requirement name="InBiome" biome="01"/>
+	<requirement name="HasBuff" buff="bufffrozensnowLL"/>
+	<requirement name="!HasBuff" buff="buffnobiomebuffondeath"/>
+	<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value="5"/>
+	<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="10" fade="3" effect_name="Cold2"/>
+	<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="10" effect_name="Cold2"/>
+	<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Cold2" intensity="0" fade="0"/>
+	<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="bufffrozensnowLL"/>
+</effect_group>
+</buff>
+</append>
+
+<append xpath="/buffs">
+<buff name="buffradiofiberharvest" hidden="true">
+	<stack_type value="ignore"/>
+	<duration value="0"/>
+
+	<effect_group>
+		<passive_effect name="HarvestCount" operation="base_add" value="3,6" tags="resourceradiofiberLL"/>
+	</effect_group>
+</buff>
+</append>
+
+<!--WASTELAND BIOME BUFF-->
+<append xpath="/buffs">
+<buff name="buffradiationwasteLL" hidden="false" name_key="buffradiationwasteLLName" description_key="buffradiationwasteLLDesc" tooltip_key="buffradiationwasteLLTooltip" icon="ui_game_symbol_radiation" icon_color="6, 222, 2" icon_blink="false" tags="buffradiationwasteLL">
+	<stack_type value="ignore"/>
+	<tags value="buffradiationwasteLL" />
+
+<effect_group name="radiationwasteLL">
+	<requirement name="InBiome" biome="08"/>
+	<requirement name="HasBuff" buff="buffradiationwasteLL"/>
+	<requirement name="!HasBuff" buff="buffnobiomebuffondeath"/>
+	<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value="5"/>
+	<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="30" fade="3" effect_name="Radiation"/>
+	<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="3" effect_name="Radiation"/>
+	<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="0"/>
+	<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffradiationwasteLL"/>
+</effect_group>
+</buff>
+</append>
+
+<append xpath="/buffs">
+<buff name="buffscrapvibeharvest" hidden="true">
+	<stack_type value="ignore"/>
+	<duration value="0"/>
+
+	<effect_group>
+		<passive_effect name="HarvestCount" operation="base_add" value="500,1000" tags="resourcescrapvibeLL"/>
+	</effect_group>
+</buff>
+</append>
+
+</configs>
+

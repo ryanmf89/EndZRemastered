@@ -1,0 +1,38 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+zombieEndZBossRadPF1,entityclasses,Entity,,,Radiated Gizmo
+zombieEndZBossSuperRadPF1,entityclasses,Entity,,,Super Radiated Gizmo
+
+zombieEndZBossRadPF2,entityclasses,Entity,,,Radiated Gonzo
+zombieEndZBossSuperRadPF2,entityclasses,Entity,,,Super Radiated Gonzo
+
+zombieEndZBossRadPF3,entityclasses,Entity,,,Radiated Orc
+zombieEndZBossSuperRadPF3,entityclasses,Entity,,,Super Radiated Orc
+
+zombieEndZBossRadDesert1,entityclasses,Entity,,,Radiated Imp
+zombieEndZBossSuperRadDesert1,entityclasses,Entity,,,Super Radiated Imp
+
+zombieEndZBossRadDesert2,entityclasses,Entity,,,Radiated Desert Orc
+zombieEndZBossSuperRadDesert2,entityclasses,Entity,,,Super Radiated Desert Orc
+
+zombieEndZBossRadSnow1,entityclasses,Entity,,,Radiated Frozen Thick
+zombieEndZBossSuperRadSnow1,entityclasses,Entity,,,Super Radiated Frozen Thick
+
+zombieEndZBossSuperRadSnow2,entityclasses,Entity,,,Snow Guardian
+
+zombieEndZBossSuperRadWL0,entityclasses,Entity,,,Wasteland Guardian
+
+zombieEndZBossRadWL1,entityclasses,Entity,,,Infected Mutant
+zombieEndZBossSuperRadWL1,entityclasses,Entity,,,Super Infected Mutant
+
+zombieEndZBossRadWL2,entityclasses,Entity,,,Infected Necromancer
+zombieEndZBossSuperRadWL2,entityclasses,Entity,,,Super Infected Necromancer
+
+zombieEndZBossRadWL3,entityclasses,Entity,,,Infected Spike
+zombieEndZBossSuperRadWL3,entityclasses,Entity,,,Super Infected Spike
+
+zombieEndZBossRadWL4,entityclasses,Entity,,,Infected Mutant
+zombieEndZBossSuperRadWL4,entityclasses,Entity,,,Super Infected Mutant
+
+zombieEndZBossRadWL5,entityclasses,Entity,,,Infected Ghoul
+zombieEndZBossSuperRadWL5,entityclasses,Entity,,,Super Infected Ghoul

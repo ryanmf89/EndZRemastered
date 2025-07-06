@@ -1,0 +1,11 @@
+<configs>
+
+<!--BIOME MODS IN MOD TRADERGROUPS-->
+<append xpath="//trader_item_group[@name='groupArmorMods']">
+	<item name="modbuffburntforestLL"/>
+	<item name="modbuffdesertheatLL"/>
+	<item name="modbufffrozensnowLL"/>
+	<item name="modbuffradiationwasteLL"/>
+</append>
+
+</configs>

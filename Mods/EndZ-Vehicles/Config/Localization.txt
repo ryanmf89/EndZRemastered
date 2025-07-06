@@ -1,0 +1,64 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+ApocolypticVehicle,vehicles,vehicle,,,Apocolyptic Car
+ApocolypticVehiclePlaceable,vehicles,item,,,Apocolyptic Car
+
+ApocolypticBuggy,vehicles,vehicle,,,Apocolyptic Buggy
+ApocolypticBuggyPlaceable,vehicles,item,,,Apocolyptic Buggy
+
+ApocolypticBattleCar,vehicles,vehicle,,,Apocolyptic Ripper
+ApocolypticBattleCarPlaceable,vehicles,item,,,Apocolyptic Ripper
+
+ApocolypticBus,vehicles,vehicle,,,Apocolyptic Battle Bus
+ApocolypticBusPlaceable,vehicles,item,,,Apocolyptic Battle Bus
+
+ApocolypticTruck,vehicles,vehicle,,,Apocolyptic Truck
+ApocolypticTruckPlaceable,vehicles,item,,,Apocolyptic Truck
+
+ApocolypticNux,vehicles,vehicle,,,Apocolyptic Nux
+ApocolypticNuxPlaceable,vehicles,item,,,Apocolyptic Nux
+
+ApocolypticRaceCar,vehicles,vehicle,,,Apocolyptic Race Car
+ApocolypticRaceCarPlaceable,vehicles,item,,,Apocolyptic Race Car
+
+ApocolypticBattleBuggy,vehicles,vehicle,,,Apocolyptic Battle Buggy
+ApocolypticBattleBuggyPlaceable,vehicles,item,,,Apocolyptic Battle Buggy
+
+ApocolypticBattleCrane,vehicles,vehicle,,,Apocolyptic Battle Crane
+ApocolypticBattleCranePlaceable,vehicles,item,,,Apocolyptic Battle Crane
+
+WarthogVehicle,vehicles,vehicle,,,EndZ Angel McCarthy Series(Warthog)
+WarthogVehiclePlaceable,vehicles,item,,,EndZ Angel McCarthy Series(Warthog)
+
+EndZbuggy,vehicles,vehicle,,,EndZ Racing Bug
+EndZbuggyPlaceable,vehicles,item,,,EndZ Racing Bug
+
+EndZdeville,vehicles,vehicle,,,EndZ Cruella
+EndZdevillePlaceable,vehicles,item,,,EndZ Cruella
+
+EndZblueracecarLL,vehicles,vehicle,,,EndZ Blue Racecar
+EndZblueracecarLLPlaceable,vehicles,item,,,EndZ Blue Racecar
+
+EndZyellowracecarLL,vehicles,vehicle,,,EndZ Yellow Racecar
+EndZyellowracecarLLPlaceable,vehicles,item,,,EndZ Yellow Racecar
+
+EndZredracecarLL,vehicles,vehicle,,,EndZ Red Racecar
+EndZredracecarLLPlaceable,vehicles,item,,,EndZ Red Racecar
+
+EndZblackracecarLL,vehicles,vehicle,,,EndZ Black Racecar
+EndZblackracecarLLPlaceable,vehicles,item,,,EndZ Black Racecar
+
+EndZcamaroLL,vehicles,vehicle,,,EndZ 1970 Camaro
+EndZcamaroLLPlaceable,vehicles,item,,,EndZ 1970 Camaro
+
+EndZdodgetruckLL,vehicles,vehicle,,,EndZ 1950 Dodge Truck
+EndZdodgetruckLLPlaceable,vehicles,item,,,EndZ 1950 Dodge Truck
+
+EndZmilitarytruckLL,vehicles,vehicle,,,EndZ Military Truck
+EndZmilitarytruckLLPlaceable,vehicles,item,,,EndZ Military Truck
+
+vehicleEndZmilihelicopterLL,vehicles,vehicle,,,EndZ Transport Helicopter
+vehicleEndZmilihelicopterLLPlaceable,vehicles,item,,,EndZ Transport Helicopter
+
+EndZmilihelicopter2LL,vehicles,vehicle,,,EndZ Military Helicopter
+EndZmilihelicopter2LLPlaceable,vehicles,item,,,EndZ Military Helicopter

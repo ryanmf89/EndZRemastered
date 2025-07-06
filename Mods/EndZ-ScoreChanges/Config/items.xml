@@ -1,0 +1,90 @@
+<configs>
+
+<append xpath="/items">
+<!--FIRE EXTINGUISHER-->
+<item name="endzfireextLLitem">
+	<property name="Tags" value="weapon,ranged"/>
+	<property name="DisplayType" value="rangedGun"/>
+	<property name="HoldType" value="37"/>
+	<property name="Meshfile" value="#@modfolder:Resources/EndZfireextLL2.unity3d?EndZfireextLL.Prefab"/>
+	<property name="DropMeshfile" value="#@modfolder:Resources/EndZfireextLL2.unity3d?EndZfireextLL.Prefab"/>
+	<property name="Material" value="MMachineGunParts"/> 
+	<property name="Weight" value="6"/>
+	<property name="CrosshairOnAim" value="true"/>
+	<property name="CrosshairUpAfterShot" value="true"/>
+	<property name="RepairTools" value="RepairKitAutomaticRifles"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+	<property name="EconomicValue" value="65"/>
+	<property name="ShowQuality" value="true"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="DescriptionKey" value="endzfireextLLitemDesc"/>				
+<property class="Action0">
+	<property name="Class" value="Ranged"/>
+	<property name="Delay" value=".150"/>
+	<property name="AutoReload" value="false"/>
+	<property name="Magazine_items" value="ammoCO2"/>
+	<property name="Sound_start" value="fire_extinguisher"/>
+	<property name="Sound_loop" value=""/>
+	<property name="Sound_empty" value="dryfire"/>
+	<property name="Sound_reload" value="pistol_reload"/>
+	<property name="Sound_repeat" value=""/>
+	<property name="Sound_end" value=""/>
+	<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
+	<property name="Particles_muzzle_smoke" value="gunfire_pistol"/>
+	<property name="Particles_muzzle_fire_fpv" value="gunfire_pistol"/>
+	<property name="Particles_muzzle_smoke_fpv" value="gunfire_pistol"/>
+<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+	<property name="Infinite_ammo" value="true"/>
+</property>
+<effect_group name="Extinguisher">
+	<passive_effect name="MaxRange" operation="base_set" value="6"/>
+	<passive_effect name="DamageFalloffRange" operation="base_set" value="1"/>
+	<passive_effect name="DamageFalloffRange" operation="perc_add" value="1"/>
+	<passive_effect name="EntityDamage" operation="base_add" value="0"/>
+	<passive_effect name="BlockDamage" operation="base_add" value="0"/>
+	<passive_effect name="RoundsPerMinute" operation="base_set" value="1"/>
+	<passive_effect name="MagazineSize" operation="perc_add" value="15"/>
+	<passive_effect name="WeaponHandling" operation="perc_add" value=".08,.08"/>
+	<passive_effect name="RoundsPerMinute" operation="base_set" value="500"/>
+	<passive_effect name="MagazineSize" operation="base_set" value="60"/>
+	<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+	<passive_effect name="SpreadDegreesVertical" operation="base_set" value="0"/>
+	<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="0"/>
+	<passive_effect name="SpreadMultiplierAiming" operation="base_set" value="0"/>
+	<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value="0"/>
+	<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="0"/>
+	<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="0"/>
+	<passive_effect name="KickDegreesVerticalMin" operation="base_set" value="0"/>
+	<passive_effect name="KickDegreesVerticalMax" operation="base_set" value="0"/>
+	<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="0"/>
+	<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value="0"/>
+	<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.5"/>
+	<passive_effect name="WeaponHandling" operation="base_set" value=".83"/>
+	<passive_effect name="ModSlots" operation="base_set" value="0" tier="0"/>
+	<triggered_effect trigger="onSelfPrimaryActionStart" action="AnimatorSetBool" target="self" property="Fire" value="true"/>
+	<triggered_effect trigger="onSelfPrimaryActionEnd" action="AnimatorSetBool" target="self" property="WeaponFire" value="false"/>
+	<triggered_effect trigger="onSelfItemActivate" action="AnimatorSetBool" target="self" property="WeaponFire" value="false"/>
+	<triggered_effect trigger="onSelfItemDeactivate" action="AnimatorSetBool" target="self" property="WeaponFire" value="false"/>		
+	<triggered_effect trigger="onSelfHoldingItemCreated" action="AnimatorSetBool" target="self" property="WeaponFire" value="false"/>
+	<passive_effect name="DegradationMax" operation="base_set" value="200,500" tier="1,10"/>
+	<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>				
+</effect_group>
+<effect_group name="CO2 Proc" tiered="false">
+	<triggered_effect trigger="onSelfAttackedOther" action="RemoveBuff" target="other" buff="buffIsOnFire"/>
+	<passive_effect name="EntityDamage" operation="base_set" value="0"/>
+	<passive_effect name="BlockDamage" operation="base_set" value="0"/>
+	<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="head"/>
+	<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="earth"/>
+	<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
+	<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="metal"/>
+	<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="stone"/>	
+	<triggered_effect trigger="onSelfPrimaryActionRayHit" action="RemoveFire, SCore" target="positionAOE" range="5"/>				
+</effect_group>
+</item>
+</append>
+
+</configs>

@@ -1,0 +1,52 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+tooltipJammed,UI,Menu,,,{0} Use {1} ([cfcb02]Jammed[-]),,
+tooltipLocked,UI,Menu,,,{0} Use {1} ([fc0808]Locked[-]),,
+tooltipUnlocked,UI,Menu,,,{0} Use {1} ([24e602]Unlocked[-]),,
+lootTooltipNew,UI,Use Prompt,,,{0} Search {1} ([0328fc]Untouched[-]),,
+
+quest_clear_response,Quest,Quest Info,,,Clear Zombies ([DECEA3]{poi.distance}[-] [[DECEA3]{poi.direction}[-]] at [DECEA3]'{poi.name}'[-])
+quest_fetch_response,Quest,Quest Info,,,Fetch ([DECEA3]{poi.distance}[-] [[DECEA3]{poi.direction}[-]] at [DECEA3]'{poi.name}'[-])
+quest_fetch_clear_response,Quest,Quest Info,,,Fetch / Clear ([DECEA3]{poi.distance}[-] [[DECEA3]{poi.direction}[-]] at [DECEA3]'{poi.name}'[-])
+quest_infestation_response,,,,,Infested Clear ([DECEA3]{poi.distance}[-] [[DECEA3]{poi.direction}[-]] at [DECEA3]'{poi.name}'[-])
+quest_restore_power_response,Quest,Quest Info,,,Restore Power [[DECEA3]Night Only[-]] ([DECEA3]{poi.distance}[-] [[DECEA3]{poi.direction}[-]] at [DECEA3]'{poi.name}'[-])
+
+perkMotherLodeRank1LongDesc,progression,perk Str,,,"You've found your first small vein and are envy of all the Johnny Newcomes.\nHarvest 100% more from ore, stone, terrain blocks and trees with any axe, pick, shovel, chainsaw or auger."
+perkMotherLodeRank2LongDesc,progression,perk Str,,,"Finding more ore is starting to become second nature to you. Harvest 200% more from ore, stone, terrain blocks and trees with any axe, pick, shovel, chainsaw or auger."
+perkMotherLodeRank3LongDesc,progression,perk Str,,,"You've hit your stride and can probably make a decent living at this. Harvest 300% more from ore, stone, terrain blocks and trees with any axe, pick, shovel, chainsaw or auger."
+perkMotherLodeRank4LongDesc,progression,perk Str,,,"You are going to need an Irish baby buggy to carry all this ore. Harvest 400% more from ore, stone, terrain blocks and trees with any axe, pick, shovel, chainsaw or auger."
+perkMotherLodeRank5LongDesc,progression,perk Str,,,"Mining is second nature to you and you find the mother lode everywhere you go. Harvest 500% more from ore, stone, terrain blocks and trees with any axe, pick, shovel, chainsaw or auger."
+
+perkJunkMinerRank1LongDesc,progression,perk Str,,,"Gain 100% more resources from mining junk such as cloth, plastic etc."
+perkJunkMinerRank2LongDesc,progression,perk Str,,,"Gain 200% more resources from mining junk such as cloth, plastic etc."
+perkJunkMinerRank3LongDesc,progression,perk Str,,,"Gain 300% more resources from mining junk such as cloth, plastic etc."
+perkJunkMinerRank4LongDesc,progression,perk Str,,,"Gain 400% more resources from mining junk such as cloth, plastic etc."
+perkJunkMinerRank5LongDesc,progression,perk Str,,,"Gain 500% more resources from mining junk such as cloth, plastic etc."
+
+perkSalvageOperationsRank1LongDesc,progression,perk Per,,,"Who knows what useful items can be found when tearing things apart? Salvage tools deal 10% more damage, harvest 20% faster, and gain up to 100% more resources with a wrench, ratchet or impact driver. Stamina costs are reduced by 8% and 15% for power attacks. Find more salvage tools and parts in loot."
+perkSalvageOperationsRank2LongDesc,progression,perk Per,,,"Most people call you “Scavver”, but at least it's an honest living. Salvage tools deal 20% more damage, harvest 40% faster, and gain up to 200% more resources with a wrench, ratchet or impact driver. Stamina costs are reduced by 15% and 30% for power attacks. Find more salvage tools and parts in loot."
+perkSalvageOperationsRank3LongDesc,progression,perk Per,,,"You have a knack for salvaging more useful parts than the average scrapper. Salvage tools deal 30% more damage, harvest 60% faster, and gain up to 300% more resources with a wrench, ratchet or impact driver. Stamina costs are reduced by 20% and 40% for power attacks. Find more salvage tools and parts in loot."
+perkSalvageOperationsRank4LongDesc,progression,perk Per,,,"Your ability to gather salvaged parts is remarkable. Salvage tools deal 40% more damage, harvest 80% faster, and gain up to 400% more resources with a wrench, ratchet or impact driver. Stamina costs are reduced by 25% and 50% for power attacks. Find more salvage tools and parts in loot."
+perkSalvageOperationsRank5LongDesc,progression,perk Per,,,"You're king of the junk dealers and envy of the grease monkeys of the apocalypse. Salvage tools deal 50% more damage, harvest 100% faster, and gain up to 500% more resources with a wrench, ratchet or impact driver. Find more salvage tools and parts in loot."
+
+perkTheHuntsmanRank1LongDesc,progression,perk For,,,You are on the path of the huntsman. Harvest 100% more resources from animals using any bladed tool or weapon.
+perkTheHuntsmanRank2LongDesc,progression,perk For,,,You are becoming adept at skinning and harvesting meat. Harvest 200% more resources from animals using any bladed tool or weapon.
+perkTheHuntsmanRank3LongDesc,progression,perk For,,,Living in the wild is becoming second nature to you. Harvest 300% more resources from animals using any bladed tool or weapon.
+perkTheHuntsmanRank4LongDesc,progression,perk For,,,You know exactly how to get the perfect cuts. Harvest 400% more resources from animals using any bladed tool or weapon.
+perkTheHuntsmanRank5LongDesc,progression,perk For,,,You are a true mountain man and let nothing go to waste. Harvest 500% more resources from animals using any bladed tool or weapon.
+
+perkDaringAdventurerDesc,progression,perk,,,Be a daring adventurer!\nGet better rewards for doing quests.
+perkDaringAdventurerName,progression,perk,,,The Daring Adventurer
+perkDaringAdventurerRank1Desc,progression,perk,,,Looter
+perkDaringAdventurerRank1LongDesc,progression,perk,,,"Risking your neck every day has its advantages.\nGain access to better trader items and get 5% more dukes, also choose 1 rewards."
+perkDaringAdventurerRank2Desc,progression,perk,,,Plunderer
+perkDaringAdventurerRank2LongDesc,progression,perk,,,"The traders know you can get the job done, plunderer.\nGain access to even better trader items and get 10% more dukes, also choose 2 rewards."
+perkDaringAdventurerRank3Desc,progression,perk,,,Mercenary
+perkDaringAdventurerRank3LongDesc,progression,perk,,,"You've made a name for yourself as a mercenary for hire.\nGain access to better trader items and get 15% more dukes, also choose 3 rewards."
+perkDaringAdventurerRank4Desc,progression,perk,,,Bounty Hunter
+perkDaringAdventurerRank4LongDesc,progression,perk,,,"You are the daring adventurer!\nGain access to better trader items and get 20% more dukes.\nPick 4 rewards for your hard effort."
+perkDaringAdventurerRank5Desc,progression,perk Int,,,Daring Adventurer
+perkDaringAdventurerRank5LongDesc,progression,perk Int,,,"You are the daring adventurer!\nGain access to better trader items and get 25% more dukes.\nPick 5 quest rewards for your daring efforts."
+
+woodLogSpike1,blocks,Block,,,Wood Log Spike
+woodLogSpike1Desc,blocks,Block,,,"This log spike is super sharp. Causes bleeding damage to entities. \nCan be upgraded 5 times from the craftable spike after putting in place."

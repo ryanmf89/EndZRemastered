@@ -1,0 +1,36 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+buffburntforestLLName,buffs,Buff,New,,"Suffocating Smoke"
+buffburntforestLLDesc,buffs,Buff,New,,"The Burnt Forest is filled with thick smoke. Find material to craft the Respirator Mod."
+buffburntforestLLTooltip,buffs,Buff,New,,"[595a5c]The Burnt Forest is filled with smoke!"
+modbuffburntforestLL,item_modifiers,mod,,,Respirator Mod
+modbuffburntforestLLDesc,item_modifiers,mod,,,"Equip this to head armor to gain protection from the Burnt Forest smoke."
+resourcefilterpiecesLL,Items,Resource,,,"Filter Pieces"
+resourcefilterpiecesLLDesc,Items,Resource,,,"Use these Filter Pieces to craft a Respirator Mod to combat the Burnt Forest smoke." 
+
+resourcebiomeiceLL,Items,Resource,,,"Dry Ice"
+resourcebiomeiceLLDesc,Items,Resource,,,"Use this to craft a Super Heat Mod to stay cool in the high temp desert."
+buffdesertheatLL,buffs,Buff,New,,"Super Heat"
+buffdesertheatLLName,buffs,Buff,New,,"Super Heat"
+buffdesertheatLLDesc,buffs,Buff,New,,"The sun in the desert is super hot. Find the material to craft the Super Heat Mod"
+buffdesertheatLLTooltip,buffs,Buff,New,,"[ff0000]The sun in the desert is creating a super heat!"
+modbuffdesertheatLL,item_modifiers,mod,,,Super Heat Mod
+modbuffdesertheatLLDesc,item_modifiers,mod,,,"Equip this to leg armor to gain protection from the super heat in the desert."
+
+resourcesnowLL,Items,Resource,,,"Small Pile of Hot Sand"
+resourcesnowLLDesc,Items,Resource,,,"Use this to craft a Frozen North Mod to protect from the severe cold in the snow."
+bufffrozensnowLL,buffs,Buff,New,,"Frozen North"
+bufffrozensnowLLName,buffs,Buff,New,,"Frozen North"
+bufffrozensnowLLDesc,buffs,Buff,New,,"The snow biome is a dangerous place, you will need to craft the Frozen North mod to protect from the freezing cold"
+bufffrozensnowLLTooltip,buffs,Buff,New,,"[0073ff]Dont venture into the snow unless your properly protected"
+modbufffrozensnowLL,item_modifiers,mod,,,Frozen North Mod
+modbufffrozensnowLLDesc,item_modifiers,mod,,,Equip this to chest armor to gain protection from the freezing temps of the snow region
+
+resourceradiofiberLL,Items,Resource,,,"Radioactive Snow Fibers"
+resourceradiofiberLLDesc,Items,Resource,,,"Use this to craft a Radiation Ready Mod to protect from the radiation of the wasteland."
+buffradiationwasteLL,buffs,Buff,New,,"Radiation"
+buffradiationwasteLLName,buffs,Buff,New,,"Radiation"
+buffradiationwasteLLDesc,buffs,Buff,New,,"The wasteland is super dangerous and full of radiation, equip the Radiation Ready Mod to protect yourself. This also needs to be equipped to gather Scrap Vibranium from the Wasteland."
+buffradiationwasteLLTooltip,buffs,Buff,New,,"[06de02]Wasteland is RADIATED. watchout"
+modbuffradiationwasteLL,item_modifiers,mod,,,Radiation Ready Mod
+modbuffradiationwasteLLDesc,item_modifiers,mod,,,"Equip this to head armor to gain protection from the radiation in the wasteland."

@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+serumLL,items,Food,,,"Serum"
+serumLLDesc,items,Food,,,"Helps cure the infection at 11% each vile."

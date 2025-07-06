@@ -1,0 +1,583 @@
+<configs>
+
+<!--AMMO BENCH-->
+<append xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Group']/@value">,RegularAmmo</append>
+<append xpath="/items/item[@name='ammoBundle9mmBulletBall']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,RegularAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammo9mmBulletHP']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,HPAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammoBundle9mmBulletHP']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,HPAmmo"/>
+</append>	
+<append xpath="/items/item[@name='ammo9mmBulletAP']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,APAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammoBundle9mmBulletAP']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,APAmmo"/>
+</append>	
+<append xpath="/items/item[@name='ammo44MagnumBulletBall']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,RegularAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammoBundle44MagnumBulletBall']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,RegularAmmo"/>
+</append>	
+<append xpath="/items/item[@name='ammo44MagnumBulletHP']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,HPAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammoBundle44MagnumBulletHP']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,HPAmmo"/>
+</append>	
+<append xpath="/items/item[@name='ammo44MagnumBulletAP']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,APAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammoBundle44MagnumBulletAP']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,APAmmo"/>
+</append>	
+<append xpath="/items/item[@name='ammo762mmBulletBall']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,RegularAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammoBundle762mmBulletBall']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,RegularAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammo762mmBulletHP']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,HPAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammoBundle762mmBulletHP']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,HPAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammo762mmBulletAP']">	
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,APAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammoBundle762mmBulletAP']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,APAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammoShotgunShell']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,RegularAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammoBundleShotgunShell']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,RegularAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammoShotgunBreachingSlug']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,RegularAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammoBundleShotgunBreachingSlug']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,RegularAmmo"/>
+</append>	
+<append xpath="/items/item[@name='ammoShotgunSlug']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,APAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammoBundleShotgunSlug']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,APAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammoJunkTurretRegular']/property[@name='Group']/@value">,RegularAmmo</append>
+<append xpath="/items/item[@name='ammoBundleJunkTurretRegular']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,RegularAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammoJunkTurretAP']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Robotics,APAmmo"/>
+</append>
+<append xpath="/items/item[@name='ammoBundleJunkTurretAP']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,APAmmo"/>
+</append>	
+<append xpath="/items/item[@name='ammoArrowIron']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Arrows"/>
+</append>	
+<append xpath="/items/item[@name='ammoBundleArrowIron']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Arrows"/>
+</append>	
+<append xpath="/items/item[@name='ammoArrowSteelAP']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Arrows"/>
+</append>	
+<append xpath="/items/item[@name='ammoBundleArrowSteelAP']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Arrows"/>
+</append>
+<append xpath="/items/item[@name='ammoArrowFlaming']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Arrows"/>
+</append>
+<append xpath="/items/item[@name='ammoBundleArrowFlaming']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Arrows"/>
+</append>	
+<append xpath="/items/item[@name='ammoArrowExploding']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Arrows"/>
+</append>	
+<append xpath="/items/item[@name='ammoBundleArrowExploding']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Arrows"/>
+</append>	
+<append xpath="/items/item[@name='ammoCrossbowBoltFlaming']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Arrows"/>
+</append>	
+<append xpath="/items/item[@name='ammoBundleCrossbowBoltFlaming']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Arrows"/>
+</append>	
+<append xpath="/items/item[@name='ammoCrossbowBoltExploding']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Arrows"/>
+</append>	
+<append xpath="/items/item[@name='ammoBundleCrossbowBoltExploding']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Arrows"/>
+</append>	
+<append xpath="/items/item[@name='ammoCrossbowBoltIron']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Arrows"/>
+</append>	
+<append xpath="/items/item[@name='ammoBundleCrossbowBoltIron']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Arrows"/>
+</append>	
+<append xpath="/items/item[@name='ammoCrossbowBoltSteelAP']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Arrows"/>
+</append>	
+<append xpath="/items/item[@name='ammoBundleCrossbowBoltSteelAP']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,Arrows"/>
+</append>		
+<append xpath="/items/item[@name='thrownAmmoMolotovCocktail']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,explosive"/>
+</append>
+<append xpath="/items/item[@name='thrownAmmoPipeBomb']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,explosive"/>
+</append>
+<append xpath="/items/item[@name='thrownGrenade']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,explosive"/>
+</append>
+<append xpath="/items/item[@name='thrownGrenadeContact']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,explosive"/>
+</append>
+<append xpath="/items/item[@name='thrownTimedCharge']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,explosive"/>
+</append>
+<append xpath="/items/item[@name='thrownDynamite']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,explosive"/>
+</append>
+<append xpath="/items/item[@name='ammoRocketFrag']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,firedexplosive"/>
+</append>
+<append xpath="/items/item[@name='ammoRocketHE']">		
+	<property name="Group" value="Ammo/Weapons,Ammo,firedexplosive"/>
+</append>
+<append xpath="/items/item[@name='gunMGT1AK47Parts' 
+or @name='gunHandgunT1PistolParts' 
+or @name='gunRifleT1HuntingRifleParts'
+or @name='gunShotgunT1DoubleBarrelParts'
+or @name='gunBowT1WoodenBowParts'
+or @name='gunExplosivesT3RocketLauncherParts'
+or @name='gunBotRoboticsParts'
+or @name='meleeWpnBatonT2StunBatonParts'
+or @name='meleeWpnKnucklesT3SteelKnucklesParts'
+or @name='meleeWpnBladeT3MacheteParts'
+or @name='meleeWpnSpearT3SteelSpearParts'
+or @name='meleeWpnClubT3SteelClubParts'
+or @name='meleeWpnSledgeT3SteelSledgehammerParts'
+or @name='meleeToolAllSteelParts'
+or @name='armorParts'
+or @name='meleeToolAxeT3ChainsawParts']">		
+	<property name="Group" value="vanillapartscategory"/>
+</append>
+<!--END OF AMMO BENCH-->
+
+	
+<!--*****TIER 0 WEAPONS AND TOOLS*****-->
+	
+<!--STONE AXE-->
+<append xpath="/items/item[@name='meleeToolRepairT0StoneAxe']"><property name="CustomIcon" value="moonrockaxeLL"/></append>
+<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@name='TintColor']/@value">00FFF7</set>
+<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@name='Material']/@value">MmoonrockLL</set>
+<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@name='RepairTools']/@value">resourceMoonRocksLL</set>
+<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@name='Meshfile']/@value">#@modfolder:Resources/moonrocktoolsandweapons.unity3d?moonrockaxe</set>
+<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/effect_group[@name='meleeToolRepairT0StoneAxe']/passive_effect[@name='AttacksPerMinute']/@value">125</set>
+<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/effect_group[@name='meleeToolRepairT0StoneAxe']/passive_effect[@name='StaminaLoss']/@value">5</set>
+<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/effect_group[@name='meleeToolRepairT0StoneAxe']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">50</set>
+<!--STONE SHOVEL-->
+<append xpath="/items/item[@name='meleeToolShovelT0StoneShovel']"><property name="CustomIcon" value="moonrockshovelLL"/></append>
+<set xpath="/items/item[@name='meleeToolShovelT0StoneShovel']/property[@name='TintColor']/@value">00FFF7</set>
+<set xpath="/items/item[@name='meleeToolShovelT0StoneShovel']/property[@name='Material']/@value">MmoonrockLL</set>
+<set xpath="/items/item[@name='meleeToolShovelT0StoneShovel']/property[@name='RepairTools']/@value">resourceMoonRocksLL</set>
+<set xpath="/items/item[@name='meleeToolShovelT0StoneShovel']/property[@name='Meshfile']/@value">#@modfolder:Resources/moonrocktoolsandweapons.unity3d?moonrockshovel</set>
+<set xpath="/items/item[@name='meleeToolShovelT0StoneShovel']/effect_group[@name='meleeToolShovelT0StoneShovel']/passive_effect[@name='AttacksPerMinute']/@value">75</set>
+<set xpath="/items/item[@name='meleeToolShovelT0StoneShovel']/effect_group[@name='meleeToolShovelT0StoneShovel']/passive_effect[@name='StaminaLoss']/@value">5</set>
+<set xpath="/items/item[@name='meleeToolShovelT0StoneShovel']/effect_group[@name='meleeToolShovelT0StoneShovel']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">50</set>
+<!--STONE SPEAR-->
+<append xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']"><property name="CustomIcon" value="moonrockspearLL"/></append>
+<set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/property[@name='TintColor']/@value">00FFF7</set>
+<set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/property[@name='Material']/@value">MmoonrockLL</set>
+<set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/property[@name='RepairTools']/@value">resourceMoonRocksLL</set>
+<set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/property[@name='Meshfile']/@value">#@modfolder:Resources/moonrocktoolsandweapons.unity3d?moonrockspear</set>
+<set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']/passive_effect[@name='AttacksPerMinute']/@value">75</set>
+<set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']/passive_effect[@name='StaminaLoss']/@value">5</set>
+<set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/effect_group[@name='meleeWpnSpearT0StoneSpear']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">10</set>
+<!--STONE SLEDGEHAMMER-->
+<append xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']"><property name="CustomIcon" value="moonrocksledgeLL"/></append>
+<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/property[@name='TintColor']/@value">00FFF7</set>
+<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/property[@name='Material']/@value">MmoonrockLL</set>
+<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/property[@name='RepairTools']/@value">resourceMoonRocksLL</set>
+<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/property[@name='Meshfile']/@value">#@modfolder:Resources/moonrocktoolsandweapons.unity3d?moonrocksledge</set>
+<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='meleeWpnSledgeT0StoneSledgehammer']/passive_effect[@name='AttacksPerMinute']/@value">75</set>
+<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='meleeWpnSledgeT0StoneSledgehammer']/passive_effect[@name='StaminaLoss']/@value">10</set>
+<set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/effect_group[@name='meleeWpnSledgeT0StoneSledgehammer']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">50</set>
+<!--WOODEN CLUB-->
+<append xpath="/items/item[@name='meleeWpnClubT0WoodenClub']"><property name="CustomIcon" value="moonrockclubLL"/></append>
+<set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/property[@name='TintColor']/@value">00FFF7</set>
+<set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/property[@name='Material']/@value">MmoonrockLL</set>
+<set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/property[@name='RepairTools']/@value">resourceMoonRocksLL</set>
+<set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/property[@name='Meshfile']/@value">#@modfolder:Resources/moonrocktoolsandweapons.unity3d?moonrockclub</set>
+<set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/effect_group[@name='meleeWpnClubT0WoodenClub']/passive_effect[@name='AttacksPerMinute']/@value">75</set>
+<set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/effect_group[@name='meleeWpnClubT0WoodenClub']/passive_effect[@name='StaminaLoss']/@value">5</set>
+<set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/effect_group[@name='meleeWpnClubT0WoodenClub']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">10</set>
+<!--BONE KNIFE-->
+<set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='meleeWpnBladeT0BoneKnife']/passive_effect[@name='AttacksPerMinute']/@value">150</set>
+<set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='meleeWpnBladeT0BoneKnife']/passive_effect[@name='StaminaLoss']/@value">5</set>
+<set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/effect_group[@name='meleeWpnBladeT0BoneKnife']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">5</set>
+<!--PIPE BATON-->
+<set xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/effect_group[@name='meleeWpnBatonT0PipeBaton']/passive_effect[@name='AttacksPerMinute']/@value">75</set>
+<set xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/effect_group[@name='meleeWpnBatonT0PipeBaton']/passive_effect[@name='StaminaLoss']/@value">5</set>
+<set xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/effect_group[@name='meleeWpnBatonT0PipeBaton']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">15</set>
+<!--LEATHER KNUCKLES-->
+<set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/effect_group[@name='meleeWpnKnucklesT0LeatherKnuckles']/passive_effect[@name='AttacksPerMinute']/@value">150</set>
+<set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/effect_group[@name='meleeWpnKnucklesT0LeatherKnuckles']/passive_effect[@name='StaminaLoss']/@value">5</set>
+<set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/effect_group[@name='meleeWpnKnucklesT0LeatherKnuckles']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">5</set>
+<!--PIPE PISTOL-->
+<set xpath="/items/item[@name='gunHandgunT0PipePistol']/effect_group[@name='gunHandgunT0PipePistol']/passive_effect[@name='RoundsPerMinute']/@value">150</set>
+<set xpath="/items/item[@name='gunHandgunT0PipePistol']/effect_group[@name='gunHandgunT0PipePistol']/passive_effect[@name='MagazineSize']/@value">5</set>
+<!--PIPE SHOTGUN-->
+<set xpath="/items/item[@name='gunShotgunT0PipeShotgun']/effect_group[@name='gunShotgunT0PipeShotgun']/passive_effect[@name='RoundsPerMinute']/@value">150</set>
+<set xpath="/items/item[@name='gunShotgunT0PipeShotgun']/effect_group[@name='gunShotgunT0PipeShotgun']/passive_effect[@name='MagazineSize']/@value">2</set>
+<!--PIPE RIFLE-->
+<set xpath="/items/item[@name='gunRifleT0PipeRifle']/effect_group[@name='gunRifleT0PipeRifle']/passive_effect[@name='RoundsPerMinute']/@value">150</set>
+<set xpath="/items/item[@name='gunRifleT0PipeRifle']/effect_group[@name='gunRifleT0PipeRifle']/passive_effect[@name='MagazineSize']/@value">2</set>
+<!--PIPE MACHINE GUN-->
+<set xpath="/items/item[@name='gunMGT0PipeMachineGun']/effect_group[@name='gunMGT0PipeMachineGun']/passive_effect[@name='RoundsPerMinute']/@value">350</set>
+<set xpath="/items/item[@name='gunMGT0PipeMachineGun']/effect_group[@name='gunMGT0PipeMachineGun']/passive_effect[@name='MagazineSize']/@value">25</set>
+
+<!--*****END OF TIER 0 WEAPONS AND TOOLS*****-->
+	
+<!--*****TIER 1 WEAPONS AND TOOLS*****-->
+	
+<!--IRON FIREAXE-->
+<remove xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/property[@name='TintColor']"></remove>
+<append xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']"><property name="CustomIcon" value="brassaxeLL"/></append>
+<set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/property[@name='Material']/@value">Mbrass_scrap</set>
+<set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/property[@name='RepairTools']/@value">resourcebrassRepairKitLL</set>
+<set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/property[@name='Meshfile']/@value">#@modfolder:Resources/brasstoolsandweapons.unity3d?brassaxeLL</set>
+<set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/effect_group[@name='meleeToolAxeT1IronFireaxe']/passive_effect[@name='AttacksPerMinute']/@value">100</set>
+<set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/effect_group[@name='meleeToolAxeT1IronFireaxe']/passive_effect[@name='StaminaLoss']/@value">15</set>
+<set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/effect_group[@name='meleeToolAxeT1IronFireaxe']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">75</set>
+<!--IRON PICKAXE-->
+<remove xpath="/items/item[@name='meleeToolPickT1IronPickaxe']/property[@name='TintColor']"></remove>
+<append xpath="/items/item[@name='meleeToolPickT1IronPickaxe']"><property name="CustomIcon" value="brasspickaxeLL"/></append>
+<set xpath="/items/item[@name='meleeToolPickT1IronPickaxe']/property[@name='Material']/@value">Mbrass_scrap</set>
+<set xpath="/items/item[@name='meleeToolPickT1IronPickaxe']/property[@name='RepairTools']/@value">resourcebrassRepairKitLL</set>
+<set xpath="/items/item[@name='meleeToolPickT1IronPickaxe']/property[@name='Meshfile']/@value">#@modfolder:Resources/brasstoolsandweapons.unity3d?brasspickaxeLL</set>
+<set xpath="/items/item[@name='meleeToolPickT1IronPickaxe']/effect_group[@name='meleeToolPickT1IronPickaxe']/passive_effect[@name='AttacksPerMinute']/@value">100</set>
+<set xpath="/items/item[@name='meleeToolPickT1IronPickaxe']/effect_group[@name='meleeToolPickT1IronPickaxe']/passive_effect[@name='StaminaLoss']/@value">15</set>
+<set xpath="/items/item[@name='meleeToolPickT1IronPickaxe']/effect_group[@name='meleeToolPickT1IronPickaxe']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">75</set>
+<!--IRON SHOVEL-->
+<remove xpath="/items/item[@name='meleeToolShovelT0StoneShovel']/property[@name='TintColor']"></remove>
+<append xpath="/items/item[@name='meleeToolShovelT1IronShovel']"><property name="CustomIcon" value="brassshovelLL"/></append>
+<set xpath="/items/item[@name='meleeToolShovelT1IronShovel']/property[@name='Material']/@value">Mbrass_scrap</set>
+<set xpath="/items/item[@name='meleeToolShovelT1IronShovel']/property[@name='RepairTools']/@value">resourcebrassRepairKitLL</set>
+<set xpath="/items/item[@name='meleeToolShovelT1IronShovel']/property[@name='Meshfile']/@value">#@modfolder:Resources/brasstoolsandweapons.unity3d?brassshovelLL</set>
+<set xpath="/items/item[@name='meleeToolShovelT1IronShovel']/effect_group[@name='meleeToolShovelT1IronShovel']/passive_effect[@name='AttacksPerMinute']/@value">100</set>
+<set xpath="/items/item[@name='meleeToolShovelT1IronShovel']/effect_group[@name='meleeToolShovelT1IronShovel']/passive_effect[@name='StaminaLoss']/@value">15</set>
+<set xpath="/items/item[@name='meleeToolShovelT1IronShovel']/effect_group[@name='meleeToolShovelT1IronShovel']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">75</set>
+<!--WRENCH-->
+<set xpath="/items/item[@name='meleeToolSalvageT1Wrench']/effect_group[@name='meleeToolSalvageT1Wrench']/passive_effect[@name='AttacksPerMinute']/@value">75</set>
+<set xpath="/items/item[@name='meleeToolSalvageT1Wrench']/effect_group[@name='meleeToolSalvageT1Wrench']/passive_effect[@name='StaminaLoss']/@value">15</set>
+<set xpath="/items/item[@name='meleeToolSalvageT1Wrench']/effect_group[@name='meleeToolSalvageT1Wrench']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">75</set>
+<!--HUNTING KNIFE-->
+<remove xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/property[@name='TintColor']"></remove>
+<append xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']"><property name="CustomIcon" value="brassknifeLL"/></append>
+<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/property[@name='Material']/@value">Mbrass_scrap</set>
+<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/property[@name='RepairTools']/@value">resourcebrassRepairKitLL</set>
+<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/property[@name='Meshfile']/@value">#@modfolder:Resources/brasstoolsandweapons.unity3d?brassknifeLL</set>
+<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='meleeWpnBladeT1HuntingKnife']/passive_effect[@name='AttacksPerMinute']/@value">150</set>
+<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='meleeWpnBladeT1HuntingKnife']/passive_effect[@name='StaminaLoss']/@value">10</set>
+<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/effect_group[@name='meleeWpnBladeT1HuntingKnife']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">10</set>
+<!--BASEBALL BAT-->
+<remove xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/property[@name='TintColor']"></remove>
+<append xpath="/items/item[@name='meleeWpnClubT1BaseballBat']"><property name="CustomIcon" value="brassclubLL"/></append>
+<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/property[@name='Material']/@value">Mbrass_scrap</set>
+<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/property[@name='RepairTools']/@value">resourcebrassRepairKitLL</set>
+<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/property[@name='Meshfile']/@value">#@modfolder:Resources/brasstoolsandweapons.unity3d?brassclubLL</set>
+<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/effect_group[@name='meleeWpnClubT1BaseballBat']/passive_effect[@name='AttacksPerMinute']/@value">75</set>
+<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/effect_group[@name='meleeWpnClubT1BaseballBat']/passive_effect[@name='StaminaLoss']/@value">15</set>
+<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/effect_group[@name='meleeWpnClubT1BaseballBat']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">20</set>
+<!--IRON SPEAR-->
+<remove xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/property[@name='TintColor']"></remove>
+<append xpath="/items/item[@name='meleeWpnSpearT1IronSpear']"><property name="CustomIcon" value="brassspearLL"/></append>
+<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/property[@name='Material']/@value">Mbrass_scrap</set>
+<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/property[@name='RepairTools']/@value">resourcebrassRepairKitLL</set>
+<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/property[@name='Meshfile']/@value">#@modfolder:Resources/brasstoolsandweapons.unity3d?brassspearLL</set>
+<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']/passive_effect[@name='AttacksPerMinute']/@value">75</set>
+<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']/passive_effect[@name='StaminaLoss']/@value">15</set>
+<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group[@name='meleeWpnSpearT1IronSpear']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">10</set>
+<!--IRON SLEDGEHAMMER-->
+<remove xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/property[@name='TintColor']"></remove>
+<append xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']"><property name="CustomIcon" value="brasssledgeLL"/></append>
+<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/property[@name='Material']/@value">Mbrass_scrap</set>
+<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/property[@name='RepairTools']/@value">resourcebrassRepairKitLL</set>
+<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/property[@name='Meshfile']/@value">#@modfolder:Resources/brasstoolsandweapons.unity3d?brasssledgeLL</set>
+<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='meleeWpnSledgeT1IronSledgehammer']/passive_effect[@name='AttacksPerMinute']/@value">50</set>
+<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='meleeWpnSledgeT1IronSledgehammer']/passive_effect[@name='StaminaLoss']/@value">15</set>
+<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group[@name='meleeWpnSledgeT1IronSledgehammer']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">75</set>
+<!--IRON KNUCKLES-->
+<set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/effect_group[@name='meleeWpnKnucklesT1IronKnuckles']/passive_effect[@name='AttacksPerMinute']/@value">150</set>
+<set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/effect_group[@name='meleeWpnKnucklesT1IronKnuckles']/passive_effect[@name='StaminaLoss']/@value">5</set>
+<set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/effect_group[@name='meleeWpnKnucklesT1IronKnuckles']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">5</set>
+<!--PISTOL-->
+<set xpath="/items/item[@name='gunHandgunT1Pistol']/effect_group[@name='gunHandgunT1Pistol']/passive_effect[@name='RoundsPerMinute']/@value">200</set>
+<set xpath="/items/item[@name='gunHandgunT1Pistol']/effect_group[@name='gunHandgunT1Pistol']/passive_effect[@name='MagazineSize']/@value">25</set>
+<!--DOUBLE BARREL SHOTGUN-->
+<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/effect_group[@name='gunShotgunT1DoubleBarrel']/passive_effect[@name='MagazineSize']/@value">4</set>
+<!--HUNTING RIFLE-->
+<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/effect_group[@name='gunRifleT1HuntingRifle']/passive_effect[@name='RoundsPerMinute']/@value">150</set>
+<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/effect_group[@name='gunRifleT1HuntingRifle']/passive_effect[@name='MagazineSize']/@value">4</set>
+<!--AK-47-->
+<set xpath="/items/item[@name='gunMGT1AK47']/effect_group[@name='gunMGT1AK47']/passive_effect[@name='RoundsPerMinute']/@value">400</set>
+<set xpath="/items/item[@name='gunMGT1AK47']/effect_group[@name='gunMGT1AK47']/passive_effect[@name='MagazineSize']/@value">45</set>
+	
+<!--*****END OF TIER 1 WEAPONS AND TOOLS*****-->
+
+<!--*****TIER 2 WEAPONS AND TOOLS*****-->
+
+<!--STEEL AXE-->
+<append xpath="/items/item[@name='meleeToolAxeT2SteelAxe']"><property name="CustomIcon" value="vibeaxeLL"/></append>
+<set xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/property[@name='Material']/@value">MvibescrapLL</set>
+<append xpath="/items/item[@name='meleeToolAxeT2SteelAxe']"><property name="RepairTools" value="resourcevibeRepairKitLL"/></append>
+<set xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/property[@name='Meshfile']/@value">#@modfolder:Resources/vibraniumtoolsandweapons.unity3d?vibeaxeLL</set>
+<set xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/effect_group[@name='meleeToolAxeT2SteelAxe']/passive_effect[@name='AttacksPerMinute']/@value">75</set>
+<set xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/effect_group[@name='meleeToolAxeT2SteelAxe']/passive_effect[@name='StaminaLoss']/@value">20</set>
+<set xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/effect_group[@name='meleeToolAxeT2SteelAxe']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">100</set>
+<!--STEEL PICKAXE-->
+<append xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']"><property name="CustomIcon" value="vibepickaxeLL"/></append>
+<set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/property[@name='Material']/@value">MvibescrapLL</set>
+<set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/property[@name='RepairTools']/@value">resourcevibeRepairKitLL</set>
+<set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/property[@name='Meshfile']/@value">#@modfolder:Resources/vibraniumtoolsandweapons.unity3d?vibepickLL</set>
+<set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/effect_group[@name='meleeToolPickT2SteelPickaxe']/passive_effect[@name='AttacksPerMinute']/@value">75</set>
+<set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/effect_group[@name='meleeToolPickT2SteelPickaxe']/passive_effect[@name='StaminaLoss']/@value">20</set>
+<set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/effect_group[@name='meleeToolPickT2SteelPickaxe']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">100</set>
+<!--STEEL SHOVEL-->
+<append xpath="/items/item[@name='meleeToolShovelT2SteelShovel']"><property name="CustomIcon" value="vibeshovelLL"/></append>
+<set xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/property[@name='Material']/@value">MvibescrapLL</set>
+<set xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/property[@name='RepairTools']/@value">resourcevibeRepairKitLL</set>
+<set xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/property[@name='Meshfile']/@value">#@modfolder:Resources/vibraniumtoolsandweapons.unity3d?vibeshovelLL</set>
+<set xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/effect_group[@name='meleeToolShovelT2SteelShovel']/passive_effect[@name='AttacksPerMinute']/@value">75</set>
+<set xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/effect_group[@name='meleeToolShovelT2SteelShovel']/passive_effect[@name='StaminaLoss']/@value">20</set>
+<set xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/effect_group[@name='meleeToolShovelT2SteelShovel']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">125</set>
+<!--RATCHET-->
+<set xpath="/items/item[@name='meleeToolSalvageT2Ratchet']/effect_group[@name='meleeToolSalvageT2Ratchet']/passive_effect[@name='AttacksPerMinute']/@value">75</set>
+<set xpath="/items/item[@name='meleeToolSalvageT2Ratchet']/effect_group[@name='meleeToolSalvageT2Ratchet']/passive_effect[@name='StaminaLoss']/@value">15</set>
+<set xpath="/items/item[@name='meleeToolSalvageT2Ratchet']/effect_group[@name='meleeToolSalvageT2Ratchet']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">100</set>
+<!--STUN BATON-->
+<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='meleeWpnBatonT2StunBaton']/passive_effect[@name='AttacksPerMinute']/@value">100</set>
+<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='meleeWpnBatonT2StunBaton']/passive_effect[@name='StaminaLoss']/@value">10</set>
+<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='meleeWpnBatonT2StunBaton']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">15</set>
+<!--44 MAGNUM-->
+<set xpath="/items/item[@name='gunHandgunT2Magnum44']/effect_group[@name='gunHandgunT2Magnum44']/passive_effect[@name='RoundsPerMinute']/@value">150</set>
+<set xpath="/items/item[@name='gunHandgunT2Magnum44']/effect_group[@name='gunHandgunT2Magnum44']/passive_effect[@name='MagazineSize']/@value">8</set>
+<!--PUMP SHOTGUN-->
+<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/effect_group[@name='gunShotgunT2PumpShotgun']/passive_effect[@name='RoundsPerMinute']/@value">75</set>
+<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/effect_group[@name='gunShotgunT2PumpShotgun']/passive_effect[@name='MagazineSize']/@value">12</set>
+<!--LEVER ACTION RIFLE-->
+<set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/effect_group[@name='gunRifleT2LeverActionRifle']/passive_effect[@name='RoundsPerMinute']/@value">100</set>
+<set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/effect_group[@name='gunRifleT2LeverActionRifle']/passive_effect[@name='MagazineSize']/@value">10</set>
+<!--TACTICAL ACTION RIFLE-->
+<set xpath="/items/item[@name='gunMGT2TacticalAR']/effect_group[@name='gunMGT2TacticalAR']/passive_effect[@name='RoundsPerMinute']/@value">450</set>
+<set xpath="/items/item[@name='gunMGT2TacticalAR']/effect_group[@name='gunMGT2TacticalAR']/passive_effect[@name='MagazineSize']/@value">50</set>
+
+<!--*****END OF TIER 2 WEAPONS AND TOOLS*****-->
+
+<!--*****TIER 3 WEAPONS AND TOOLS*****-->
+
+<!--CHAINSAW-->
+<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='RoundsPerMinute']/@value">350</set>
+<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">100</set>
+<!--AUGER-->
+<set xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='RoundsPerMinute']/@value">350</set>
+<set xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">100</set>
+<!--IMPACT DRIVER-->
+<set xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/effect_group[@name='meleeToolSalvageT3ImpactDriver']/passive_effect[@name='AttacksPerMinute']/@value">75</set>
+<set xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/effect_group[@name='meleeToolSalvageT3ImpactDriver']/passive_effect[@name='StaminaLoss']/@value">15</set>
+<set xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/effect_group[@name='meleeToolSalvageT3ImpactDriver']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">100</set>
+<!--MACHETE-->
+<append xpath="/items/item[@name='meleeWpnBladeT3Machete']"><property name="CustomIcon" value="vibemacheteLL"/></append>
+<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/property[@name='Material']/@value">MvibescrapLL</set>
+<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/property[@name='RepairTools']/@value">resourcevibeRepairKitLL</set>
+<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/property[@name='Meshfile']/@value">#@modfolder:Resources/vibraniumtoolsandweapons.unity3d?vibeswordLL</set>
+<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='AttacksPerMinute']/@value">100</set>
+<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='StaminaLoss']/@value">10</set>
+<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group[@name='meleeWpnBladeT3Machete']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">25</set>
+<!--STEEL CLUB-->
+<append xpath="/items/item[@name='meleeWpnClubT3SteelClub']"><property name="CustomIcon" value="vibebatLL"/></append>
+<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/property[@name='Material']/@value">MvibescrapLL</set>
+<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/property[@name='RepairTools']/@value">resourcevibeRepairKitLL</set>
+<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/property[@name='Meshfile']/@value">#@modfolder:Resources/vibraniumtoolsandweapons.unity3d?vibemaceLL</set>
+<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='meleeWpnClubT3SteelClub']/passive_effect[@name='AttacksPerMinute']/@value">75</set>
+<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='meleeWpnClubT3SteelClub']/passive_effect[@name='StaminaLoss']/@value">15</set>
+<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='meleeWpnClubT3SteelClub']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">35</set>
+<!--STEEL SPEAR-->
+<append xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']"><property name="CustomIcon" value="t3vibespearLL"/></append>
+<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/property[@name='Material']/@value">MvibescrapLL</set>
+<append xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']"><property name="RepairTools" value="resourcevibeRepairKitLL"/></append>
+<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/property[@name='Meshfile']/@value">#@modfolder:Resources/vibraniumtoolsandweapons.unity3d?vibespearLL</set>
+<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']/passive_effect[@name='AttacksPerMinute']/@value">75</set>
+<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']/passive_effect[@name='StaminaLoss']/@value">15</set>
+<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group[@name='meleeWpnSpearT3SteelSpear']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">20</set>
+<!--STEEL SLEDGEHAMMER-->
+<append xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']"><property name="CustomIcon" value="vibesledgeLL"/></append>
+<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/property[@name='Material']/@value">MvibescrapLL</set>
+<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/property[@name='RepairTools']/@value">resourcevibeRepairKitLL</set>
+<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/property[@name='Meshfile']/@value">#@modfolder:Resources/vibraniumtoolsandweapons.unity3d?vibesledgeLL</set>
+<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='meleeWpnSledgeT3SteelSledgehammer']/passive_effect[@name='AttacksPerMinute']/@value">50</set>
+<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='meleeWpnSledgeT3SteelSledgehammer']/passive_effect[@name='StaminaLoss']/@value">20</set>
+<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='meleeWpnSledgeT3SteelSledgehammer']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">150</set>
+<!--STEEL KNUCKLES-->
+<set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='meleeWpnKnucklesT3SteelKnuckles']/passive_effect[@name='AttacksPerMinute']/@value">150</set>
+<set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='meleeWpnKnucklesT3SteelKnuckles']/passive_effect[@name='StaminaLoss']/@value">5</set>
+<set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/effect_group[@name='meleeWpnKnucklesT3SteelKnuckles']/passive_effect[@name='BlockDamage' and @operation='base_set']/@value">15</set>
+<!--SMG-->
+<set xpath="/items/item[@name='gunHandgunT3SMG5']/effect_group[@name='gunHandgunT3SMG5']/passive_effect[@name='RoundsPerMinute']/@value">600</set>
+<set xpath="/items/item[@name='gunHandgunT3SMG5']/effect_group[@name='gunHandgunT3SMG5']/passive_effect[@name='MagazineSize']/@value">50</set>
+<!--DESERT VULTURE-->
+<set xpath="/items/item[@name='gunHandgunT3DesertVulture']/effect_group[@name='gunHandgunT3DesertVulture']/passive_effect[@name='RoundsPerMinute']/@value">175</set>
+<set xpath="/items/item[@name='gunHandgunT3DesertVulture']/effect_group[@name='gunHandgunT3DesertVulture']/passive_effect[@name='MagazineSize']/@value">15</set>
+<!--AUTO SHOTGUN-->
+<set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='RoundsPerMinute']/@value">100</set>
+<set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='MagazineSize']/@value">30</set>
+<!--SNIPER RIFLE-->
+<set xpath="/items/item[@name='gunRifleT3SniperRifle']/effect_group[@name='gunRifleT3SniperRifle']/passive_effect[@name='RoundsPerMinute']/@value">175</set>
+<set xpath="/items/item[@name='gunRifleT3SniperRifle']/effect_group[@name='gunRifleT3SniperRifle']/passive_effect[@name='MagazineSize']/@value">20</set>
+<!--M60-->
+<set xpath="/items/item[@name='gunMGT3M60']/effect_group[@name='gunMGT3M60']/passive_effect[@name='RoundsPerMinute']/@value">600</set>
+<set xpath="/items/item[@name='gunMGT3M60']/effect_group[@name='gunMGT3M60']/passive_effect[@name='MagazineSize']/@value">200</set>
+<!--*****END OF TIER 3 WEAPONS AND TOOLS*****-->
+
+<!--UPGRADE RESOURCES ADDED TO UPGRADE TOOLS-->
+<append xpath="//item[@name='meleeToolRepairT0StoneAxe' or @name='meleeToolRepairT1ClawHammer' or @name='meleeToolRepairT3Nailgun']/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">
+,resourceMoonRocksLL,resourceforgedvibeLL,resourcemoonmixLL
+</append>
+
+<!--MOONROCK-->
+<append xpath="/items">
+<item name="resourceMoonRocksLL">
+	<property name="Tags" value="salvageScrap,resourceMoonRocksLL"/>
+	<property name="CustomIcon" value="resourceCobblestones" />
+	<property name="CustomIconTint" value="7ec2c0" />
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MmoonrockLL"/>
+	<property name="Weight" value="1"/>
+	<property name="Stacknumber" value="10000"/> 
+	<property name="EconomicValue" value="1"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property name="RepairTime" value="1"/>
+	<property name="RepairAmount" value="400"/>
+</item>
+</append>
+
+<append xpath="/items">
+<item name="resourcemoonmixLL">
+	<property name="CustomIcon" value="resourceConcreteMix" />
+	<property name="CustomIconTint" value="7ec2c0" />
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceConcreteMix"/>
+	<property name="Weight" value="20"/>
+	<property name="Stacknumber" value="10000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="1"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="TraderStageTemplate" value="midTier1"/>
+	<property name="Group" value="Resources"/>
+	<!--property name="UnlockedBy" value="craftingWorkstations"/-->
+</item>
+</append>
+<!--END OF MOONROCK-->
+
+<!--BRASS-->
+<append xpath="/items">
+<item name="resourceForgedBrassLL">
+	<property name="Tags" value="salvageScrap,resourceForgedBrassLL"/>
+	<property name="CustomIcon" value="resourceForgedSteel" />
+	<property name="CustomIconTint" value="8f6f17" />
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mbrass_scrap"/>
+	<property name="Stacknumber" value="10000"/> 
+	<property name="EconomicValue" value="1"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property name="RepairTime" value="1"/>
+	<property name="RepairAmount" value="400"/>
+</item>
+
+<item name="resourcebrassRepairKitLL">
+	<property name="Tags" value="junk,salvageScrap,resourcebrassRepairKitLL"/>
+	<property name="CustomIcon" value="resourceRepairKit" />
+	<property name="CustomIconTint" value="8f6f17" />
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mbrass_scrap"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resourceRepairKit -->
+	<property name="EconomicValue" value="1"/>
+	<property name="RepairTime" value="3"/>
+	<property name="RepairAmount" value="32000"/>
+	<property name="Group" value="Resources"/>
+</item>
+</append>
+<!--END OF BRASS-->
+
+<!--VIBRANIUM-->
+<append xpath="/items">
+<item name="resourcescrapvibeLL">
+	<property name="Tags" value="salvageScrap,resourcescrapvibeLL"/>
+	<property name="DescriptionKey" value="resourcescrapvibeLLDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MvibeblockLL"/>
+	<property name="HoldType" value="45" />
+	<property name="Stacknumber" value="10000"/>
+	<property name="Weight" value="1"/>
+	<property name="EconomicValue" value="10"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="CraftingIngredientExp" value="2"/>
+	<property name="CraftingIngredientTime" value="20"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Resources"/>
+</item>
+
+<item name="resourceforgedvibeLL">
+	<property name="CustomIcon" value="resourceForgedSteel" />
+	<property name="CustomIconTint" value="b804af" />
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MvibescrapLL"/>
+	<property name="Stacknumber" value="10000"/> 
+	<property name="EconomicValue" value="1"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property name="RepairTime" value="1"/>
+	<property name="RepairAmount" value="400"/>
+</item>
+
+<item name="resourcevibeRepairKitLL">
+	<property name="CustomIcon" value="resourceRepairKit" />
+	<property name="CustomIconTint" value="b804af" />
+	<property name="HoldType" value="45"/>
+	<property name="Tags" value="junk"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MvibescrapLL"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resourceRepairKit -->
+	<property name="EconomicValue" value="1"/>
+	<property name="RepairTime" value="3"/>
+	<property name="RepairAmount" value="32000"/>
+	<property name="Group" value="Resources"/>
+</item>
+</append>
+<!--END OF VIBRANIUM-->
+
+</configs>

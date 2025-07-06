@@ -1,0 +1,29 @@
+<configs>
+
+<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingVehicles']">
+	<display_entry icon="vehicleBicyclePlaceable" name_key="2 Wheel Vehicles" has_quality="false" unlock_level="20" >
+		<unlock_entry item="vehicleBicycleChassis,vehicleBicycleHandlebars,vehicleWheels,vehicleMinibikeChassis,vehicleMinibikeHandlebars,carBattery,resourceOil,ammoGasCan,vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,ammoGasCanBundle" unlock_tier="1" />
+	</display_entry>
+	<display_entry icon="EndZcamaroLLPlaceable,EndZdevillePlaceable,EndZbuggyPlaceable,EndZblueracecarLLPlaceable,EndZyellowracecarLLPlaceable,EndZredracecarLLPlaceable,EndZblackracecarLLPlaceable" name_key="Cars" has_quality="false" unlock_level="40" >
+		<unlock_entry item="EndZcamaroLLPlaceable,EndZdevillePlaceable,EndZbuggyPlaceable,EndZblueracecarLLPlaceable,EndZyellowracecarLLPlaceable,EndZredracecarLLPlaceable,EndZblackracecarLLPlaceable" unlock_tier="1" />
+	</display_entry>		
+	<display_entry icon="EndZdodgetruckLLPlaceable,vehicle4x4TruckPlaceable" name_key="Trucks" has_quality="false" unlock_level="60" >
+		<unlock_entry item="vehicleTruck4x4Chassis,vehicleTruck4x4Accessories,EndZdodgetruckLLPlaceable" unlock_tier="1" />
+	</display_entry>					
+	<display_entry icon="ApocolypticVehiclePlaceable" name_key="Apoc Vehicles" has_quality="false" unlock_level="80" >
+		<unlock_entry item="ApocolypticVehiclePlaceable,ApocolypticBuggyPlaceable,ApocolypticBattleCarPlaceable,ApocolypticBusPlaceable,ApocolypticTruckPlaceable,ApocolypticNuxPlaceable,ApocolypticRaceCarPlaceable,ApocolypticBattleBuggyPlaceable,ApocolypticBattleCranePlaceable" unlock_tier="1" />
+	</display_entry>		
+	<display_entry icon="vehicleGyrocopterPlaceable,EndZmilitarytruckLLPlaceable,vehicleEndZmilihelicopterLLPlaceable,EndZmilihelicopter2LLPlaceable" name_key="Military Vehicles" has_quality="false" unlock_level="100" >
+		<unlock_entry item="vehicleGyroCopterChassis,vehicleGyroCopterAccessories,EndZmilitarytruckLLPlaceable,vehicleEndZmilihelicopterLLPlaceable,EndZmilihelicopter2LLPlaceable" unlock_tier="1" />
+	</display_entry>
+
+	<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="vehicleBicycleChassis,vehicleBicycleHandlebars,vehicleWheels,vehicleMinibikeChassis,vehicleMinibikeHandlebars,carBattery,resourceOil,ammoGasCan,vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,ammoGasCanBundle"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="EndZcamaroLLPlaceable,EndZdevillePlaceable,EndZbuggyPlaceable,EndZblueracecarLLPlaceable,EndZyellowracecarLLPlaceable,EndZredracecarLLPlaceable,EndZblackracecarLLPlaceable"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="vehicleTruck4x4Chassis,vehicleTruck4x4Accessories,EndZdodgetruckLLPlaceable"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="80,100" value="1" tags="ApocolypticVehiclePlaceable,ApocolypticBuggyPlaceable,ApocolypticBattleCarPlaceable,ApocolypticBusPlaceable,ApocolypticTruckPlaceable,ApocolypticNuxPlaceable,ApocolypticRaceCarPlaceable,ApocolypticBattleBuggyPlaceable,ApocolypticBattleCranePlaceable"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,100" value="1" tags="vehicleGyroCopterChassis,vehicleGyroCopterAccessories,EndZmilitarytruckLLPlaceable,vehicleEndZmilihelicopterLLPlaceable,EndZmilihelicopter2LLPlaceable"/>
+	</effect_group>
+</set>
+
+</configs>

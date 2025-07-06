@@ -1,0 +1,28 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+zombieEndZPF1,entityclasses,Entity,,,Business Rager
+zombieEndZPF2,entityclasses,Entity,,,Burnt Rager
+zombieEndZPF3,entityclasses,Entity,,,Plague Rager
+zombieEndZPF4,entityclasses,Entity,,,Frosty Rager
+zombieEndZPF5,entityclasses,Entity,,,Frosty Rager
+
+zombieEndZBF1,entityclasses,Entity,,,Dusty Thick
+zombieEndZBF2,entityclasses,Entity,,,Compromised Hazmat
+zombieEndZBF3,entityclasses,Entity,,,Cleanser
+zombieEndZBF4,entityclasses,Entity,,,Prison Doctor
+
+zombieEndZBF1,entityclasses,Entity,,,Fired Up Moe
+zombieEndZBF2,entityclasses,Entity,,,Fired Up  Darlene
+zombieEndZBF3,entityclasses,Entity,,,Fired Up Yo
+zombieEndZBF4,entityclasses,Entity,,,Fired Up Utility Worker
+
+zombieEndZSnow1,entityclasses,Entity,,,Frozen Biker
+zombieEndZSnow2,entityclasses,Entity,,,Frozen LumberJack
+zombieEndZSnow3,entityclasses,Entity,,,Frozen Big Mama
+zombieEndZSnow4,entityclasses,Entity,,,Frozen Big Boy
+
+zombieEndZWL1,entityclasses,Entity,,,Infected Bowler
+zombieEndZWL2,entityclasses,Entity,,,Infected Cop
+zombieEndZWL3,entityclasses,Entity,,,Infected Skateboarder
+zombieEndZWL4,entityclasses,Entity,,,Infected Soldier
+zombieEndZWL5,entityclasses,Entity,,,Infected Wight

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xml>		
+	<Name value="EndZ_Launcher" />
+	<DisplayName value="EndZ-Launcher" />
+	<Description value="Adds the Mod to the Mod launcher for auto download gameplay" />
+	<Author value="TheeLegion" />
+	<Version value="2.0.0.0" />		
+</xml>

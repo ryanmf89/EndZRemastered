@@ -1,0 +1,43 @@
+<configs>
+
+<!--DROPS FILTER PIECES FROM PINE FOREST ZOMBIES-->
+<append xpath="/gameevents">
+	<action_sequence name="pineforestdrops">
+		<action class="AddItems">
+			<property name="added_items" value="resourcefilterpiecesLL" />
+			<property name="added_item_counts" value="2" />
+		</action>
+	</action_sequence>
+</append>
+
+<!--DROPS DRY ICE FROM BURNT FOREST ZOMBIES-->
+<append xpath="/gameevents">
+	<action_sequence name="burntforestdrops">
+		<action class="AddItems">
+			<property name="added_items" value="resourcebiomeiceLL" />
+			<property name="added_item_counts" value="2" />
+		</action>
+	</action_sequence>
+</append>
+
+<!--DROPS HOT SAND FROM DESERT ZOMBIES-->
+<append xpath="/gameevents">
+	<action_sequence name="desertdrops">
+		<action class="AddItems">
+			<property name="added_items" value="resourcesnowLL" />
+			<property name="added_item_counts" value="2" />
+		</action>
+	</action_sequence>
+</append>
+
+<!--DROPS RADIO FIBERS FROM SNOW ZOMBIES-->
+<append xpath="/gameevents">
+	<action_sequence name="snowdrops">
+		<action class="AddItems">
+			<property name="added_items" value="resourceradiofiberLL" />
+			<property name="added_item_counts" value="2" />
+		</action>
+	</action_sequence>
+</append>
+
+</configs>

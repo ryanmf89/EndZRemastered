@@ -1,0 +1,282 @@
+<configs>
+
+<!--AMMO BENCH-->
+<append xpath="/blocks">	
+	<block name="endzAmmobench">
+	<property name="Class" value="Workstation"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="AmmoBench"/>
+	<property name="DescriptionKey" value="AmmobenchDesc"/>
+	<property name="UnlockedBy" value="craftingWorkstations"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="800"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Weight" value="0"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="Model" value="#@modfolder:Resources/EndZammostation1.unity3d?EndZammostation"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="HeatMapStrength" value="1"/>
+	<property name="HeatMapTime" value="500"/>
+	<property name="HeatMapFrequency" value="100"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="endzAmmobench"/>
+	</property>
+	<property name="WorkstationIcon" value="ui_game_symbol_endzAmmobench"/>
+	<property name="OpenSound" value="open_workbench"/>
+	<property name="CloseSound" value="close_workbench"/>
+	<property name="WorkstationJournalTip" value="workbenchTip"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="25"/>
+		<property name="resourceMechanicalParts" value="20"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="200" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="20" tag="allHarvest"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="8" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="EconomicValue" value="2000"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+	<property name="SortOrder1" value="70i0"/>
+</block>	
+</append>
+<!--END OF AMMO BENCH-->
+
+<!--MOONROCK BOULDER-->
+<append xpath="/blocks">
+<block name="moonrockboulderLL">
+	<property name="CreativeMode" value="Player"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Map.Color" value="120,120,120"/>
+	<property name="IndexName" value="quest_stone_boulder"/>
+	<property name="Material" value="MmoonrockLL"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/specialbiomeboulders.unity3d?moonrockboulderLL" />
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="MultiBlockDim" value="3,3,3"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="BigDecorationRadius" value="3"/>
+	<property name="IsDistantDecoration" value="false"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="DowngradeBlock" value="moonrockboulderLLRespawner"/>
+	<drop event="Harvest" name="resourceMoonRocksLL" count="500,750" tag="oreWoodHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="resourceMoonRocksLL" count="0" prob="1" stick_chance="0"/>
+	<property name="SortOrder1" value="B275"/>
+	<property name="SortOrder2" value="0006"/>
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+</block>
+
+<block name="moonrockboulderLLRespawner">
+	<property name="CustomIcon" value="decoCarWheelFlat" />
+	<property name="CustomIconTint" value="ff0000"/>
+	<property name="Extends" value="decoEntityPolymerMaster"/>			
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mmetal"/>			
+	<property name="StabilitySupport" value="false"/>
+	<property name="Texture" value="282"/>
+	<property name="Model" value="#@modfolder:Resources/specialbiomeboulders.unity3d?moonrockboulderrespawnerLL" />		
+	<property name="Collide" value="movement,melee"/>
+	<property name="CanMobsSpawnOn" value="false" />
+	<property name="MaxDamage" value="150000"/>
+	<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="moonrockboulderLL" />
+	<property name="PlantGrowing.GrowthRate" value="120" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+</append>
+<!--END OF MOONROCK BOULDER-->
+
+<!--BRASS BOULDER-->
+<append xpath="/blocks">
+<block name="brassboulderLL">
+	<property name="CreativeMode" value="Player"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Map.Color" value="120,120,120"/>
+	<property name="IndexName" value="quest_stone_boulder"/>
+	<property name="Material" value="MbrassscrapLL"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/specialbiomeboulders.unity3d?brassboulderLL" />
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="MultiBlockDim" value="3,3,3"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="BigDecorationRadius" value="3"/>
+	<property name="IsDistantDecoration" value="false"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="DowngradeBlock" value="brassboulderLLRespawner"/>
+	<drop event="Harvest" name="resourceScrapBrass" count="250,500" tag="oreWoodHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="resourceScrapBrass" count="0" prob="1" stick_chance="0"/>
+	<property name="SortOrder1" value="B275"/>
+	<property name="SortOrder2" value="0006"/>
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+</block>
+
+<block name="brassboulderLLRespawner">
+	<property name="CustomIcon" value="decoCarWheelFlat" />
+	<property name="CustomIconTint" value="ff0000"/>
+	<property name="Extends" value="decoEntityPolymerMaster"/>			
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mmetal"/>			
+	<property name="StabilitySupport" value="false"/>
+	<property name="Texture" value="282"/>
+	<property name="Model" value="#@modfolder:Resources/specialbiomeboulders.unity3d?brassboulderrespawnerLL" />		
+	<property name="Collide" value="movement,melee"/>
+	<property name="CanMobsSpawnOn" value="false" />
+	<property name="MaxDamage" value="150000"/>
+	<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="brassboulderLL" />
+	<property name="PlantGrowing.GrowthRate" value="120" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+</append>
+<!--END OF BRASS BOULDER-->
+
+<!--VIBRANIUM BOULDER-->
+<append xpath="/blocks">
+<block name="vibeboulderLL">
+	<property name="CreativeMode" value="Player"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Map.Color" value="120,120,120"/>
+	<property name="IndexName" value="quest_stone_boulder"/>
+	<property name="Material" value="MvibeblockLL"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/specialbiomeboulders.unity3d?vibeboulderLL" />
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="MultiBlockDim" value="3,3,3"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="BigDecorationRadius" value="3"/>
+	<property name="IsDistantDecoration" value="false"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="DowngradeBlock" value="vibeboulderLLRespawner"/>
+	<drop event="Harvest" name="resourcescrapvibeLL" count="500,750" tag="oreWoodHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="resourcescrapvibeLL" count="0" prob="1" stick_chance="0"/>
+	<property name="SortOrder1" value="B275"/>
+	<property name="SortOrder2" value="0006"/>
+	<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+</block>
+
+<block name="vibeboulderLLRespawner">
+	<property name="CustomIcon" value="decoCarWheelFlat" />
+	<property name="CustomIconTint" value="ff0000"/>
+	<property name="Extends" value="decoEntityPolymerMaster"/>			
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mmetal"/>			
+	<property name="StabilitySupport" value="false"/>
+	<property name="Texture" value="282"/>
+	<property name="Model" value="#@modfolder:Resources/specialbiomeboulders.unity3d?vibeboulderrespawnLL" />		
+	<property name="Collide" value="movement,melee"/>
+	<property name="CanMobsSpawnOn" value="false" />
+	<property name="MaxDamage" value="150000"/>
+	<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="vibeboulderLL" />
+	<property name="PlantGrowing.GrowthRate" value="120" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+</append>
+<!--END OF VIBRANIUM BOULDER-->
+
+<!--NEW BLOCK UPGRADES-->	
+<append xpath="//block[@name='steelShapes']">
+	<property class="UpgradeBlock">
+	<property name="ToBlock" value="moonrockShapes"/>
+	<property name="Item" value="resourcemoonmixLL"/>
+	<property name="ItemCount" value="10"/>
+	<property name="UpgradeHitCount" value="5"/>
+</property>
+	<property name="CustomUpgradeSound" value="place_block_concrete"/>
+</append>
+
+<!--NEW BLOCK SYSTEM FOR ENDZ-->
+<append xpath="/blocks">
+<block name="moonrockShapes" shapes="All">
+	<property name="DescriptionKey" value="moonrockMasterLLDesc"/>
+	<property name="DisplayType" value="blockHardened"/>
+	<property name="Material" value="Mmoonrock_shapes"/>
+	<property name="MaxDamage" value="15000"/>
+	<property name="Shape" value="New"/>
+	<property name="Texture" value="537"/>
+	<property name="UiBackgroundTexture" value="537"/>
+	<property name="EconomicValue" value="320"/>
+	<property name="EconomicBundleSize" value="20"/>
+	<property name="Stacknumber" value="2500"/>
+	<property class="RepairItems">
+		<property name="resourcemoonmixLL" value="8"/>
+	</property>
+	<drop event="Harvest" name="resourcemoonmixLL" count="3" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="vibeShapes"/>
+		<property name="Item" value="resourceforgedvibeLL"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<property name="UpgradeSound" value="place_block_concrete"/>
+	<property name="SortOrder1" value="S040"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="MC_Shapes"/>
+</block>
+			
+<block name="vibeShapes" shapes="All">
+	<property name="DescriptionKey" value="moonrockMasterLLDesc"/>
+	<property name="DisplayType" value="blockHardened"/>
+	<property name="Material" value="Mvibe_shapes"/>
+	<property name="MaxDamage" value="30000"/>
+	<property name="Shape" value="New"/>
+	<property name="Texture" value="543"/>
+	<property name="UiBackgroundTexture" value="543"/>
+	<property name="EconomicValue" value="320"/>
+	<property name="EconomicBundleSize" value="20"/>
+	<property name="Stacknumber" value="2500"/>
+	<property class="RepairItems">
+		<property name="resourceforgedvibeLL" value="8"/>
+	</property>
+	<drop event="Harvest" name="resourceforgedvibeLL" count="3" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	<property name="SortOrder1" value="S040"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="MC_Shapes"/>
+</block>
+</append>
+<!--END OF NEW BLOCK UPGRADES-->
+</configs>

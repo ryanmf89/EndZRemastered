@@ -1,0 +1,211 @@
+<configs>
+
+<!--*************************BIOMES ARE 3X SPAWNS*************************-->
+<!--**********************ENTITY SPAWNER IS 2X SPAWNS*********************-->
+
+<!--*************************START OF BIOMES*************************-->
+<!--PINE FOREST MAX COUNTS-->
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='dz01']/@maxcount">3</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='nz01']/@maxcount">3</set>
+
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='dz02']/@maxcount">6</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='nz02']/@maxcount">9</set>
+
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='dz03']/@maxcount">9</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='nz03']/@maxcount">9</set>
+
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='aa01']/@maxcount">3</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='na01']/@maxcount">3</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='ne01']/@maxcount">3</set>
+
+<!--BURNT FOREST MAX COUNTS-->
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='dz01']/@maxcount">3</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='nz01']/@maxcount">3</set>
+
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='dz02']/@maxcount">9</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='nz02']/@maxcount">12</set>
+
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='dz03']/@maxcount">9</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='nz03']/@maxcount">12</set>
+
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='aa01']/@maxcount">3</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='na01']/@maxcount">3</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='ae01']/@maxcount">3</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='ne01']/@maxcount">3</set>
+
+<!--DESERT MAX COUNTS-->
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='dz01']/@maxcount">3</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='nz01']/@maxcount">6</set>
+
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='dz02']/@maxcount">9</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='nz02']/@maxcount">9</set>
+
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='dz03']/@maxcount">9</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='nz03']/@maxcount">12</set>
+
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='aa01']/@maxcount">3</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='ae01']/@maxcount">3</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='ne01']/@maxcount">3</set>
+
+<!--SNOW MAX COUNTS-->
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='dz01']/@maxcount">3</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='nz01']/@maxcount">6</set>
+
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='dz02']/@maxcount">12</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='nz02']/@maxcount">12</set>
+
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='dz03']/@maxcount">12</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='nz03']/@maxcount">12</set>
+
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='aa01']/@maxcount">3</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='na01']/@maxcount">3</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='ae01']/@maxcount">3</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='ne01']/@maxcount">3</set>
+
+<!--WASTELAND MAX COUNTS-->
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz01']/@maxcount">3</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='nz01']/@maxcount">6</set>
+
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz02']/@maxcount">12</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='nz02']/@maxcount">12</set>
+
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz03']/@maxcount">12</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='nz03']/@maxcount">12</set>
+
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='na01']/@maxcount">3</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='ae01']/@maxcount">3</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='ne01']/@maxcount">3</set>
+
+<!--*************************END OF BIOMES*************************-->
+
+<!--*************************START OF ENTITY SPAWNERS*************************-->
+<!--ZOMBIES_DOG_SMALL-->
+<set xpath="/spawning/entityspawner[@name='Dog_Sm_Territorial']/day/property[@name='TotalAlive']/@value">4</set>
+<set xpath="/spawning/entityspawner[@name='Dog_Sm_Territorial']/day/property[@name='TotalPerWave']/@value">4</set>
+<set xpath="/spawning/entityspawner[@name='Dog_Sm_Territorial']/day/property[@name='Territorial']/@value">true</set>
+<set xpath="/spawning/entityspawner[@name='Dog_Sm_Territorial']/day/property[@name='TerritorialRange']/@value">80</set>
+
+<!--ZOMBIES_AND_ANIMALS_FARM-->
+<set xpath="/spawning/entityspawner[@name='Farm_Med_Territorial']/day/property[@name='TotalAlive']/@value">10</set>
+<set xpath="/spawning/entityspawner[@name='Farm_Med_Territorial']/day/property[@name='TotalPerWave']/@value">10</set>
+<set xpath="/spawning/entityspawner[@name='Farm_Med_Territorial']/day/property[@name='Territorial']/@value">true</set>
+<set xpath="/spawning/entityspawner[@name='Farm_Med_Territorial']/day/property[@name='TerritorialRange']/@value">120</set>
+
+<!--ZOMBIES_DOG_MED (WRONG COMMENT AS THIS IS A SOLDIER GROUP)-->
+<set xpath="/spawning/entityspawner[@name='Zombie_Soldier_Med_Territorial']/day/property[@name='TotalAlive']/@value">12</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Soldier_Med_Territorial']/day/property[@name='TotalPerWave']/@value">12</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Soldier_Med_Territorial']/day/property[@name='Territorial']/@value">true</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Soldier_Med_Territorial']/day/property[@name='TerritorialRange']/@value">80</set>
+
+<!--ZOMBIES_UTILITY_WORKER_MED-->
+<set xpath="/spawning/entityspawner[@name='Zombie_Utility_Worker_Med_Territorial']/day/property[@name='TotalAlive']/@value">12</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Utility_Worker_Med_Territorial']/day/property[@name='TotalPerWave']/@value">12</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Utility_Worker_Med_Territorial']/day/property[@name='Territorial']/@value">true</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Utility_Worker_Med_Territorial']/day/property[@name='TerritorialRange']/@value">80</set>
+
+<!--ZOMBIES_UTILITY_WORKER_SMALL-->
+<set xpath="/spawning/entityspawner[@name='Zombie_Utility_Worker_Sm_Territorial']/day/property[@name='TotalAlive']/@value">3</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Utility_Worker_Sm_Territorial']/day/property[@name='TotalPerWave']/@value">3</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Utility_Worker_Sm_Territorial']/day/property[@name='Territorial']/@value">true</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Utility_Worker_Sm_Territorial']/day/property[@name='TerritorialRange']/@value">80</set>
+
+<!--ZOMBIES_GHOST_TOWN_LARGE-->
+<set xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Large_Territorial']/day/property[@name='TotalAlive']/@value">24</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Large_Territorial']/day/property[@name='TotalPerWave']/@value">24</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Large_Territorial']/day/property[@name='Territorial']/@value">true</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Large_Territorial']/day/property[@name='TerritorialRange']/@value">80</set>
+
+<!--ZOMBIES_GHOST_TOWN_SMALL-->
+<set xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Sm_Territorial']/day/property[@name='TotalAlive']/@value">4</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Sm_Territorial']/day/property[@name='TotalPerWave']/@value">4</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Sm_Territorial']/day/property[@name='Territorial']/@value">true</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Sm_Territorial']/day/property[@name='TerritorialRange']/@value">80</set>
+
+<!--ZOMBIES_BIKER_BAR_MED-->
+<set xpath="/spawning/entityspawner[@name='Zombie_Biker_Bar_Med_Territorial']/day/property[@name='TotalAlive']/@value">12</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Biker_Bar_Med_Territorial']/day/property[@name='TotalPerWave']/@value">12</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Biker_Bar_Med_Territorial']/day/property[@name='Territorial']/@value">true</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Biker_Bar_Med_Territorial']/day/property[@name='TerritorialRange']/@value">80</set>
+
+<!--ZOMBIES_NIGHT_CLUB_MED-->
+<set xpath="/spawning/entityspawner[@name='Zombie_Night_Club_Med_Territorial']/day/property[@name='TotalAlive']/@value">12</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Night_Club_Med_Territorial']/day/property[@name='TotalPerWave']/@value">12</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Night_Club_Med_Territorial']/day/property[@name='Territorial']/@value">true</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Night_Club_Med_Territorial']/day/property[@name='TerritorialRange']/@value">80</set>
+
+<!--ZOMBIES_SPECIAL_INFECTED-->
+<set xpath="/spawning/entityspawner[@name='Zombie_Special_Infected_Med_Territorial']/day/property[@name='TotalAlive']/@value">12</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Special_Infected_Med_Territorial']/day/property[@name='TotalPerWave']/@value">12</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Special_Infected_Med_Territorial']/day/property[@name='Territorial']/@value">true</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Special_Infected_Med_Territorial']/day/property[@name='TerritorialRange']/@value">80</set>
+
+<!--ZOMBIE_ANIMALS_DOG_MED-->
+<set xpath="/spawning/entityspawner[@name='Dog_Med_Territorial']/day/property[@name='TotalAlive']/@value">6</set>
+<set xpath="/spawning/entityspawner[@name='Dog_Med_Territorial']/day/property[@name='TotalPerWave']/@value">6</set>
+<set xpath="/spawning/entityspawner[@name='Dog_Med_Territorial']/day/property[@name='Territorial']/@value">true</set>
+<set xpath="/spawning/entityspawner[@name='Dog_Med_Territorial']/day/property[@name='TerritorialRange']/@value">110</set>
+
+<!--ZOMBIE_FERAL_SMALL-->
+<set xpath="/spawning/entityspawner[@name='Spawn_Small_Feral_Territorial']/day/property[@name='TotalAlive']/@value">2</set>
+<set xpath="/spawning/entityspawner[@name='Spawn_Small_Feral_Territorial']/day/property[@name='TotalPerWave']/@value">2</set>
+<set xpath="/spawning/entityspawner[@name='Spawn_Small_Feral_Territorial']/day/property[@name='Territorial']/@value">true</set>
+<set xpath="/spawning/entityspawner[@name='Spawn_Small_Feral_Territorial']/day/property[@name='TerritorialRange']/@value">50</set>
+
+<!--ZOMBIES_CAVE-->
+<set xpath="/spawning/entityspawner[@name='SpawnCave']/day/property[@name='TotalAlive']/@value">2</set>
+<set xpath="/spawning/entityspawner[@name='SpawnCave']/day/property[@name='TotalPerWave']/@value">2</set>
+
+<!--ZOMBIES_ALL_EXTRA_SMALL-->
+<set xpath="/spawning/entityspawner[@name='SpawnExtraSmall']/day/property[@name='TotalAlive']/@value">4</set>
+<set xpath="/spawning/entityspawner[@name='SpawnExtraSmall']/day/property[@name='TotalPerWave']/@value">4</set>
+
+<!--ZOMBIES_ALL_SMALL-->
+<set xpath="/spawning/entityspawner[@name='SpawnSmall']/day/property[@name='TotalAlive']/@value">8</set>
+<set xpath="/spawning/entityspawner[@name='SpawnSmall']/day/property[@name='TotalPerWave']/@value">8</set>
+
+<!--ZOMBIES_ALL_MED-->
+<set xpath="/spawning/entityspawner[@name='SpawnMedium']/day/property[@name='TotalAlive']/@value">12</set>
+<set xpath="/spawning/entityspawner[@name='SpawnMedium']/day/property[@name='TotalPerWave']/@value">12</set>
+
+<!--ZOMBIES_ALL_LARGE-->
+<set xpath="/spawning/entityspawner[@name='SpawnLarge']/day/property[@name='TotalAlive']/@value">20</set>
+<set xpath="/spawning/entityspawner[@name='SpawnLarge']/day/property[@name='TotalPerWave']/@value">20</set>
+
+<!--ZOMBIES_ALL_EXTRA_LARGE-->
+<set xpath="/spawning/entityspawner[@name='SpawnExLarge']/day/property[@name='TotalAlive']/@value">24</set>
+<set xpath="/spawning/entityspawner[@name='SpawnExLarge']/day/property[@name='TotalPerWave']/@value">24</set>
+
+<!--ZOMBIE_CRAWLERS-->
+<set xpath="/spawning/entityspawner[@name='SpawnCrawlers']/day/property[@name='TotalAlive']/@value">6</set>
+<set xpath="/spawning/entityspawner[@name='SpawnCrawlers']/day/property[@name='TotalPerWave']/@value">6</set>
+
+<!--ZOMBIES_BURNT-->
+<set xpath="/spawning/entityspawner[@name='SpawnBurntTown']/day/property[@name='TotalAlive']/@value">24</set>
+<set xpath="/spawning/entityspawner[@name='SpawnBurntTown']/day/property[@name='TotalPerWave']/@value">24</set>
+
+<!--ZOMBIES_SNOW_SMALL-->
+<set xpath="/spawning/entityspawner[@name='SpawnSnowSmall']/day/property[@name='TotalAlive']/@value">6</set>
+<set xpath="/spawning/entityspawner[@name='SpawnSnowSmall']/day/property[@name='TotalPerWave']/@value">6</set>
+
+<!--ZOMBIES_SNOW_MED-->
+<set xpath="/spawning/entityspawner[@name='SpawnSnowMedium']/day/property[@name='TotalAlive']/@value">14</set>
+<set xpath="/spawning/entityspawner[@name='SpawnSnowMedium']/day/property[@name='TotalPerWave']/@value">14</set>
+
+<!--ZOMBIES_SNOW_LARGE-->
+<set xpath="/spawning/entityspawner[@name='SpawnSnowLarge']/day/property[@name='TotalAlive']/@value">20</set>
+<set xpath="/spawning/entityspawner[@name='SpawnSnowLarge']/day/property[@name='TotalPerWave']/@value">20</set>
+
+<!--ZOMBIES_SCOUT_SCREAMER-->
+<!--SCOUT-->
+<set xpath="/spawning/entityspawner[@name='Scouts']/day/property[@name='TotalAlive']/@value">4</set>
+<set xpath="/spawning/entityspawner[@name='Scouts']/day/property[@name='TotalPerWave']/@value">2,4</set>
+<!--SCOUT FERAL-->
+<set xpath="/spawning/entityspawner[@name='ScoutsFeral']/day/property[@name='TotalAlive']/@value">4</set>
+<set xpath="/spawning/entityspawner[@name='ScoutsFeral']/day/property[@name='TotalPerWave']/@value">2,4</set>
+<!--SCOUT RADIATED-->
+<set xpath="/spawning/entityspawner[@name='ScoutsRadiated']/day/property[@name='TotalAlive']/@value">4</set>
+<set xpath="/spawning/entityspawner[@name='ScoutsRadiated']/day/property[@name='TotalPerWave']/@value">2,4</set>
+
+<!--*************************END OF ENTITY SPAWNERS*************************-->
+
+</configs>

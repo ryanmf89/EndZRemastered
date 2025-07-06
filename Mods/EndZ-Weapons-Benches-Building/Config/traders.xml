@@ -1,0 +1,17 @@
+<configs>
+
+<!--BATTERY, FLAMEOIL, AND NITROGEN MODS IN MOD LOOTGROUPS-->
+<append xpath="//trader_item_group[@name='groupMeleeMods']">
+	<item name="modGunMeleeNiCdBattery"/>
+	<item name="modGunMeleeFlammableOil"/>
+	<item name="modGunMeleeLiquidNitrogen"/>
+</append>
+
+<append xpath="//trader_item_group[@name='groupRangedMods']">
+	<item name="modGunMeleeNiCdBattery"/>
+	<item name="modGunMeleeFlammableOil"/>
+	<item name="modGunMeleeLiquidNitrogen"/>
+</append>
+<!--END OF BATTERY, FLAMEOIL, AND NITROGEN MODS IN MOD LOOTGROUPS-->
+
+</configs>

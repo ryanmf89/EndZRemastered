@@ -1,0 +1,14 @@
+<configs>
+
+<!--ENEMY HEALTH BAR -->
+<!--append xpath="/xui/ruleset[@name='default']/window_group[@name='compass']">
+	<window name="windowTargetBar" anchor="CenterTop" />
+</append-->
+
+<!--ADDS NEW STAT BAR-->
+<set xpath="/xui/ruleset/window_group[@name='toolbelt']/window[@name='HUDLeftStatBars']/@name">NewFoodAndWaterStatBars</set>
+	
+<!--REMOVES INPUT WINDOW FOR THE FORGE-->
+<remove xpath="/xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowForgeInput']"></remove>	
+	
+</configs>

@@ -1,0 +1,159 @@
+<configs>
+
+<!--BURNT FOREST RESPIRATOR MOD FOR ARMOR-->
+<append xpath="/item_modifiers">
+<item_modifier name="modbuffburntforestLL" installable_tags="head" modifier_tags="resourcefilterpiecesLL,biome4" blocked_tags="noMods" type="attachment">
+	<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="EconomicValue" value="8200"/>
+	<property name="TraderStageTemplate" value="modsTier1"/>
+	<effect_group tiered="false">
+	<passive_effect name="ElementalDamageResist" operation="perc_add" value="1" tags="buffburntforestLL"/>
+</effect_group>
+	<effect_group tiered="false">
+	<triggered_effect trigger="onSelfEquipStart" action="RemoveBuff" target="self" buff="buffburntforestLL"/>
+	<triggered_effect trigger="onSelfEquipStop" action="AddBuff" target="self" buff="buffburntforestLL"/>
+</effect_group>
+<!--TELLS THE BUFF WHETHER TO FIRE AGAIN IF NOT EQUIPPED-->
+<effect_group tiered="false">
+    <triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" target="self" cvar="biome4var" operation="set" value="1"/>
+    <triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" target="self" cvar="biome4var" operation="set" value="0"/>
+</effect_group>
+<!--TELLS TO START COLLECTING BIOME ITEMS AGAIN IN PINEFORST-->
+<effect_group tiered="false">
+    <triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" target="self" cvar="itemcollect1var" operation="set" value="1"/>
+    <triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" target="self" cvar="itemcollect1var" operation="set" value="0"/>
+</effect_group>
+<!--LOOT CAP RELEASE-->
+<effect_group tiered="false">
+	<passive_effect name="LootStageMax" operation="base_add" value="30">
+		<requirement name="InBiome" biome="3"/><!-- pine_forest -->
+	</passive_effect>
+</effect_group>
+</item_modifier>
+</append>
+
+<!--DESERT HEAT MOD FOR ARMOR-->
+<append xpath="/item_modifiers">
+<item_modifier name="modbuffdesertheatLL" installable_tags="armorFeet" modifier_tags="endzbiomes,resourcesnowLL,biome1" blocked_tags="noMods" type="attachment">
+	<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="EconomicValue" value="10200"/>
+	<property name="TraderStageTemplate" value="modsTier1"/>
+	<effect_group tiered="false">
+	<passive_effect name="ElementalDamageResist" operation="perc_add" value="1" tags="buffdesertheatLL"/>
+</effect_group>
+	<effect_group tiered="false">
+	<triggered_effect trigger="onSelfEquipStart" action="RemoveBuff" target="self" buff="buffdesertheatLL"/>
+	<triggered_effect trigger="onSelfEquipStop" action="AddBuff" target="self" buff="buffdesertheatLL"/>
+</effect_group>
+<!--EFFECT GROUP WITH BUFF DETERMINES A HIGHER HARVEST RATE FOR HOT SAND-->
+<effect_group tiered="false">
+	<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffhotsandharvest"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffhotsandharvest"/>
+</effect_group>
+<!--TELLS THE BUFF WHETHER TO FIRE AGAIN IF NOT EQUIPPED-->
+<effect_group tiered="false">
+    <triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" target="self" cvar="biome1var" operation="set" value="1"/>
+    <triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" target="self" cvar="biome1var" operation="set" value="0"/>
+</effect_group>
+<!--TELLS TO START COLLECTING BIOME ITEMS AGAIN IN BURNT FOREST-->
+<effect_group tiered="false">
+    <triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" target="self" cvar="itemcollect2var" operation="set" value="1"/>
+    <triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" target="self" cvar="itemcollect2var" operation="set" value="0"/>
+</effect_group>
+<!--LOOT CAP RELEASE-->
+<effect_group tiered="false">
+	<passive_effect name="LootStageMax" operation="base_add" value="50">
+		<requirement name="InBiome" biome="3"/></passive_effect><!-- pine_forest -->
+	<passive_effect name="LootStageMax" operation="base_add" value="10">
+		<requirement name="InBiome" biome="9"/></passive_effect><!-- burnt_forest -->
+</effect_group>
+</item_modifier>
+</append>
+
+<!--FROZEN NORTH MOD FOR ARMOR-->
+<append xpath="/item_modifiers">
+<item_modifier name="modbufffrozensnowLL" installable_tags="armorChest" modifier_tags="endzbiomes,resourceradiofiberLL,biome2" blocked_tags="noMods" type="attachment">
+	<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="EconomicValue" value="14300"/>
+	<property name="TraderStageTemplate" value="modsTier2"/>
+	<effect_group tiered="false">
+	<passive_effect name="ElementalDamageResist" operation="perc_add" value="1" tags="bufffrozensnowLL"/>
+</effect_group>
+	<effect_group tiered="false">
+	<triggered_effect trigger="onSelfEquipStart" action="RemoveBuff" target="self" buff="bufffrozensnowLL"/>
+	<triggered_effect trigger="onSelfEquipStop" action="AddBuff" target="self" buff="bufffrozensnowLL"/>
+</effect_group>
+<!--EFFECT GROUP WITH BUFF DETERMINES A HIGHER HARVEST RATE FOR SNOW MATERIAL-->
+<effect_group tiered="false">
+	<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffradiofiberharvest"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffradiofiberharvest"/>
+</effect_group>
+<!--TELLS THE BUFF WHETHER TO FIRE AGAIN IF NOT EQUIPPED-->
+<effect_group tiered="false">
+    <triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" target="self" cvar="biome2var" operation="set" value="1"/>
+    <triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" target="self" cvar="biome2var" operation="set" value="0"/>
+</effect_group>
+<!--TELLS TO START COLLECTING BIOME ITEMS AGAIN IN DESERT-->
+<effect_group tiered="false">
+    <triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" target="self" cvar="itemcollect3var" operation="set" value="1"/>
+    <triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" target="self" cvar="itemcollect3var" operation="set" value="0"/>
+</effect_group>
+<!--LOOT CAP RELEASE-->
+<effect_group tiered="false">
+	<passive_effect name="LootStageMax" operation="base_add" value="60">
+		<requirement name="InBiome" biome="3"/></passive_effect><!-- pine_forest -->
+	<passive_effect name="LootStageMax" operation="base_add" value="40">
+		<requirement name="InBiome" biome="9"/></passive_effect><!-- burnt_forest -->
+	<passive_effect name="LootStageMax" operation="base_add" value="15">
+		<requirement name="InBiome" biome="5"/></passive_effect><!-- desert -->
+</effect_group>
+</item_modifier>
+</append>
+
+<!--RADIATION MOD FOR ARMOR-->
+<append xpath="/item_modifiers">
+<item_modifier name="modbuffradiationwasteLL" installable_tags="head" modifier_tags="endzbiomes,resourcescrapvibeLL,biome3" blocked_tags="noMods" type="attachment">
+	<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="EconomicValue" value="18200"/>
+	<property name="TraderStageTemplate" value="modsTier3"/>
+	<effect_group tiered="false">
+	<passive_effect name="ElementalDamageResist" operation="perc_add" value="1" tags="buffradiationwasteLL"/>
+</effect_group>
+	<effect_group tiered="false">
+	<triggered_effect trigger="onSelfEquipStart" action="RemoveBuff" target="self" buff="buffradiationwasteLL"/>
+	<triggered_effect trigger="onSelfEquipStop" action="AddBuff" target="self" buff="buffradiationwasteLL"/>
+</effect_group>
+<!--EFFECT GROUP WITH BUFF DETERMINES A HIGHER HARVEST RATE FOR VIBRANIUM-->
+<effect_group tiered="false">
+	<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffscrapvibeharvest"/>
+	<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffscrapvibeharvest"/>
+</effect_group>
+<!--TELLS THE BUFF WHETHER TO FIRE AGAIN IF NOT EQUIPPED-->
+<effect_group tiered="false">
+    <triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" target="self" cvar="biome3var" operation="set" value="1"/>
+    <triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" target="self" cvar="biome3var" operation="set" value="0"/>
+</effect_group>
+<!--TELLS TO START COLLECTING BIOME ITEMS AGAIN IN SNOW-->
+<effect_group tiered="false">
+    <triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" target="self" cvar="itemcollect4var" operation="set" value="1"/>
+    <triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" target="self" cvar="itemcollect4var" operation="set" value="0"/>
+</effect_group>
+<!--LOOT CAP RELEASE-->
+<effect_group tiered="false">
+	<passive_effect name="LootStageMax" operation="base_add" value="100">
+		<requirement name="InBiome" biome="3"/></passive_effect><!-- pine_forest -->
+	<passive_effect name="LootStageMax" operation="base_add" value="50">
+		<requirement name="InBiome" biome="9"/></passive_effect><!-- burnt_forest -->
+	<passive_effect name="LootStageMax" operation="base_add" value="45">
+		<requirement name="InBiome" biome="5"/></passive_effect><!-- desert -->
+	<passive_effect name="LootStageMax" operation="base_add" value="20">
+		<requirement name="InBiome" biome="1"/></passive_effect><!-- snow -->
+</effect_group>
+</item_modifier>
+</append>
+
+</configs>

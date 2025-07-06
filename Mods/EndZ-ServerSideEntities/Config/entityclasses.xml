@@ -1,0 +1,456 @@
+<configs>
+
+<!--COLOR MATERIAL ON ZOMBIES-->
+<insertAfter xpath="/entity_classes/color[@name='infernal']">
+	<color name="LLpurple" value=".45, .10, .86"/><!--146, 4, 207-->
+	<color name="LLred" value="1, .02, .07"/><!--255, 5, 18-->
+	<color name="LLpink" value=".98, .01, .76"/><!--252, 3, 194-->
+	<color name="LLblue" value=".25, 0, .96"/><!--64, 2, 247-->
+	<color name="LLcyan" value="0, .88, .98"/><!--2, 225, 250-->
+	<color name="LLgreen" value=".01, .96, .09"/><!--5, 247, 25-->
+	<color name="LLyellow" value=".93, .96, .01"/><!--239, 247, 5-->
+	<color name="LLorange" value=".96, .52, .01"/><!--247, 134, 5-->
+	<color name="LLwhite" value=".98, .98, .98"/><!--252, 252, 252-->
+	<color name="LLblack" value=".04, .04, .04"/><!--10, 10, 10-->
+	<color name="LLgray" value=".49, .49, .49"/><!--125, 125, 125-->
+	<color name="LLbrown" value=".25, .16, .13"/><!--64, 43, 33-->
+</insertAfter>
+
+<!--HEALTH POOLS-->
+<append xpath="/entity_classes/replace_passive_effect">
+	<property name="PFHealth"	value="500"/>
+	<property name="BFHealth"	value="750"/>
+	<property name="DesertHealth"	value="1000"/>
+	<property name="SnowHealth"	value="1250"/>
+	<property name="WLHealth"	value="1500"/>
+</append>
+
+<!--PINEFOREST-->
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZPF1" extends="zombieBusinessManInfernal">
+	<property name="NavObject" value="LLyellowNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Suit/ZSuitRadiated.prefab"/><!--BUSINESS MAN-->
+	<property name="MatColor" value="LLyellow"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombieInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="Prefab" value="Z"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^PFHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZPF2" extends="zombieBurntInfernal">
+	<property name="NavObject" value="LLyellowNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Burnt/ZBurntRadiated.prefab"/><!--BURNT ZOMBIE-->
+	<property name="MatColor" value="LLyellow"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombieInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="Prefab" value="Z"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^PFHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZPF3" extends="zombiePlagueSpitterRadiated">
+	<property name="NavObject" value="LLyellowNav" />
+	<property name="Mesh" value="@:Entities/Zombies/PlagueSpitter/ZPlagueSpitterRadiated.prefab"/><!--PLAGUE SPITTER-->
+	<property name="MatColor" value="LLyellow"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^PFHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZPF4" extends="zombieFrostclawRadiated">
+	<property name="NavObject" value="LLyellowNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Frostclaw/ZFrostClawRadiated.prefab"/><!--FROST CLAW-->
+	<property name="MatColor" value="LLyellow"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^PFHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZPF5" extends="zombieSpiderInfernal">
+	<property name="NavObject" value="LLyellowNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Spider/ZSpiderRadiated.prefab"/><!--SPIDER-->
+	<property name="MatColor" value="LLyellow"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^PFHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+<!--END OF PINEFOREST-->
+
+<!--BURNT FOREST-->
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBF1" extends="zombieBoeInfernal">
+	<property name="NavObject" value="LLpinkNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Boe/ZBoeRadiated.prefab"/><!--BOE-->
+	<property name="MatColor" value="LLpink"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^BFHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBF2" extends="zombieMaleHazmatInfernal">
+	<property name="NavObject" value="LLpinkNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Hazmat/ZHazmatRadiated.prefab"/><!--HAZMAT-->
+	<property name="MatColor" value="LLpink"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^BFHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBF3" extends="zombieJanitorInfernal">
+	<property name="NavObject" value="LLpinkNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Mechanic/ZMechanicRadiated.prefab"/><!--JANITOR-->
+	<property name="MatColor" value="LLpink"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^BFHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBF4" extends="zombieInmateInfernal">
+	<property name="NavObject" value="LLpinkNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Mechanic/ZInmateRadiated.prefab"/><!--INMATE-->
+	<property name="MatColor" value="LLpink"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^BFHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+<!--END OF BURNT FOREST-->
+
+<!--DESERT-->
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZDesert1" extends="zombieMoeInfernal">
+	<property name="NavObject" value="LLredNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Moe/ZMoeRadiated.prefab"/><!--MOE-->
+	<property name="MatColor" value="LLred"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^DesertHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZDesert2" extends="zombieDarleneInfernal">
+	<property name="NavObject" value="LLredNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Darlene/ZDarleneRadiated.prefab"/><!--DARLENE-->
+	<property name="MatColor" value="LLred"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^DesertHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZDesert3" extends="zombieYoInfernal">
+	<property name="NavObject" value="LLredNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Yo/ZYoRadiated.prefab"/><!--YO-->
+	<property name="MatColor" value="LLred"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^DesertHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZDesert4" extends="zombieUtilityWorkerInfernal">
+	<property name="NavObject" value="LLredNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Worker/ZWorkerRadiated.prefab"/><!--UTILITY WORKER-->
+	<property name="MatColor" value="LLred"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^DesertHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+<!--END OF DESERT-->
+
+<!--SNOW-->
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZSnow1" extends="zombieBikerInfernal">
+	<property name="NavObject" value="LLcyanNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Biker/ZBikerRadiated.prefab"/><!--BIKER-->
+	<property name="MatColor" value="LLcyan"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^SnowHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZSnow2" extends="zombieLumberjackInfernal">
+	<property name="NavObject" value="LLcyanNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Lumberjack/ZLumberjackRadiated.prefab"/><!--LUMBERJACK-->
+	<property name="MatColor" value="LLcyan"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^SnowHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZSnow3" extends="zombieFemaleFatInfernal">
+	<property name="NavObject" value="LLcyanNav" />
+	<property name="Mesh" value="@:Entities/Zombies/BigMama/ZBigMamaRadiated.prefab"/><!--BIG MAMA-->
+	<property name="MatColor" value="LLcyan"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^SnowHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZSnow4" extends="zombieFatHawaiianInfernal">
+	<property name="NavObject" value="LLcyanNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Hawaiian/ZHawaiianRadiated.prefab"/><!--BIG BOY-->
+	<property name="MatColor" value="LLcyan"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^SnowHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+<!--END OF SNOW-->
+
+<!--WASTELAND-->
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZWL1" extends="zombieBowlerInfernal">
+	<property name="NavObject" value="LLpurpleNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Hawaiian/ZBowlerRadiated.prefab"/><!--BOWLER-->
+	<property name="MatColor" value="LLpurple"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^WLHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZWL2" extends="zombieFatCopInfernal">
+	<property name="NavObject" value="LLpurpleNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Cop/ZCopRadiated.prefab"/><!--COP-->
+	<property name="MatColor" value="LLpurple"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^WLHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZWL3" extends="zombieSkateboarderInfernal">
+	<property name="NavObject" value="LLpurpleNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Thug/ZThugRadiated.prefab"/><!--SKATEBOARDER-->
+	<property name="MatColor" value="LLpurple"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^WLHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZWL4" extends="zombieSoldierInfernal">
+	<property name="NavObject" value="LLpurpleNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Soldier/ZSoldierRadiated.prefab"/><!--SOLDIER-->
+	<property name="MatColor" value="LLpurple"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^WLHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZWL5" extends="zombieWightInfernal">
+	<property name="NavObject" value="LLpurpleNav" />
+	<property name="Mesh" value="@:Entities/Zombies/Wight/ZWightRadiated.prefab"/><!--WIGHT-->
+	<property name="MatColor" value="LLpurple"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="LootDropProb" value=".5"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="^WLHealth"/>
+		<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+	</effect_group>
+</entity_class>
+</append>
+<!--END OF WASTELAND-->
+
+</configs>

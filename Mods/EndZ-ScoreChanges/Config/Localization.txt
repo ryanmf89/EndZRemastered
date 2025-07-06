@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+cntIronWritableDropBox,blocks,Block,,,Sorting Box
+cntIronWritableDropBoxDesc,blocks,Block,,,"An Auto Sort Box \n Place your items in this box and exit out of the inventory of the box.\n Once you go back into the box you see it is empty. \n This is because it got pushed to all nearby containers that contain the same items you put inside this box."

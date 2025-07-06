@@ -1,0 +1,3 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+noteDuke01Desc,items,Quest - Note,,,"Just a friendly reminder that you pay on time, every time or there will be consequences. Next time we won't be so nice. Thanks for the gear, but you still owe us. See you soon. -The Duke \n\n([fc0516]BE CAREFUL AT NIGHT![-])"

@@ -1,0 +1,55 @@
+<configs>
+
+<!--PINE FOREST-->
+<append xpath="/entitygroups">
+<entitygroup name="PFspawns">
+	zombieEndZPF1, .5
+	zombieEndZPF2, .5
+	zombieEndZPF3, .5
+	zombieEndZPF4, .5
+	zombieEndZPF5, .5
+</entitygroup>
+</append>
+
+<!--BURNT FOREST-->
+<append xpath="/entitygroups">
+<entitygroup name="BFspawns">
+	zombieEndZBF1, .5
+	zombieEndZBF2, .5
+	zombieEndZBF3, .5
+	zombieEndZBF4, .5
+</entitygroup>
+</append>
+
+<!--DESERT-->
+<append xpath="/entitygroups">
+<entitygroup name="Desertspawns">
+	zombieEndZDesert1, .5
+	zombieEndZDesert2, .5
+	zombieEndZDesert3, .5
+	zombieEndZDesert4, .5
+</entitygroup>
+</append>
+
+<!--SNOW-->
+<append xpath="/entitygroups">
+<entitygroup name="Snowspawns">
+	zombieEndZSnow1, .5
+	zombieEndZSnow2, .5
+	zombieEndZSnow3, .5
+	zombieEndZSnow4, .5
+</entitygroup>
+</append>
+
+<!--WASTELAND-->
+<append xpath="/entitygroups">
+<entitygroup name="Wastelandspawns">
+	zombieEndZWL1, .5
+	zombieEndZWL2, .5
+	zombieEndZWL3, .5
+	zombieEndZWL4, .5
+	zombieEndZWL5, .5
+</entitygroup>
+</append>
+
+</configs>

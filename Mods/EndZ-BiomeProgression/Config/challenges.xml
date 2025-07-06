@@ -1,0 +1,42 @@
+<configs>
+
+<!--CHALLENGE HEADER-->
+<remove xpath="/challenges/challenge_category[@name='Biome Progression']"/>
+
+<!--BURNT FOREST-->
+<remove xpath="/challenges/challenge[@name='burntSurvivalWearArmor']"/>
+<remove xpath="/challenges/challenge[@name='burntSurvivalHarvestCrop']"/>
+<remove xpath="/challenges/challenge[@name='burntSurvivalUseReducer']"/>
+<remove xpath="/challenges/challenge[@name='burntSurvivalHarvestOre']"/>
+<remove xpath="/challenges/challenge[@name='burntSurvivalKillZombie']"/>
+<remove xpath="/challenges/challenge[@name='burntSurvivalLoot']"/>
+<remove xpath="/challenges/challenge[@name='burntSurvivalMinutes']"/>
+
+<!--DESERT-->
+<remove xpath="/challenges/challenge[@name='desertSurvivalWearArmor']"/>
+<remove xpath="/challenges/challenge[@name='desertSurvivalHarvestCrop']"/>
+<remove xpath="/challenges/challenge[@name='desertSurvivalUseReducer']"/>
+<remove xpath="/challenges/challenge[@name='desertSurvivalHarvestOre']"/>
+<remove xpath="/challenges/challenge[@name='desertSurvivalKillZombie']"/>
+<remove xpath="/challenges/challenge[@name='desertSurvivalLoot']"/>
+<remove xpath="/challenges/challenge[@name='desertSurvivalMinutes']"/>
+
+<!--SNOW-->
+<remove xpath="/challenges/challenge[@name='snowSurvivalWearArmor']"/>
+<remove xpath="/challenges/challenge[@name='snowSurvivalHarvestCrop']"/>
+<remove xpath="/challenges/challenge[@name='snowSurvivalUseReducer']"/>
+<remove xpath="/challenges/challenge[@name='snowSurvivalHarvestOre']"/>
+<remove xpath="/challenges/challenge[@name='snowSurvivalKillZombie']"/>
+<remove xpath="/challenges/challenge[@name='snowSurvivalLoot']"/>
+<remove xpath="/challenges/challenge[@name='snowSurvivalMinutes']"/>
+
+<!--WASTELAND-->
+<remove xpath="/challenges/challenge[@name='wastelandSurvivalWearArmor']"/>
+<remove xpath="/challenges/challenge[@name='wastelandSurvivalHarvestCrop']"/>
+<remove xpath="/challenges/challenge[@name='wastelandSurvivalUseReducer']"/>
+<remove xpath="/challenges/challenge[@name='wastelandSurvivalHarvestOre']"/>
+<remove xpath="/challenges/challenge[@name='wastelandSurvivalKillZombie']"/>
+<remove xpath="/challenges/challenge[@name='wastelandSurvivalLoot']"/>
+<remove xpath="/challenges/challenge[@name='wastelandSurvivalMinutes']"/>
+
+</configs>

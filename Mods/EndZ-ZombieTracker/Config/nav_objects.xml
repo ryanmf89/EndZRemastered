@@ -1,0 +1,87 @@
+<configs>
+
+<!--SCREAMER NAV-->
+<append xpath="/nav_object_classes">				
+<nav_object_class name="LLscreamerzombie">
+<compass_settings>
+	<property name="sprite_name" value="ui_game_symbol_zombie"/>
+	<property name="min_distance" value="2"/>
+	<property name="max_distance" value="30"/>
+	<property name="color" value="255,0,220,255"/><!--PINK-->
+	<property name="has_pulse" value="true"/>
+	<property name="icon_clamped" value="false"/>
+</compass_settings>
+</nav_object_class>
+</append>
+
+<!--NORMAL ZOMBIE NAV-->
+<append xpath="/nav_object_classes">		
+<nav_object_class name="LLnormalzombie">
+<compass_settings>
+	<property name="sprite_name" value="ui_game_symbol_zombie"/>
+	<property name="min_distance" value="2"/>
+	<property name="max_distance" value="30"/>
+	<property name="color" value="245, 245, 245"/><!--WHITE-->
+	<property name="has_pulse" value="true"/>
+	<property name="icon_clamped" value="false"/>
+</compass_settings>
+</nav_object_class>
+</append>
+
+<!--FERAL ZOMBIE NAV-->	
+<append xpath="/nav_object_classes">
+<nav_object_class name="LLferalzombie">
+<compass_settings>
+	<property name="sprite_name" value="ui_game_symbol_zombie"/>
+	<property name="min_distance" value="2"/>
+	<property name="max_distance" value="30"/>
+	<property name="color" value="255,255,0,255"/><!--YELLOW-->
+	<property name="has_pulse" value="true"/>
+	<property name="icon_clamped" value="false"/>
+</compass_settings>
+</nav_object_class>
+</append>
+
+<!--RADIATED ZOMBIE NAV-->		
+<append xpath="/nav_object_classes">		
+<nav_object_class name="LLradiatedzombie">
+<compass_settings>
+	<property name="sprite_name" value="ui_game_symbol_zombie"/>
+	<property name="min_distance" value="2"/>
+	<property name="max_distance" value="30"/>
+	<property name="color" value="76,255,0,255"/><!--GREEN-->
+	<property name="has_pulse" value="true"/>
+	<property name="icon_clamped" value="false"/>
+</compass_settings>
+</nav_object_class>
+</append>
+
+<!--CHARGED ZOMBIE NAV-->		
+<append xpath="/nav_object_classes">		
+<nav_object_class name="LLchargedzombie">
+<compass_settings>
+	<property name="sprite_name" value="ui_game_symbol_zombie"/>
+	<property name="min_distance" value="2"/>
+	<property name="max_distance" value="30"/>
+	<property name="color" value="5, 78, 247"/><!--BLUE-->
+	<property name="has_pulse" value="true"/>
+	<property name="icon_clamped" value="false"/>
+</compass_settings>
+</nav_object_class>
+</append>
+
+<!--INFERNAL ZOMBIE NAV-->		
+<append xpath="/nav_object_classes">		
+<nav_object_class name="LLinfernalzombie">
+<compass_settings>
+	<property name="sprite_name" value="ui_game_symbol_zombie"/>
+	<property name="min_distance" value="2"/>
+	<property name="max_distance" value="30"/>
+	<property name="color" value="247, 138, 5"/><!--ORANGE-->
+	<property name="has_pulse" value="true"/>
+	<property name="icon_clamped" value="false"/>
+</compass_settings>
+</nav_object_class>
+</append>
+
+</configs>

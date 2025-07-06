@@ -1,0 +1,136 @@
+<configs>
+
+<!--MAKES OLD CASH THE MAIN MONEY-->
+<set xpath="//item[@name='casinoCoin']/@name">oldCash</set>
+
+<!--60 SLOT BACKPACK-->
+<set xpath="/lootcontainers/lootcontainer[@name='playerBackpack']/@size">10,10</set>
+
+<!--TIER 1-->
+<set xpath="//lootgroup[@name='groupReinforcedChestT1']">
+	<item group="groupReinforcedChestT1_01" count="2"/> <!-- Ammo -->
+	<item group="groupReinforcedChestT1_02" count="2"/> <!-- Weapon OR Armor -->
+	<item group="groupReinforcedChestT1_04" count="2"/> <!-- Medical OR Food -->
+	<item group="groupReinforcedChestT1_05" count="2"/> <!-- Mods OR Early Books -->
+</set>
+
+<!--TIER 2-->
+<set xpath="//lootgroup[@name='groupReinforcedChestT2']">
+	<item group="groupReinforcedChestT2_01" count="3"/> <!-- Ammo -->
+	<item group="groupReinforcedChestT2_02" count="3"/> <!-- Weapon OR Armor -->
+	<item group="groupReinforcedChestT2_05" count="3"/> <!-- Medical OR Food -->
+	<item group="groupReinforcedChestT2_06" count="3"/> <!-- Mods -->
+	<item group="groupReinforcedChestT2_07" count="3"/> <!-- Early Books -->
+</set>
+
+<!--TIER 3-->
+<set xpath="//lootgroup[@name='groupReinforcedChestT3']">
+	<item group="groupReinforcedChestT3_01" count="4"/> <!-- Ammo -->
+	<item group="groupReinforcedChestT3_02" count="4"/> <!-- Weapon OR Armor -->
+	<item group="groupReinforcedChestT3_03" count="4"/> <!-- Medical -->
+	<item group="groupReinforcedChestT3_04" count="4"/> <!-- Mods -->
+	<item group="groupReinforcedChestT3_05" count="4"/> <!-- Books/Schematics -->
+	<item group="groupReinforcedChestT3_06" count="4"/> <!-- Bonus Items -->
+</set>
+
+<!--TIER 4-->
+<set xpath="//lootgroup[@name='groupHardenedChestT4']">
+	<item group="groupHardenedChestT4_01" count="5"/> <!-- Ammo -->
+	<item group="groupHardenedChestT4_02" count="5"/> <!-- Ammo -->
+	<item group="groupHardenedChestT4_03" count="5"/> <!-- Ammo -->
+	<item group="groupHardenedChestT4_04" count="5"/> <!-- Weapon OR Armor -->
+	<item group="groupHardenedChestT4_05" count="5"/> <!-- Medical -->
+	<item group="groupHardenedChestT4_06" count="5"/> <!-- Mods -->
+	<item group="groupHardenedChestT4_07" count="5"/> <!-- Books/Schematics -->
+	<item group="groupHardenedChestT4_08" count="5"/> <!-- Bonus Items -->
+	<item group="groupHardenedChestT4_09" count="5"/> <!-- Cash-n-Prizes -->
+</set>
+
+<!--TIER 5-->
+<set xpath="//lootgroup[@name='groupHardenedChestT5']">
+	<item group="groupHardenedChestT5_01" count="6"/> <!-- Ammo -->
+	<item group="groupHardenedChestT5_02" count="6"/> <!-- Weapon OR Armor -->
+	<item group="groupHardenedChestT5_03" count="6"/> <!-- Medical -->
+	<item group="groupHardenedChestT5_04" count="6"/> <!-- Mods -->
+	<item group="groupHardenedChestT5_05" count="6"/> <!-- Books/Schematics -->
+	<item group="groupHardenedChestT5_06" count="6"/> <!-- Bonus Items -->
+	<item group="groupHardenedChestT5_07" count="6"/> <!-- Cash-n-Prizes -->
+	<item group="groupHardenedChestT5_08" count="6"/> <!-- T5 Bonus Items -->
+</set>
+<!--END OF QUEST CHEST ENHANCED LOOT-->
+
+<!--AIR DROP LOOT-->
+<set xpath="//lootgroup[@name='groupAirDrop']">
+	<item name="questRewardT1SkillMagazineBundle" count="2"/>
+	<item group="groupAirDrop01" count="4"/>
+	<item group="groupAirDrop02" count="4"/>
+	<item group="groupAirDrop03" count="4"/>
+</set>
+<!--END OF AIR DROP LOOT-->
+
+<!--TREASURE CHEST LOOT-->
+<set xpath="//lootgroup[@name='groupBuriedTreasure']">
+	<item group="groupValuablesExtraLarge" count="10"/>
+	<item group="groupAmmoPileLarge" count="15"/>
+</set>
+<!--TREASURE CHEST LOOT-->
+
+<!--CRAFTING SKILL MAGAZINE TO 4 BOOKS AT 3 EACH-->
+<set xpath="//lootgroup[@name='groupQuestRewardSkillMagazinesAll01']/@count">5</set>
+<set xpath="//lootgroup[@name='groupQuestRewardSkillMagazinesAll01']">
+	<item name="bowsSkillMagazine" count="4"/>
+	<item name="spearsSkillMagazine" count="4"/>
+	<item name="clubsSkillMagazine" count="4"/>
+	<item name="sledgehammersSkillMagazine" count="4"/>
+	<item name="harvestingToolsSkillMagazine" count="4"/>
+	<item name="knucklesSkillMagazine" count="4"/>
+	<item name="bladesSkillMagazine" count="4"/>
+	<item name="repairToolsSkillMagazine" count="4"/>
+	<item name="salvageToolsSkillMagazine" count="4"/>
+	<item name="handgunsSkillMagazine" count="4"/>
+	<item name="shotgunsSkillMagazine" count="4"/>
+	<item name="riflesSkillMagazine" count="4"/>
+	<item name="machineGunsSkillMagazine" count="4"/>
+	<item name="explosivesSkillMagazine" count="4"/>
+	<item name="armorSkillMagazine" count="4"/>
+	<item name="roboticsSkillMagazine" count="4"/>
+	<item name="workstationSkillMagazine" count="4"/>
+	<item name="medicalSkillMagazine" count="4"/>
+	<item name="foodSkillMagazine" count="4"/>
+	<item name="seedSkillMagazine" count="4"/>
+	<item name="vehiclesSkillMagazine" count="4"/>
+	<item name="electricianSkillMagazine" count="4"/>
+	<item name="trapsSkillMagazine" count="4"/>
+</set>
+
+<!--ADDS GENERAL RESOURCES TO YELLOW LOOT BAGS-->
+<append xpath="//lootgroup[@name='groupZpackReg01']">
+	<item group="groupCraftingCommon" loot_prob_template="high"/> <!--CLOTH, PIPES, GLUE, POLY, NAILS-->
+	<item group="groupCraftingUncommon" loot_prob_template="high"/> <!--SEWING KIT, GUNPOWDER, TAPE, OIL, SPRINGS, HEADLIGHT, ELECTRICALPART, MECHANICALPART, ACID-->
+	<item group="groupCraftingRare" loot_prob_template="high"/> <!--FORGED IRON, FORGED STEEL, MILITARY FIBER-->
+	<item group="groupBuildingCommon" loot_prob_template="high"/> <!--CLAY, SAND, STONE, WOOD-->
+	<item group="groupBuildingUncommon" loot_prob_template="high"/> <!--COBBLESTONE, CEMENT-->
+	<item group="groupBuildingRare" loot_prob_template="high"/><!--CONCRETE MIX, FORGED STEEL-->
+	<item group="groupPassNGas01" loot_prob_template="high"/><!--REPAIR KIT, GROUPTOOLSTIERED, MAGAZINES-HARVEST TOOLS, REPAIR, SALVAGE, VEHICLE-->
+	<item group="groupPassNGas02" loot_prob_template="high"/> <!--OIL, OILSHALE, GASCAN-->
+	<item group="groupPassNGas03" loot_prob_template="high"/><!--groupPassNGas03, VEHICLE PARTS, VEHICLE SCHEMATICS, MAGAZINES-HARVESTING TOOLS, REPAIR, SALVAGE-->
+	<item group="groupRareAutomotive" loot_prob_template="low"/> <!--20% chance ENGINE, BATTERY, WHEELS-->
+</append>
+
+<!--ADDS THROWABLES TO BLUE LOOTBAGS-->
+<append xpath="//lootgroup[@name='groupZpackStrong01']">
+	<item group="groupWeaponsT1_Demolitionist" loot_prob_template="high"/> <!--MOLOTOV, PIPEBOMB-->
+	<item group="groupWeaponsT2_Demolitionist" loot_prob_template="high"/> <!--DYNAMITE, GRENADE, ROCKET GROUP-->
+</append>
+
+<!--changes in game dyes to custom ones-->
+<set xpath="//item[@name='modDyeRed']/@name">modDyeredLL</set>
+<set xpath="//item[@name='modDyeGreen']/@name">modDyelimegreenLL</set>
+<set xpath="//item[@name='modDyeBlue']/@name">modDyeblueLL</set>
+<set xpath="//item[@name='modDyeBrown']/@name">modDyeorangeLL</set>
+<set xpath="//item[@name='modDyeBlack']/@name">modDyeblackLL</set>
+<set xpath="//item[@name='modDyePink']/@name">modDyepinkLL</set>
+<set xpath="//item[@name='modDyePurple']/@name">modDyepurpleLL</set>
+<set xpath="//item[@name='modDyeYellow']/@name">modDyeyellowLL</set>
+
+</configs>

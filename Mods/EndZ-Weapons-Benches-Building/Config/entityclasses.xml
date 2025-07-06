@@ -1,0 +1,8 @@
+<config>
+
+<!--SETS STARTING ITEMS-->
+<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']/@value">drinkJarBoiledWater=5,foodCanChili=5,medicalFirstAidBandage=5,meleeToolFlashlight02,noteDuke01,resourceMoonRocksLL=10</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']/@value">drinkJarBoiledWater=5,foodCanChili=5,medicalFirstAidBandage=5,meleeToolFlashlight02</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']/@value">drinkJarBoiledWater=5,foodCanChili=5,medicalFirstAidBandage=5,meleeToolFlashlight02</set>
+
+</config>

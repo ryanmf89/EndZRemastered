@@ -1,0 +1,77 @@
+<configs>
+
+<append xpath="/items">
+<!--FILTER PIECES-->
+<item name="resourcefilterpiecesLL"> <!-- scrap material -->
+	<property name="Tags" value="resourcedesertLL,miningTool"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceWood"/>
+	<property name="Weight" value="5"/>
+	<property name="Stacknumber" value="25000"/> <!-- STK resource -->
+	<property name="FuelValue" value="50"/>
+	<property name="EconomicValue" value="1"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="LootExpValue" value="1"/>
+	<property name="CraftingIngredientTime" value=".2"/>
+</item>
+
+<!--DRY ICE-->
+<item name="resourcebiomeiceLL"> <!-- scrap material -->
+	<property name="Tags" value="resourcedesertLL,miningTool"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceWood"/>
+	<property name="Weight" value="5"/>
+	<property name="Stacknumber" value="25000"/> <!-- STK resource -->
+	<property name="FuelValue" value="50"/>
+	<property name="EconomicValue" value="1"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="LootExpValue" value="1"/>
+	<property name="CraftingIngredientTime" value=".2"/>
+</item>
+
+<!--HOT SAND-->
+<item name="resourcesnowLL"> <!-- scrap material -->
+	<property name="Tags" value="resourcesnowLL"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceWood"/>
+	<property name="Weight" value="5"/>
+	<property name="Stacknumber" value="25000"/> <!-- STK resource -->
+	<property name="FuelValue" value="50"/>
+	<property name="EconomicValue" value="1"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="LootExpValue" value="1"/>
+	<property name="CraftingIngredientTime" value=".2"/>
+</item>
+
+<!--WASTELAND FIBERS-->	
+<item name="resourceradiofiberLL"> <!-- scrap material -->
+	<property name="Tags" value="resourceradiofiberLL"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceWood"/>
+	<property name="Weight" value="5"/>
+	<property name="Stacknumber" value="25000"/> <!-- STK resource -->
+	<property name="FuelValue" value="50"/>
+	<property name="EconomicValue" value="1"/>
+	<property name="EconomicBundleSize" value="50"/>
+	<property name="Group" value="Resources"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="LootExpValue" value="1"/>
+	<property name="CraftingIngredientTime" value=".2"/>
+</item>
+</append>
+
+</configs>

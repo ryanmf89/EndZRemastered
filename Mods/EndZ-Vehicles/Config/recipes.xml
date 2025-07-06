@@ -1,0 +1,200 @@
+<configs>
+
+<append xpath="/recipes">
+<recipe name="ApocolypticVehiclePlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,ApocolypticVehiclePlaceable">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+</append>	
+
+<append xpath="/recipes">
+<recipe name="ApocolypticBuggyPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,ApocolypticBuggyPlaceable">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+</append>
+
+<append xpath="/recipes">
+<recipe name="ApocolypticBattleCarPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,ApocolypticBattleCarPlaceable">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+</append>
+
+<append xpath="/recipes">
+<recipe name="ApocolypticBusPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,ApocolypticBusPlaceable">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+</append>
+
+<append xpath="/recipes">
+<recipe name="ApocolypticTruckPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,ApocolypticTruckPlaceable">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+</append>
+
+<append xpath="/recipes">
+<recipe name="ApocolypticNuxPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,ApocolypticNuxPlaceable">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+</append>
+
+<append xpath="/recipes">
+<recipe name="ApocolypticRaceCarPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,ApocolypticRaceCarPlaceable">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+</append>
+
+<append xpath="/recipes">
+<recipe name="ApocolypticBattleBuggyPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,ApocolypticBattleBuggyPlaceable">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+</append>
+
+<append xpath="/recipes">
+<recipe name="ApocolypticBattleCranePlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,ApocolypticBattleCranePlaceable">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="vehicleWheels" count="10"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="3"/>
+</recipe>
+</append>
+
+<append xpath="/recipes">
+<recipe name="EndZdevillePlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,EndZdevillePlaceable">
+	<ingredient name="resourceForgedIron" count="50"/>
+	<ingredient name="resourceForgedSteel" count="50"/>
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+</append>
+
+<append xpath="/recipes">
+<recipe name="EndZcamaroLLPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,EndZcamaroLLPlaceable">
+	<ingredient name="resourceForgedIron" count="50"/>
+	<ingredient name="resourceForgedSteel" count="50"/>
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+</append>
+
+<append xpath="/recipes">
+<recipe name="EndZbuggyPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,EndZbuggyPlaceable">
+	<ingredient name="resourceForgedSteel" count="50"/>
+	<ingredient name="resourceForgedIron" count="100"/>
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+</append>
+
+<append xpath="/recipes">
+<recipe name="EndZblueracecarLLPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,EndZblueracecarLLPlaceable">
+	<ingredient name="resourceForgedSteel" count="50"/>
+	<ingredient name="resourceForgedIron" count="100"/>
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+</append>
+
+<append xpath="/recipes">
+<recipe name="EndZyellowracecarLLPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,EndZyellowracecarLLPlaceable">
+	<ingredient name="resourceForgedSteel" count="50"/>
+	<ingredient name="resourceForgedIron" count="100"/>
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+</append>
+
+<append xpath="/recipes">
+<recipe name="EndZredracecarLLPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,EndZredracecarLLPlaceable">
+	<ingredient name="resourceForgedSteel" count="50"/>
+	<ingredient name="resourceForgedIron" count="100"/>
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+</append>
+
+<append xpath="/recipes">
+<recipe name="EndZblackracecarLLPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,EndZblackracecarLLPlaceable">
+	<ingredient name="resourceForgedSteel" count="50"/>
+	<ingredient name="resourceForgedIron" count="100"/>
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+</append>
+
+<append xpath="/recipes">
+<recipe name="EndZdodgetruckLLPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,EndZdodgetruckLLPlaceable">
+	<ingredient name="resourceForgedSteel" count="100"/>
+	<ingredient name="resourceForgedIron" count="50"/>
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+</append>
+
+<!--append xpath="/recipes">
+<recipe name="WarthogVehiclePlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,WarthogVehiclePlaceable">
+	<ingredient name="resourceforgedvibeLL" count="100"/>
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+</append-->
+
+<append xpath="/recipes">
+<recipe name="EndZmilitarytruckLLPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,EndZmilitarytruckLLPlaceable">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="vehicleWheels" count="4"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+</append>
+
+<append xpath="/recipes">
+<recipe name="vehicleEndZmilihelicopterLLPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,vehicleEndZmilihelicopterLLPlaceable">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="smallEngine" count="2"/>
+	<ingredient name="carBattery" count="2"/>
+</recipe>
+</append>
+
+<append xpath="/recipes">
+<recipe name="EndZmilihelicopter2LLPlaceable" count="1" craft_time="210" craft_area="workbench" tags="learnable,workbenchCrafting,perkvehicles,EndZmilihelicopter2LLPlaceable">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="smallEngine" count="2"/>
+	<ingredient name="carBattery" count="2"/>
+</recipe>
+</append>
+
+</configs>
+

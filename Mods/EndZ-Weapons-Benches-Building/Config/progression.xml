@@ -1,0 +1,26 @@
+<configs>
+
+<!--ADDS AMMOBENCH TO THE WORKSBENCH UNLOCK IN WORKSTATION BOOKS, ALSO ALL AMMO WILL NO BE CRAFTED IN THE AMMO BENCH AND NO LONGER ANYWHERE ELSE-->
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry/unlock_entry[@item='workbench']/@item">,endzAmmobench</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@tags='workbench']/@tags">,endzAmmobench</append>
+
+<!--SETS THE BOOKS TO MAX 50 ON CRAFTING WORKSTATIONS-->
+<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@tags='workstationCSM']/requirement[@name='ProgressionLevel']/@value">50</set>
+<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/@max_level">50</set>
+<!--REMOVES CRUCIBLE-->
+<remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry[contains(@icon ,'toolForgeCrucible')]"/>
+<remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@tags='toolForgeCrucible']"></remove>
+<!--ADDS CRUCIBLE TO THE CHEMSTATION AREAS-->
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/display_entry/unlock_entry[@item='chemistryStation']/@item">,toolForgeCrucible</append>
+<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[@tags='chemistryStation']/@tags">,toolForgeCrucible</append>
+
+<!--MOONROCK-->
+<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']/display_entry[@icon='meleeToolRepairT0StoneAxe']/@icon">moonrockaxeLL</set>
+
+<!--BRASS-->
+<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']/display_entry[@icon='meleeToolPickT1IronPickaxe']/@icon">brasspickaxeLL</set>
+
+<!--VIBRANIUM-->
+<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']/display_entry[@icon='meleeToolPickT2SteelPickaxe']/@icon">vibepickaxeLL</set>
+
+</configs>

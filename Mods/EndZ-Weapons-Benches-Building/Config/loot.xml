@@ -1,0 +1,19 @@
+<configs>
+
+<!--BATTERY, FLAMEOIL, AND NITROGEN MODS IN RANGED MOD TIER2 MOD LOOTGROUPS-->
+<append xpath="//lootgroup[@name='modGunT2']">
+	<item name="modGunMeleeNiCdBattery"/>
+	<item name="modGunMeleeFlammableOil"/>
+	<item name="modGunMeleeLiquidNitrogen"/>
+</append>
+<!--END OF BATTERY, FLAMEOIL, AND NITROGEN MODS IN RANGED MOD TIER2 MOD LOOTGROUPS-->
+
+<!--BATTERY, FLAMEOIL, AND NITROGEN MODS IN MELEE MOD TIER2 MOD LOOTGROUPS-->
+<append xpath="//lootgroup[@name='modMeleeT2']">
+	<item name="modGunMeleeNiCdBattery" />
+	<item name="modGunMeleeFlammableOil"/>
+	<item name="modGunMeleeLiquidNitrogen"/>
+</append>
+<!--END OF BATTERY, FLAMEOIL, AND NITROGEN MODS IN MELEE MOD TIER2 MOD LOOTGROUPS-->
+
+</configs>

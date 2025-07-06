@@ -1,0 +1,399 @@
+<configs>
+
+<append xpath="/items">
+<item name="ApocolypticVehiclePlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+    <property name="Meshfile" value="#@modfolder:/Resources/ApocCar1.unity3d?ApocCar.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="ApocolypticVehicle"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="ApocolypticVehiclePlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="25000"/>
+</effect_group>
+</item>
+</append>
+
+<append xpath="/items">
+<item name="ApocolypticBuggyPlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+    <property name="Meshfile" value="#@modfolder:/Resources/PreppoBuggy1.unity3d?PreppoBuggy.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="ApocolypticBuggy"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="ApocolypticVehiclePlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="25000"/>
+</effect_group>
+</item>
+</append>
+
+<append xpath="/items">
+<item name="ApocolypticBattleCarPlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+    <property name="Meshfile" value="#@modfolder:/Resources/apocbattlecar1.unity3d?apocbattlecar.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="ApocolypticBattleCar"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="ApocolypticVehiclePlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="25000"/>
+</effect_group>
+</item>
+</append>
+
+<append xpath="/items">
+<item name="ApocolypticBusPlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+    <property name="Meshfile" value="#@modfolder:/Resources/ApocBus1.unity3d?ApocBus.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="ApocolypticBus"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="ApocolypticVehiclePlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="25000"/>
+</effect_group>
+</item>
+</append>
+
+<append xpath="/items">
+<item name="ApocolypticTruckPlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+    <property name="Meshfile" value="#@modfolder:/Resources/appoctruck1.unity3d?appoctruck.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="ApocolypticTruck"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="ApocolypticVehiclePlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="25000"/>
+</effect_group>
+</item>
+</append>
+
+<append xpath="/items">
+<item name="ApocolypticNuxPlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+    <property name="Meshfile" value="#@modfolder:/Resources/apocnux1.unity3d?apocnux.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="ApocolypticNux"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="ApocolypticVehiclePlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="25000"/>
+</effect_group>
+</item>
+</append>
+
+<append xpath="/items">
+<item name="ApocolypticRaceCarPlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+    <property name="Meshfile" value="#@modfolder:/Resources/apocracecar1.unity3d?apocracecar.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="ApocolypticRaceCar"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="ApocolypticVehiclePlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="25000"/>
+</effect_group>
+</item>
+</append>
+
+<append xpath="/items">
+<item name="ApocolypticBattleBuggyPlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+    <property name="Meshfile" value="#@modfolder:/Resources/apocbattlebuggy1.unity3d?apocbattlebuggy.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="ApocolypticBattleBuggy"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="ApocolypticVehiclePlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="25000"/>
+</effect_group>
+</item>
+</append>
+
+<append xpath="/items">
+<item name="ApocolypticBattleCranePlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+    <property name="Meshfile" value="#@modfolder:/Resources/apocbattlecrane1.unity3d?apocbattlecrane.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="ApocolypticBattleCrane"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="ApocolypticVehiclePlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="25000"/>
+</effect_group>
+</item>
+
+<item name="WarthogVehiclePlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+    <property name="Meshfile" value="#@modfolder:/Resources/EndZwarthogLL1.unity3d?EndZwarthogLL.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="WarthogVehicle"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="WarthogVehiclePlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="30000"/>
+</effect_group>
+</item>
+
+<item name="EndZbuggyPlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="Meshfile" value="#@modfolder:/Resources/EndZbuggy1.unity3d?EndZbuggy.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="EndZbuggy"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="EndZbuggyPlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="15000"/>
+</effect_group>
+</item>
+
+<item name="EndZdevillePlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="Meshfile" value="#@modfolder:/Resources/EndZdeville1.unity3d?EndZdeville.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="EndZdeville"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="EndZdevillePlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="15000"/>
+</effect_group>
+</item>
+
+<item name="EndZblueracecarLLPlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="Meshfile" value="#@modfolder:/Resources/EndZracecars.unity3d?EndZblueracecarLL.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="EndZblueracecarLL"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="EndZdevillePlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="15000"/>
+</effect_group>
+</item>
+
+<item name="EndZyellowracecarLLPlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="Meshfile" value="#@modfolder:/Resources/EndZracecars.unity3d?EndZyellowracecarLL.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="EndZyellowracecarLL"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="EndZdevillePlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="15000"/>
+</effect_group>
+</item>
+
+<item name="EndZredracecarLLPlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="Meshfile" value="#@modfolder:/Resources/EndZracecars.unity3d?EndZredracecarLL.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="EndZredracecarLL"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="EndZdevillePlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="15000"/>
+</effect_group>
+</item>
+
+<item name="EndZblackracecarLLPlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="Meshfile" value="#@modfolder:/Resources/EndZracecars.unity3d?EndZblackracecarLL.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="EndZblackracecarLL"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="EndZdevillePlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="15000"/>
+</effect_group>
+</item>
+
+<item name="EndZcamaroLLPlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="Meshfile" value="#@modfolder:/Resources/EndZ1970camaro1.unity3d?EndZ1970camaro.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="EndZcamaroLL"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="EndZdevillePlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="15000"/>
+</effect_group>
+</item>
+
+<item name="EndZdodgetruckLLPlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="Meshfile" value="#@modfolder:/Resources/EndZdodgetruck1.unity3d?EndZdodgetruck.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="EndZdodgetruckLL"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="EndZdevillePlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="20000"/>
+</effect_group>
+</item>
+
+<item name="EndZmilitarytruckLLPlaceable">
+    <property name="Extends" value="vehicleMinibikePlaceable"/>
+    <property name="UnlockedBy" value="craftingVehicles"/>    
+    <property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="Meshfile" value="#@modfolder:/Resources/EndZmilitarytruck1.unity3d?EndZmilitarytruck.prefab"/>
+    <property name="Material" value="Mmetal"/>
+    <property name="EconomicValue" value="70000"/>
+<property class="Action1">
+    <property name="Vehicle" value="EndZmilitarytruckLL"/>
+    <property name="VehicleSize" value="2, 2, 2"/>
+</property>
+<effect_group name="EndZdevillePlaceable" tiered="false">
+    <passive_effect name="ModSlots" operation="base_set" value="4"/>
+    <passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+    <passive_effect name="DegradationMax" operation="base_set" value="30000"/>
+</effect_group>
+</item>
+
+<item name="vehicleEndZmilihelicopterLLPlaceable">
+	<property name="Extends" value="vehicleGyrocopterPlaceable"/>
+	<property name="UnlockedBy" value="craftingVehicles"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="DescriptionKey" value="EndZmilihelicopterLLPlaceable"/>
+	<property name="Meshfile" value="#@modfolder:Resources/EndZchopper1.unity3d?EndZchopper.prefab"/>
+	<property name="EconomicValue" value="60000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleEndZmilihelicopterLL"/>
+		<property name="VehicleSize" value="4.7, 4.8, 5"/>
+</property>
+	<effect_group name="Base Effects" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="30000"/>
+</effect_group>
+</item>
+
+<item name="EndZmilihelicopter2LLPlaceable">
+	<property name="Extends" value="vehicleGyrocopterPlaceable"/>
+	<property name="UnlockedBy" value="craftingVehicles"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="DescriptionKey" value="EndZmilihelicopterLLPlaceable"/>
+	<property name="Meshfile" value="#@modfolder:Resources/EndZmilichopper1.unity3d?EndZmilichopper.prefab"/>
+	<property name="EconomicValue" value="60000"/>
+<property class="Action1">
+		<property name="Vehicle" value="EndZmilihelicopter2LL"/>
+		<property name="VehicleSize" value="4.7, 4.8, 5"/>
+</property>
+	<effect_group name="Base Effects" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="30000"/>
+</effect_group>
+</item>
+</append>
+
+</configs>

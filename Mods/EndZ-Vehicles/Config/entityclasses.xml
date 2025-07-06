@@ -1,0 +1,483 @@
+<configs>
+
+<append xpath="/entity_classes">
+<entity_class name="ApocolypticVehicle">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/ApocCar1.unity3d?ApocCar.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_apoccar"/>
+	<property name="NavObject" value="apoccar" />
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="ApocolypticBuggy">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/PreppoBuggy1.unity3d?PreppoBuggy.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_apocbuggy"/>
+	<property name="NavObject" value="apocbuggy" />
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="ApocolypticBattleCar">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/apocbattlecar1.unity3d?apocbattlecar.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_apocbattlecar"/>
+	<property name="NavObject" value="apocbattlecar" />
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="ApocolypticBus">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/ApocBus1.unity3d?ApocBus.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_apocbattlebus"/>
+	<property name="NavObject" value="apocbattlebus" />
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="ApocolypticTruck">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/appoctruck1.unity3d?appoctruck.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_apoctruck"/>
+	<property name="NavObject" value="apoctruck" />
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="ApocolypticNux">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/apocnux1.unity3d?apocnux.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_apocnux"/>
+	<property name="NavObject" value="apocnux" />
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="ApocolypticRaceCar">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/apocracecar1.unity3d?apocracecar.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_apocracecar"/>
+	<property name="NavObject" value="apocracecar" />
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="ApocolypticBattleBuggy">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/apocbattlebuggy1.unity3d?apocbattlebuggy.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_apocbattlebuggy"/>
+	<property name="NavObject" value="apocbattlebuggy" />
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="ApocolypticBattleCrane">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/apocbattlecrane1.unity3d?apocbattlecrane.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_apocbattlecrane"/>
+	<property name="NavObject" value="apocbattlecrane" />
+</entity_class>
+
+<entity_class name="WarthogVehicle">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/EndZwarthogLL1.unity3d?EndZwarthogLL.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_warthog"/>
+	<property name="NavObject" value="warthog" />
+</entity_class>
+
+<entity_class name="EndZbuggy">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/EndZbuggy1.unity3d?EndZbuggy.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_buggy"/>
+	<property name="NavObject" value="buggy" />
+</entity_class>
+
+<entity_class name="EndZdeville">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/EndZdeville1.unity3d?EndZdeville.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_deville"/>
+	<property name="NavObject" value="deville" />
+</entity_class>
+
+<entity_class name="EndZblueracecarLL">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/EndZracecars.unity3d?EndZblueracecarLL.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_blueracer"/>
+	<property name="NavObject" value="blueracer" />
+</entity_class>
+
+<entity_class name="EndZyellowracecarLL">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/EndZracecars.unity3d?EndZyellowracecarLL.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_yellowracer"/>
+	<property name="NavObject" value="yellowracer" />
+</entity_class>
+
+<entity_class name="EndZredracecarLL">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/EndZracecars.unity3d?EndZredracecarLL.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_redracer"/>
+	<property name="NavObject" value="redracer" />
+</entity_class>
+
+<entity_class name="EndZblackracecarLL">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/EndZracecars.unity3d?EndZblackracecarLL.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_blackracer"/>
+	<property name="NavObject" value="blackracer" />
+</entity_class>
+
+<entity_class name="EndZcamaroLL">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/EndZ1970camaro1.unity3d?EndZ1970camaro.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_camaro"/>
+	<property name="NavObject" value="camaro" />
+</entity_class>
+
+<entity_class name="EndZdodgetruckLL">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/EndZdodgetruck1.unity3d?EndZdodgetruck.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_dodgetruck"/>
+	<property name="NavObject" value="dodgetruck" />
+</entity_class>
+
+<entity_class name="EndZmilitarytruckLL">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle"/>
+	<property name="Class" value="EntityVJeep"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:/Resources/EndZmilitarytruck1.unity3d?EndZmilitarytruck.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_militarytruck"/>
+	<property name="NavObject" value="militarytruck" />
+</entity_class>
+
+<entity_class name="vehicleEndZmilihelicopterLL">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle,usesGas"/>
+	<property name="Class" value="EntityVGyroCopter"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/EndZchopper1.unity3d?EndZchopper.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_transportchopper"/>
+	<property name="NavObject" value="transportchopper"/>
+</entity_class>
+
+<entity_class name="EndZmilihelicopter2LL">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="vehicle,usesGas"/>
+	<property name="Class" value="EntityVGyroCopter"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/EndZmilichopper1.unity3d?EndZmilichopper.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicle4x4Truck"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="3"/>
+	<property name="Explosion.RadiusEntities" value="3"/>
+	<property name="Explosion.BlockDamage" value="30"/>
+	<property name="Explosion.EntityDamage" value="30"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_militarychopper"/>
+	<property name="NavObject" value="militarychopper"/>
+</entity_class>
+</append>
+
+</configs>

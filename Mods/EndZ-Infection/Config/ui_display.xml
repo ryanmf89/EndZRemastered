@@ -1,0 +1,10 @@
+<configs>
+
+<!--SERUM DISPLAY-->
+<append xpath="//item_display">
+<item_display_info display_type="serumdisplay" display_group="groupConsumables">
+	<display_entry name="dCureInfection" title_key="statCureInfection" display_type="Percent"/>
+</item_display_info>
+</append>
+
+</configs>

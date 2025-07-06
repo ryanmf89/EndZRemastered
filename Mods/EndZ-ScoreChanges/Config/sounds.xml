@@ -1,0 +1,22 @@
+<configs>
+
+<!--FIRE EXTINGUISHER-->
+<append xpath="/Sounds">
+<SoundDataNode name="fire_extinguisher"> 
+	<AudioSource name="Sounds/AudioSource_WeaponFire"/> 
+	<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+    <Noise ID="0" noise="52" time="2" muffled_when_crouched="0.8" heat_map_strength="0.65" heat_map_time="180"/>
+    <AudioClip ClipName="#@modfolder:Resources/SoundFireE.unity3d?FireExtinguisher.Prefab"/>
+    <AudioClip ClipName="" AltSound="true"/>
+    <AudioClip ClipName="" AltSound="true"/>
+    <AudioClip ClipName="" AltSound="true"/>
+    <LocalCrouchVolumeScale value="1"/> 
+	<CrouchNoiseScale value="1"/> 
+	<NoiseScale value="1"/> 
+	<MaxVoices value="30"/> 
+	<MaxVoicesPerEntity value="10"/> 
+	<MaxRepeatRate value="0.001"/> 
+</SoundDataNode>
+</append>
+
+</configs>

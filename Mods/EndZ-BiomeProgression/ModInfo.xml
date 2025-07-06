@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>		
+	<Name value="EndZ_BiomeProgression" />
+	<DisplayName value="EndZ-BiomeProgression" />
+	<Description value="Biome Prog in order. PF,BF,desert,snow,wasteland" />
+	<Author value="TheeLegion" />
+	<Version value="2.0.0.0" />		
+</xml>

@@ -1,0 +1,27 @@
+<configs>
+
+<!--60 SLOT BACKPACK-->
+<set xpath="/progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity'][@value='3,6,10,14,18']/@value">4,8,12,16,20</set>
+	
+<!--SETS SALVAGE OPS TO GAIN 100% MORE MATERIAL FOR EACH LEVEL INVESTED IN TO THE PERK UP TO 500%-->	
+<set xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='HarvestCount']/@value">1,5</set>
+	
+<!--SETS MOTHERLODE TO GAIN 100% MORE MATERIAL FOR EACH LEVEL INVESTED IN TO THE PERK UP TO 500%-->	
+<set xpath="/progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='HarvestCount']/@value">1,5</set>
+
+<!--SETS JUNK MINER TO GAIN 100% MORE MATERIAL FOR EACH LEVEL INVESTED IN TO THE PERK UP TO 500%-->	
+<set xpath="/progression/perks/perk[@name='perkJunkMiner']/effect_group/passive_effect[@name='HarvestCount']/@value">1,5</set>
+
+<!--SETS HUNTSMAN TO GAIN 100% MORE MATERIAL FOR EACH LEVEL INVESTED IN TO THE PERK UP TO 500%-->	
+<set xpath="/progression/perks/perk[@name='perkTheHuntsman']/effect_group/passive_effect[@name='HarvestCount']/@value">1,5</set>
+	
+<!--SETS DARING ADVENTURER TO GAIN MORE DUKES AND 1 MORE REWARD PER LEVEL INVESTED-->	
+<set xpath="/progression/perks/perk[@name='perkDaringAdventurer']/effect_group/passive_effect[@name='QuestBonusItemReward']/@value">.10,.25</set>
+<append xpath="/progression/perks/perk[@name='perkDaringAdventurer']/effect_group">
+	<passive_effect name="QuestRewardChoiceCount" operation="base_add" level="2" value="1"/>
+	<passive_effect name="QuestRewardChoiceCount" operation="base_add" level="3" value="2"/>
+	<passive_effect name="QuestRewardChoiceCount" operation="base_add" level="4" value="3"/>
+</append>		
+<set xpath="/progression/perks/perk[@name='perkDaringAdventurer']/effect_group/passive_effect[@name='QuestRewardChoiceCount' and @level='5']/@value">4</set>
+
+</configs>

@@ -1,0 +1,6 @@
+﻿<configs>
+
+<!--REMOVES BIOME PROGRESSION TAB FROM THE MAIN MENU-->
+<remove xpath="/windows/window[@name='newContinueGame']/rect[@name='rightPanel']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@controller='TabSelectorTab']/grid/gameoption[@name='BiomeProgression']"/>
+
+</configs>

@@ -1,0 +1,39 @@
+<configs>
+
+<!--REGULAR AND FERAL ZOMBIES SPAWN AT RANDOM FROM NAMES SELECTED-->
+<!--TEMPLATE FOR THE CUSTOM GAME EVENT-->
+<append xpath="/gameevents">
+<action_sequence name="lush_biomes_horde_template">
+	<property name="allow_user_trigger" value="false" />
+	<property name="category" value="twitch_actions" />
+
+<action class="SpawnEntity">
+	<property name="entity_names" value="zombieArlene" param1="zombiename" />
+	<property name="spawn_count" value="1" param1="spawncount" />
+	<property name="party_addition" value="2" param1="partyaddition" />
+	<property name="air_spawn" value="false" param1="airspawn" />
+	<property name="ignore_multiplier" value="true" param1="ignoremultiplier" />
+	<property name="min_distance" value="20" />
+	<property name="max_distance" value="20" />
+</action>
+
+<action class="PlaySound">
+	<property name="sound" value="twitch_bad_spawn" />
+	<property name="phase" value="1" />
+</action>
+
+<action class="PlaySound">
+	<property name="sound" value="zombiemalealert" param1="alertsound" />
+	<property name="phase" value="1" />
+</action>
+</action_sequence>
+
+<!--CUSTOM GAME EVENT-->
+<action_sequence name="lush_biomes_horde" template="lush_biomes_horde_template">
+	<variable name="zombiename" value="zombieArlene,zombieBoe,zombieJoe,zombieLab,zombieDarlene,zombieMarlene,zombieYo,zombieSteve,zombieBusinessMan,zombieNurse,zombieSkateboarder,zombiePartyGirl,zombieBurnt,zombieJanitor,zombieInmate" />
+	<variable name="alertsound" value="zombiemalealert" />
+	<variable name="spawncount" value="8" />
+</action_sequence>
+</append>
+
+</configs>

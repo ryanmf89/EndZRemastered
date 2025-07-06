@@ -1,0 +1,12 @@
+<configs>
+
+<!--MAKES OLD CASH THE MAIN MONEY-->
+<set xpath="//reward[@id='casinoCoin']/@id">
+oldCash
+</set>
+	
+
+</configs>
+
+
+

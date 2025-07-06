@@ -1,0 +1,1739 @@
+<configs>
+
+<!--MAKES OLD CASH THE MAIN MONEY-->
+<set xpath="//drop[@event='Destroy' and @name='casinoCoin']/@name">oldCash</set>
+
+<!--elec fence and blade trap hitpoints-->
+<set xpath="/blocks/block[@name='electricfencepost']/property[@name='MaxDamage']/@value">30000</set>
+<append xpath="/blocks/block[@name='bladeTrap']"><property name="MaxDamage" value="30000"/></append>
+
+<!--ADDS 250 HP TIMES ITS TIER TO EACH SHAPE TIER IN GAME STARTING WITH WOOD ENDING WITH STEEL-->
+<append xpath="/blocks/block[@name='woodShapes']"><property name="MaxDamage" value="750"/></append>
+<append xpath="/blocks/block[@name='cobblestoneShapes']"><property name="MaxDamage" value="2000"/></append>
+<append xpath="/blocks/block[@name='concreteShapes']"><property name="MaxDamage" value="5750"/></append>
+<append xpath="/blocks/block[@name='steelShapes']"><property name="MaxDamage" value="11000"/></append>
+
+<!--WORKSTATIONS-->		
+<!-- Forge -->
+<append xpath="/blocks/block[@name='cntForgeWorkstationBroken']" >
+	<drop event="Destroy" name="forge" prob=".50" count="1" tool_category="Disassemble"/>
+	<drop event="Destroy" name="toolBellows" prob=".50" count="1" tool_category="Disassemble"/>
+	<drop event="Destroy" name="toolForgeCrucible" prob=".25" count="1" tool_category="Disassemble"/>
+	<drop event="Destroy" name="toolAnvil" prob=".50" count="1" tool_category="Disassemble"/>
+</append>
+
+<append xpath="/blocks/block[@name='cntForgeWorkstationBroken']"><property name="DowngradeBlock" value="forgeRespawner"/></append>
+<append xpath="/blocks">
+<block name="forgeRespawner">
+	<property name="CustomIcon" value="decoCarWheelFlat" />
+	<property name="CustomIconTint" value="ff0000"/>
+	<property name="Extends" value="decoEntityPolymerMaster"/>			
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mmetal"/>			
+	<property name="StabilitySupport" value="false"/>
+	<property name="Texture" value="282"/>
+	<property name="Model" value="#@modfolder:Resources/respawner1.unity3d?respawner.Prefab"/>		
+	<property name="Collide" value="melee"/>
+	<property name="CanMobsSpawnOn" value="false" />
+	<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="cntForgeWorkstationBroken" />
+	<property name="PlantGrowing.GrowthRate" value="120" />
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+</append>
+
+<!-- Workbench -->
+<append xpath="/blocks/block[@name='cntCollapsedWorkbench']" >
+	<drop event="Destroy" name="workbench" prob=".45" count="1" tool_category="Disassemble"/>
+</append>
+
+<append xpath="/blocks/block[@name='cntCollapsedWorkbench']"><property name="DowngradeBlock" value="workbenchRespawner"/></append>
+<append xpath="/blocks">
+<block name="workbenchRespawner">
+	<property name="CustomIcon" value="decoCarWheelFlat" />
+	<property name="CustomIconTint" value="ff0000"/>
+	<property name="Extends" value="decoEntityPolymerMaster"/>			
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mmetal"/>			
+	<property name="StabilitySupport" value="false"/>
+	<property name="Texture" value="282"/>
+	<property name="Model" value="#@modfolder:Resources/respawner1.unity3d?respawner.Prefab"/>		
+	<property name="Collide" value="melee"/>
+	<property name="CanMobsSpawnOn" value="false" />
+	<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="cntCollapsedWorkbench" />
+	<property name="PlantGrowing.GrowthRate" value="120" />
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+</append>
+
+<!-- Cememt Mixer -->
+<append xpath="/blocks/block[@name='cntCollapsedCementMixer']" >
+	<drop event="Destroy" name="cementMixer" prob=".35" count="1" tool_category="Disassemble"/>
+</append>
+
+<append xpath="/blocks/block[@name='cntCollapsedCementMixer']"><property name="DowngradeBlock" value="CmixerRespawner"/></append>
+<append xpath="/blocks">
+<block name="CmixerRespawner">
+	<property name="CustomIcon" value="decoCarWheelFlat" />
+	<property name="CustomIconTint" value="ff0000"/>
+	<property name="Extends" value="decoEntityPolymerMaster"/>			
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mmetal"/>			
+	<property name="StabilitySupport" value="false"/>
+	<property name="Texture" value="282"/>
+	<property name="Model" value="#@modfolder:Resources/respawner1.unity3d?respawner.Prefab"/>		
+	<property name="Collide" value="melee"/>
+	<property name="CanMobsSpawnOn" value="false" />
+	<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="cntCollapsedCementMixer" />
+	<property name="PlantGrowing.GrowthRate" value="120" />
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+</append>
+
+<!-- Chem Station -->
+<append xpath="/blocks/block[@name='cntCollapsedChemistryStation']" >
+	<drop event="Destroy" name="chemistryStation" prob=".25" count="1" tool_category="Disassemble"/>
+</append>
+
+<append xpath="/blocks/block[@name='cntCollapsedChemistryStation']"><property name="DowngradeBlock" value="CStationRespawner"/></append>
+<append xpath="/blocks">
+<block name="CStationRespawner">
+	<property name="CustomIcon" value="decoCarWheelFlat" />
+	<property name="CustomIconTint" value="ff0000"/>
+	<property name="Extends" value="decoEntityPolymerMaster"/>			
+	<property name="IsDeveloper" value="true" />
+	<property name="Class" value="PlantGrowing" />
+	<property name="Material" value="Mmetal"/>			
+	<property name="StabilitySupport" value="false"/>
+	<property name="Texture" value="282"/>
+	<property name="Model" value="#@modfolder:Resources/respawner1.unity3d?respawner.Prefab"/>		
+	<property name="Collide" value="melee"/>
+	<property name="CanMobsSpawnOn" value="false" />
+	<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+	<property name="IsTerrainDecoration" value="true" />
+	<property name="PlantGrowing.Next" value="cntCollapsedChemistryStation" />
+	<property name="PlantGrowing.GrowthRate" value="120" />
+	<property name="PlantGrowing.FertileLevel" value="0" />
+	<property name="PlantGrowing.IsRandom" value="false" />
+</block>
+</append>
+
+<!--STACK SIZE FOR SHAPES IN GAME-->
+<append xpath="/blocks/block[@name='frameShapes']">						<property name="Stacknumber" value="2500"/></append><!--changes shape stack size-->
+<append xpath="/blocks/block[@name='woodShapes']">						<property name="Stacknumber" value="2500"/></append><!--changes shape stack size-->
+<append xpath="/blocks/block[@name='cobblestoneShapes']">				<property name="Stacknumber" value="2500"/></append><!--changes shape stack size-->
+<append xpath="/blocks/block[@name='concreteShapes']">					<property name="Stacknumber" value="2500"/></append><!--changes shape stack size-->
+<append xpath="/blocks/block[@name='steelShapes']">						<property name="Stacknumber" value="2500"/></append><!--changes shape stack size-->
+<!--END OF STACK SIZE FOR SHAPES IN GAME-->
+
+<!--STACK SIZE FOR OTHER BLOCKS IN GAME-->
+<set xpath="/blocks/block[@name='bedroll']          					/property[@name='Stacknumber']/@value">20</set>		<!--10-->
+<set xpath="/blocks/block[@name='bedrollPOI']          					/property[@name='Stacknumber']/@value">20</set>		<!--10-->
+<set xpath="/blocks/block[@name='cntVendingMachine']          			/property[@name='Stacknumber']/@value">20</set>		<!--10-->
+<set xpath="/blocks/block[@name='cntVendingMachine2Broken']          	/property[@name='Stacknumber']/@value">20</set>		<!--10-->
+<set xpath="/blocks/block[@name='campfire']          					/property[@name='Stacknumber']/@value">5</set>		<!--1-->
+<set xpath="/blocks/block[@name='forge']          						/property[@name='Stacknumber']/@value">5</set>		<!--1-->
+<set xpath="/blocks/block[@name='workbench']          					/property[@name='Stacknumber']/@value">5</set>		<!--1-->
+<set xpath="/blocks/block[@name='cementMixer']          				/property[@name='Stacknumber']/@value">5</set>		<!--1-->
+<set xpath="/blocks/block[@name='chemistryStation']          			/property[@name='Stacknumber']/@value">5</set>		<!--1-->
+<set xpath="/blocks/block[@name='cars3WideRandomHelper']          		/property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='cntCar03Sedan3WideDamage0v01']         /property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='cntCar03Sedan3WideDamage1v01']         /property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='cntCar03Sedan3WideDamage2v01']         /property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='cntCar03Sedan3WideDamage0v02']         /property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='cntCar03Sedan3WideDamage1v02']         /property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='cntCar03Sedan3WideDamage2v02']         /property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='cntCar03Sedan3WideDamage0v03']         /property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='cntCar03Sedan3WideDamage1v03']         /property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='cntCar03Sedan3WideDamage2v03']         /property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='cntCar03Sedan3WideDamage0v04']         /property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='cntCar03Sedan3WideDamage1v04']         /property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='cntCar03Sedan3WideDamage2v04']         /property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='cntCar03Sedan3WideDamage0v05']         /property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='cntCar03Sedan3WideDamage1v05']         /property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='cntCar03Sedan3WideDamage2v05']         /property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='cntCar03Sedan3WideDamage0v06']         /property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='cntCar03Sedan3WideDamage1v06']         /property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='cntCar03Sedan3WideDamage2v06']         /property[@name='Stacknumber']/@value">33</set>		<!--33-->
+<set xpath="/blocks/block[@name='endTableLamp']          				/property[@name='Stacknumber']/@value">5</set>		<!--3-->
+<set xpath="/blocks/block[@name='wallTorchLightPlayer']          		/property[@name='Stacknumber']/@value">100</set>	<!--50-->
+<set xpath="/blocks/block[@name='candleWallLightPlayer']          		/property[@name='Stacknumber']/@value">100</set>	<!--50-->
+<set xpath="/blocks/block[@name='burningBarrelPlayer']          		/property[@name='Stacknumber']/@value">100</set>	<!--50-->
+<set xpath="/blocks/block[@name='keystoneBlock']          				/property[@name='Stacknumber']/@value">1</set>		<!--1-->
+<set xpath="/blocks/block[@name='generatorbank']          				/property[@name='Stacknumber']/@value">5</set>		<!--1-->
+<set xpath="/blocks/block[@name='solarbank']          					/property[@name='Stacknumber']/@value">5</set>		<!--1-->
+<set xpath="/blocks/block[@name='batterybank']          				/property[@name='Stacknumber']/@value">5</set>		<!--1-->
+<set xpath="/blocks/block[@name='dartTrap']          					/property[@name='Stacknumber']/@value">20</set>		<!--10-->
+<set xpath="/blocks/block[@name='bladeTrap']          					/property[@name='Stacknumber']/@value">20</set>		<!--10-->
+<set xpath="/blocks/block[@name='autoTurret']          					/property[@name='Stacknumber']/@value">20</set>		<!--10-->
+<set xpath="/blocks/block[@name='metalReinforcedWoodDrawBridge']       	/property[@name='Stacknumber']/@value">5</set>		<!--1-->
+<set xpath="/blocks/block[@name='mineCandyTin']          				/property[@name='Stacknumber']/@value">50</set>		<!--25-->
+<set xpath="/blocks/block[@name='mineHubcap']          					/property[@name='Stacknumber']/@value">40</set>		<!--20-->
+<set xpath="/blocks/block[@name='mineAirFilter']          				/property[@name='Stacknumber']/@value">20</set>		<!--10-->
+<set xpath="/blocks/block[@name='glassBulletproofBlockVariantHelper']	/property[@name='Stacknumber']/@value">500</set>	<!--200-->
+<!--END OF STACK SIZE FOR OTHER BLOCKS IN GAME-->
+
+<!-- Wood logs should burn longer than wood (4x) -->
+<set xpath="/blocks/block[@name='woodLogPillar100']/property[@name='FuelValue']/@value">2000</set>
+
+<set xpath="/blocks/block[starts-with(@name, 'mushroom')]/drop[@event='Harvest' and @name='foodCropMushrooms']/@count">2</set>
+<set xpath="/blocks/block[starts-with(@name, 'plantedMushroom3Harvest')]/drop[@event='Harvest' and @name='foodCropMushrooms']/@count">2</set>
+<set xpath="/blocks/block[starts-with(@name, 'plantedYucca3Harvest')]/drop[@event='Harvest' and @name='foodCropYuccaFruit']/@count">2</set>
+<set xpath="/blocks/block[starts-with(@name, 'plantedCotton3Harvest')]/drop[@event='Harvest' and @name='resourceCropCottonPlant']/@count">2</set>
+<set xpath="/blocks/block[starts-with(@name, 'plantedCoffee3Harvest')]/drop[@event='Harvest' and @name='resourceCropCoffeeBeans']/@count">2</set>
+<set xpath="/blocks/block[starts-with(@name, 'plantedGoldenrod3Harvest')]/drop[@event='Harvest' and @name='resourceCropGoldenrodPlant']/@count">2</set>
+<set xpath="/blocks/block[starts-with(@name, 'plantedAloe3Harvest')]/drop[@event='Harvest' and @name='resourceCropAloeLeaf']/@count">2</set>
+<set xpath="/blocks/block[starts-with(@name, 'plantedBlueberry3Harvest')]/drop[@event='Harvest' and @name='foodCropBlueberries']/@count">2</set>
+<set xpath="/blocks/block[starts-with(@name, 'plantedPotato3Harvest')]/drop[@event='Harvest' and @name='foodCropPotato']/@count">2</set>
+<set xpath="/blocks/block[starts-with(@name, 'plantedChrysanthemum3Harvest')]/drop[@event='Harvest' and @name='resourceCropChrysanthemumPlant']/@count">2</set>
+<set xpath="/blocks/block[starts-with(@name, 'plantedCorn3Harvest')]/drop[@event='Harvest' and @name='foodCropCorn']/@count">2</set>
+<set xpath="/blocks/block[starts-with(@name, 'plantedGraceCorn3Harvest')]/drop[@event='Harvest' and @name='foodCropGraceCorn']/@count">2</set>
+<set xpath="/blocks/block[starts-with(@name, 'plantedHop3Harvest')]/drop[@event='Harvest' and @name='resourceCropHopsFlower']/@count">2</set>
+<set xpath="/blocks/block[starts-with(@name, 'plantedSnowberry3Harvest')]/drop[@event='Harvest' and @name='resourceYuccaFibers']/@count">2</set>
+
+<!-- Repairing/Upgrading -->
+<set xpath="/blocks/block[@name='ironBarsCentered']/property[@class='RepairItems']/property[@name='resourceForgedIron']/@name">resourceScrapIron</set>
+<set xpath="/blocks/block[@name='trapSpikesWoodDmg0']/property[@class='UpgradeBlock']/property[@name='Item']/@value">resourceScrapIron</set>
+<set xpath="/blocks/block[@name='trapSpikesWoodDmg0']/property[@class='UpgradeBlock']/property[@name='ItemCount']/@value">40</set>
+<set xpath="/blocks/block[@name='trapSpikesScrapIronMaster']/property[@class='RepairItems']/property[@name='resourceForgedIron']/@name">resourceScrapIron</set>
+<set xpath="/blocks/block[@name='trapSpikesScrapIronMaster']/property[@class='RepairItems']/property[@name='resourceScrapIron']/@value">4</set>
+<set xpath="/blocks/block[@name='trapSpikesIronDmg2']/property[@class='UpgradeBlock']/property[@name='Item']/@value">resourceScrapIron</set>
+<set xpath="/blocks/block[@name='trapSpikesIronDmg1']/property[@class='UpgradeBlock']/property[@name='Item']/@value">resourceScrapIron</set>
+	
+<!--BETTER FARMING-->
+<!--GROWTH SPEED IN MINUTES-->
+<set xpath="//block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">
+,30
+</set>
+
+<!--SEED STAYS AFTER HARVEST-->
+<append xpath="//block[@name='plantedMushroom3HarvestPlayer']">
+	<property name="DowngradeBlock" value="plantedMushroom1"/>
+</append>
+
+<append xpath="//block[@name='plantedAloe3HarvestPlayer']">
+	<property name="DowngradeBlock" value="plantedAloe1"/>
+</append>
+
+<append xpath="//block[@name='plantedBlueberry3HarvestPlayer']">
+	<property name="DowngradeBlock" value="plantedBlueberry1"/>
+</append>
+
+<append xpath="//block[@name='plantedChrysanthemum3HarvestPlayer']">
+	<property name="DowngradeBlock" value="plantedChrysanthemum1"/>
+</append>
+
+<append xpath="//block[@name='plantedCoffee3HarvestPlayer']">
+	<property name="DowngradeBlock" value="plantedCoffee1"/>
+</append>
+
+<append xpath="//block[@name='plantedCorn3HarvestPlayer']">
+	<property name="DowngradeBlock" value="plantedCorn1"/>
+</append>
+
+<append xpath="//block[@name='plantedCotton3HarvestPlayer']">
+	<property name="DowngradeBlock" value="plantedCotton1"/>
+</append>
+
+<append xpath="//block[@name='plantedGoldenrod3HarvestPlayer']">
+	<property name="DowngradeBlock" value="plantedGoldenrod1"/>
+</append>
+
+<append xpath="//block[@name='plantedHop3HarvestPlayer']">
+	<property name="DowngradeBlock" value="plantedHop1"/>
+</append>
+
+<append xpath="//block[@name='plantedPotato3HarvestPlayer']">
+	<property name="DowngradeBlock" value="plantedPotato1"/>
+</append>
+
+<append xpath="//block[@name='plantedPumpkin3HarvestPlayer']">
+	<property name="DowngradeBlock" value="plantedPumpkin1"/>
+</append>
+
+<append xpath="//block[@name='plantedGraceCorn3HarvestPlayer']">
+	<property name="DowngradeBlock" value="plantedGraceCorn1"/>
+</append>
+
+<append xpath="//block[@name='plantedYucca3HarvestPlayer']">
+	<property name="DowngradeBlock" value="plantedYucca1"/>
+</append>
+
+<!--CHANGES TO THE DEW COLLECTOR -->
+<set xpath="//block[@name='cntDewCollector']/property[@name='MinConvertTime']/@value">10800</set>
+<set xpath="//block[@name='cntDewCollector']/property[@name='MaxConvertTime']/@value">18000</set>
+
+<!--CAR RESPAWNING-->
+	<append xpath="/blocks">	
+		<block name="carRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="carsRandomHelper" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+	
+		<block name="busSchoolRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntBusSchool" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+	
+		<block name="busSchoolShortRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntBusSchoolShort" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+	
+		<block name="busShuttleRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntBusShuttle" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+	
+		<block name="busCityRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntBusCity" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+	
+		<block name="armyTruckClosedRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntArmyTruckRandomLootHelper" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+		
+		<block name="cntFarmTruckClosedRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntFarmTruckRandomLootHelper" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>		
+			
+		<block name="cntAmbulanceTruck01Respawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntAmbulanceTruck01" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="cntServiceTruckMoPowerRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntServiceTruckMoPower" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="cntServiceTruckWorkingStiffToolsRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntServiceTruckWorkingStiffTools" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+		
+		<block name="cntSemiTruck01WhiteRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntSemiTruck01RandomHelper" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="cntSemiTruck01ModularFrontWhiteRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntSemiTruck01ModularFrontRandomHelper" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="cntPoliceCar01PickedLockBonusRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntPoliceCar01" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>		
+
+		<block name="cntFireTruck01WhiteRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntFireTruck01RandomHelper" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>		
+
+
+		<block name="tractorWhiteRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="tractorWhite" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="tractorRedRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="tractorRed" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="tractorGreenRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="tractorGreen" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="tractorBlueRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="tractorBlue" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="excavatorWhiteRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="excavatorWhite" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="excavatorRedRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="excavatorRed" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="excavatorOrangeRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="excavatorOrange" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="excavatorYellowRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="excavatorYellow" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="excavatorGreenRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="excavatorGreen" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="excavatorBlueRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="excavatorBlue" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="excavatorGreyRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="excavatorGrey" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="excavatorClawWhiteRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="excavatorClawWhite" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="excavatorClawRedRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="excavatorClawRed" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="excavatorClawOrangeRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="excavatorClawOrange" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="excavatorClawYellowRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="excavatorClawYellow" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="excavatorClawGreenRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="excavatorClawGreen" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="excavatorClawBlueRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="excavatorClawBlue" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="excavatorClawGreyRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="excavatorClawGrey" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="backhoeWhiteRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="backhoeWhite" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="backhoeRedRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="backhoeRed" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="backhoeOrangeRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="backhoeOrange" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="backhoeYellowRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="backhoeYellow" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="backhoeGreenRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="backhoeGreen" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="backhoeBlueRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="backhoeBlue" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="backhoeGreyRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="backhoeGrey" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="forkliftWhiteRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="forkliftWhite" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="forkliftRedRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="forkliftRed" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="forkliftOrangeRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="forkliftOrange" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="forkliftYellowRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="forkliftYellow" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="forkliftGreenRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="forkliftGreen" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="forkliftBlueRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="forkliftBlue" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="forklift2WhiteRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="forklift2White" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="forklift2RedRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="forklift2Red" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="forklift2OrangeRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="forklift2Orange" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="forklift2YellowRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="forklift2Yellow" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="forklift2GreenRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="forklift2Green" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<block name="forklift2BlueRespawner">
+			<property name="CustomIcon" value="decoCarWheelFlat" />
+			<property name="CustomIconTint" value="ff0000"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="@:Entities/Vehicles/Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="forklift2Blue" />
+			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+		
+	</append>	
+	
+	<append xpath="/blocks/block[@name='cntCar03SedanDamage2Master']"> 
+		<property name="DowngradeBlock" value="carRespawner"/>
+	</append> 
+
+	<set xpath="/blocks/block[@name='cntSedan01White']/property[@name='PassThroughDamage']/@value">false</set>
+	<append xpath="/blocks/block[@name='cntSedan01White']"> 
+		<property name="DowngradeBlock" value="carRespawner"/>
+	</append> 
+	
+	<set xpath="/blocks/block[@name='burntSedan01']/property[@name='PassThroughDamage']/@value">false</set>
+	<append xpath="/blocks/block[@name='burntSedan01']"> 
+		<property name="DowngradeBlock" value="carRespawner"/>
+	</append>
+	
+	<set xpath="/blocks/block[@name='cntSedan3Wide01White']/property[@name='PassThroughDamage']/@value">false</set>
+	<append xpath="/blocks/block[@name='cntSedan3Wide01White']"> 
+		<property name="DowngradeBlock" value="carRespawner"/>
+	</append>  
+
+	<set xpath="/blocks/block[@name='burntSedan3Wide01']/property[@name='PassThroughDamage']/@value">false</set>
+	<append xpath="/blocks/block[@name='burntSedan3Wide01']"> 
+		<property name="DowngradeBlock" value="carRespawner"/>
+	</append>
+	
+	<set xpath="/blocks/block[@name='cntFrontCrumpledSedan01White']/property[@name='PassThroughDamage']/@value">false</set>
+	<append xpath="/blocks/block[@name='cntFrontCrumpledSedan01White']"> 
+		<property name="DowngradeBlock" value="carRespawner"/>
+	</append>
+
+	<set xpath="/blocks/block[@name='cntMinivan01White']/property[@name='PassThroughDamage']/@value">false</set>
+	<append xpath="/blocks/block[@name='cntMinivan01White']"> 
+		<property name="DowngradeBlock" value="carRespawner"/>
+	</append>	
+	
+	<set xpath="/blocks/block[@name='cntMinivan3Wide01White']/property[@name='PassThroughDamage']/@value">false</set>
+	<append xpath="/blocks/block[@name='cntMinivan3Wide01White']"> 
+		<property name="DowngradeBlock" value="carRespawner"/>
+	</append>
+	
+	<set xpath="/blocks/block[@name='cntSUV01White']/property[@name='PassThroughDamage']/@value">false</set>
+	<append xpath="/blocks/block[@name='cntSUV01White']"> 
+		<property name="DowngradeBlock" value="carRespawner"/>
+	</append>
+	
+	<set xpath="/blocks/block[@name='cntSUV3Wide01White']/property[@name='PassThroughDamage']/@value">false</set>
+	<append xpath="/blocks/block[@name='cntSUV3Wide01White']"> 
+		<property name="DowngradeBlock" value="carRespawner"/>
+	</append>	
+	
+	<set xpath="/blocks/block[@name='cntPickupTruck01White']/property[@name='PassThroughDamage']/@value">false</set>
+	<append xpath="/blocks/block[@name='cntPickupTruck01White']"> 
+		<property name="DowngradeBlock" value="carRespawner"/>
+	</append>
+
+	<set xpath="/blocks/block[@name='cntPickupTruck3Wide01White']/property[@name='PassThroughDamage']/@value">false</set>
+	<append xpath="/blocks/block[@name='cntPickupTruck3Wide01White']"> 
+		<property name="DowngradeBlock" value="carRespawner"/>
+	</append>
+
+	<set xpath="/blocks/block[@name='cntSemiTruck01White']/property[@name='PassThroughDamage']/@value">false</set>
+	<append xpath="/blocks/block[@name='cntSemiTruck01White']"> 
+		<property name="DowngradeBlock" value="cntSemiTruck01WhiteRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='cntSemiTruck01ModularFrontWhite']"> 
+		<property name="DowngradeBlock" value="cntSemiTruck01ModularFrontWhiteRespawner"/>
+	</append>
+	
+	<set xpath="/blocks/block[@name='cntPoliceCar01PickedLockBonus']/property[@name='PassThroughDamage']/@value">false</set>
+	<append xpath="/blocks/block[@name='cntPoliceCar01PickedLockBonus']"> 
+		<property name="DowngradeBlock" value="cntPoliceCar01PickedLockBonusRespawner"/>
+	</append>
+	
+	<set xpath="/blocks/block[@name='cntPoliceCar01AlarmUnlocked']/property[@name='PassThroughDamage']/@value">false</set>		
+	<append xpath="/blocks/block[@name='cntPoliceCar01AlarmUnlocked']"> 
+		<property name="DowngradeBlock" value="cntPoliceCar01PickedLockBonusRespawner"/>
+	</append>	
+
+	<set xpath="/blocks/block[@name='cntFireTruck01White']/property[@name='PassThroughDamage']/@value">false</set>		
+	<append xpath="/blocks/block[@name='cntFireTruck01White']"> 
+		<property name="DowngradeBlock" value="cntFireTruck01WhiteRespawner"/>
+	</append>	
+
+	<append xpath="/blocks/block[@name='cntBusSchool']"> 
+		<property name="DowngradeBlock" value="busSchoolRespawner"/>
+	</append> 
+
+	<append xpath="/blocks/block[@name='cntBusSchoolShort']"> 
+		<property name="DowngradeBlock" value="busSchoolShortRespawner"/>
+	</append> 
+
+	<append xpath="/blocks/block[@name='cntBusShuttle']"> 
+		<property name="DowngradeBlock" value="busShuttleRespawner"/>
+	</append> 
+	
+	<append xpath="/blocks/block[@name='cntBusCity']"> 
+		<property name="DowngradeBlock" value="busCityRespawner"/>
+	</append> 
+	
+	<append xpath="/blocks/block[@name='cntArmyTruckOpen']"> 
+		<property name="DowngradeBlock" value="armyTruckClosedRespawner"/>
+	</append> 	
+
+	<append xpath="/blocks/block[@name='cntArmyTruckClosed']"> 
+		<property name="DowngradeBlock" value="armyTruckClosedRespawner"/>
+	</append> 	
+
+	<append xpath="/blocks/block[@name='cntFarmTruckOpen']"> 
+		<property name="DowngradeBlock" value="cntFarmTruckClosedRespawner"/>
+	</append> 
+
+	<append xpath="/blocks/block[@name='cntFarmTruckClosed']"> 
+		<property name="DowngradeBlock" value="cntFarmTruckClosedRespawner"/>
+	</append>
+	
+	
+	<append xpath="/blocks/block[@name='tractorWhite']"> 
+		<property name="DowngradeBlock" value="tractorWhiteRespawner"/>
+	</append>	
+
+ 	<append xpath="/blocks/block[@name='tractorRed']"> 
+		<property name="DowngradeBlock" value="tractorRedRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='tractorGreen']"> 
+		<property name="DowngradeBlock" value="tractorGreenRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='tractorBlue']"> 
+		<property name="DowngradeBlock" value="tractorBlueRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='excavatorWhite']"> 
+		<property name="DowngradeBlock" value="excavatorWhiteRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='excavatorRed']"> 
+		<property name="DowngradeBlock" value="excavatorRedRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='excavatorOrange']"> 
+		<property name="DowngradeBlock" value="excavatorOrangeRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='excavatorYellow']"> 
+		<property name="DowngradeBlock" value="excavatorYellowRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='excavatorGreen']"> 
+		<property name="DowngradeBlock" value="excavatorGreenRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='excavatorBlue']"> 
+		<property name="DowngradeBlock" value="excavatorBlueRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='excavatorGrey']"> 
+		<property name="DowngradeBlock" value="excavatorGreyRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='excavatorClawWhite']"> 
+		<property name="DowngradeBlock" value="excavatorClawWhiteRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='excavatorClawRed']"> 
+		<property name="DowngradeBlock" value="excavatorClawRedRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='excavatorClawOrange']"> 
+		<property name="DowngradeBlock" value="excavatorClawOrangeRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='excavatorClawYellow']"> 
+		<property name="DowngradeBlock" value="excavatorClawYellowRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='excavatorClawGreen']"> 
+		<property name="DowngradeBlock" value="excavatorClawGreenRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='excavatorClawBlue']"> 
+		<property name="DowngradeBlock" value="excavatorClawBlueRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='excavatorClawGrey']"> 
+		<property name="DowngradeBlock" value="excavatorClawGreyRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='backhoeWhite']"> 
+		<property name="DowngradeBlock" value="backhoeWhiteRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='backhoeRed']"> 
+		<property name="DowngradeBlock" value="backhoeRedRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='backhoeOrange']"> 
+		<property name="DowngradeBlock" value="backhoeOrangeRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='backhoeYellow']"> 
+		<property name="DowngradeBlock" value="backhoeYellowRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='backhoeGreen']"> 
+		<property name="DowngradeBlock" value="backhoeGreenRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='backhoeBlue']"> 
+		<property name="DowngradeBlock" value="backhoeBlueRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='backhoeGrey']"> 
+		<property name="DowngradeBlock" value="backhoeGreyRespawner"/>
+	</append>
+
+	<set xpath="/blocks/block[@name='forkliftWhite']/property[@name='PassThroughDamage']/@value">false</set>		
+	<append xpath="/blocks/block[@name='forkliftWhite']"> 
+		<property name="DowngradeBlock" value="forkliftWhiteRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='forkliftRed']"> 
+		<property name="DowngradeBlock" value="forkliftRedRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='forkliftOrange']"> 
+		<property name="DowngradeBlock" value="forkliftOrangeRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='forkliftYellow']"> 
+		<property name="DowngradeBlock" value="forkliftYellowRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='forkliftGreen']"> 
+		<property name="DowngradeBlock" value="forkliftGreenRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='forkliftBlue']"> 
+		<property name="DowngradeBlock" value="forkliftBlueRespawner"/>
+	</append>
+
+	<set xpath="/blocks/block[@name='forklift2White']/property[@name='PassThroughDamage']/@value">false</set>
+	<append xpath="/blocks/block[@name='forklift2White']"> 
+		<property name="DowngradeBlock" value="forklift2WhiteRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='forklift2Red']"> 
+		<property name="DowngradeBlock" value="forklift2RedRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='forklift2Orange']"> 
+		<property name="DowngradeBlock" value="forklift2OrangeRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='forklift2Yellow']"> 
+		<property name="DowngradeBlock" value="forklift2YellowRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='forklift2Green']"> 
+		<property name="DowngradeBlock" value="forklift2GreenRespawner"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='forklift2Blue']"> 
+		<property name="DowngradeBlock" value="forklift2BlueRespawner"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntAmbulanceTruck01']"> 
+		<property name="DowngradeBlock" value="cntAmbulanceTruck01Respawner"/>
+	</append> 		
+	
+	<append xpath="/blocks/block[@name='cntServiceTruckMoPower']"> 
+		<property name="DowngradeBlock" value="cntServiceTruckMoPowerRespawner"/>
+	</append> 	
+
+	<append xpath="/blocks/block[@name='cntServiceTruckWorkingStiffTools']"> 
+		<property name="DowngradeBlock" value="cntServiceTruckWorkingStiffToolsRespawner"/>
+	</append> 
+	
+<!--REMOVES THE INPUT MATERIAL FOR THE FORGE-->
+<set xpath="/blocks/block[@name='forge']/property[@class='Workstation']/property[@name='Modules']/@value">tools,output,fuel</set>	
+
+<!--LOG SPIKES-->
+<!-- TIER1 LOG SPIKE -->
+<append xpath="/blocks">
+<block name="woodLogSpike1"> 
+	<property name="CreativeMode" value="Player"/> 
+	<property name="Class" value="TrunkTip"/> 
+	<property name="BlockTag" value="Spike"/> 
+	<property name="Damage" value="3"/> 
+	<property name="Damage_received" value="10"/> 
+	<property name="Material" value="Mwood_regular"/> 
+	<property name="Shape" value="New"/> 
+	<property name="LightOpacity" value="6"/> 
+	<property name="Path" value="solid"/> 
+	<property name="Model" value="@:Shapes/cone1m.fbx" /> 
+	<property name="Texture" value="21,21,22,22,22,22"/> 
+	<property name="UseGlobalUV" value="Local"/> 
+	<property name="ImposterExchange" value="imposterPyramid" param1="10"/> 
+	<property name="ImposterDontBlock" value="true"/> 
+	<property name="FuelValue" value="300"/> 
+	<property class="RepairItems"> 
+	<property name="resourceWood" value="10"/> 
+</property> 
+<property class="UpgradeBlock"> 
+	<property name="ToBlock" value="rWoodLogSpike2"/> 
+	<property name="Item" value="resourceWood"/> 
+	<property name="ItemCount" value="10"/> 
+	<property name="UpgradeHitCount" value="4"/> 
+	<property name="ExperienceGain" value="1"/>
+</property> 
+	<property name="CustomUpgradeSound" value="place_block_wood"/> 
+	<drop event="Destroy" name="resourceWood" count="2,6"/> 
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/> 
+	<property name="Group" value="Tools/Traps"/> 
+	<property name="DescriptionKey" value="woodLogSpike1Desc"/> 
+	<property name="EconomicValue" value="30"/> 
+	<property name="EconomicBundleSize" value="20"/> 
+	<property name="FilterTags" value="MC_building,SC_traps"/> 
+	<property name="SortOrder1" value="70g0"/> 
+</block> 
+
+<!-- TIER2 LOG SPIKE -->
+<block name="rWoodLogSpike2"> 
+	<property name="Extends" value="woodLogSpike1"/> 
+	<property name="CreativeMode" value="None"/> 
+	<property name="Damage" value="4"/> 
+	<property name="Damage_received" value="20"/> 
+	<property name="Texture" value="379"/> 
+	<property name="ImposterExchange" value="imposterPyramid" param1="119"/> 
+<property class="UpgradeBlock"> 
+	<property name="ToBlock" value="rWoodMetalLogSpike3"/> 
+	<property name="Item" value="resourceScrapIron"/> 
+	<property name="ItemCount" value="20"/> 
+	<property name="ExperienceGain" value="1"/>
+</property> 
+	<property name="CustomUpgradeSound" value="place_block_metal"/> 
+	<property name="DowngradeBlock" value="woodLogSpike1"/> 
+	<property name="EconomicValue" value="0"/> 
+</block> 
+
+<!-- TIER3 LOG SPIKE -->
+<block name="rWoodMetalLogSpike3"> 
+	<property name="Extends" value="rWoodLogSpike2" param1="RepairItems"/> 
+	<property name="CreativeMode" value="None"/> 
+	<property name="Damage" value="5"/> 
+	<property name="Damage_received" value="30"/> 
+	<property name="Material" value="Mmetal"/> 
+	<property name="Texture" value="380"/> 
+	<property name="ImposterExchange" value="imposterPyramid" param1="120"/> 
+	<property class="RepairItems"> 
+	<property name="resourceScrapIron" value="20"/> 
+</property> 
+<property class="UpgradeBlock"> 
+	<property name="ToBlock" value="scrapIronLogSpike4"/> 
+	<property name="ItemCount" value="40"/> 
+	<property name="ExperienceGain" value="1"/>
+</property> 
+	<property name="DowngradeBlock" value="rWoodLogSpike2"/> 
+	<drop event="Destroy" name="resourceWood" count="0"/> 
+	<drop event="Destroy" name="resourceScrapIron" count="8"/> 
+</block>
+
+<!-- TIER4 LOG SPIKE -->
+<block name="scrapIronLogSpike4"> 
+	<property name="Extends" value="rWoodLogSpike2" param1="DowngradeBlock,RepairItems"/> 
+	<property name="CreativeMode" value="None"/> 
+	<property name="Damage" value="6"/> 
+	<property name="Damage_received" value="40"/> 
+	<property name="DisplayType" value="blockHardened"/> 
+	<property name="Material" value="MmoonrockLL"/> 
+	<property name="Texture" value="307"/> 
+	<property name="ImposterExchange" value="imposterPyramid" param1="87"/> 
+	<property class="RepairItems"> 
+	<property name="resourceScrapIron" value="40"/> 
+</property> 
+<property class="UpgradeBlock"> 
+	<property name="ToBlock" value="rScrapIronLogSpike5"/> 
+	<property name="ItemCount" value="40"/> 
+	<property name="ExperienceGain" value="1"/>
+</property> 
+	<drop event="Destroy" name="resourceWood" count="0"/> 
+	<drop event="Destroy" name="resourceScrapIron" count="15"/> 
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/> 
+</block>
+
+<!-- TIER5 LOG SPIKE -->
+<block name="rScrapIronLogSpike5"> 
+	<property name="Extends" value="scrapIronLogSpike4"/> 
+	<property name="CreativeMode" value="None"/> 
+	<property name="Damage" value="7"/> 
+	<property name="Damage_received" value="50"/> 
+	<property name="Texture" value="352"/> 
+	<property name="ImposterExchange" value="imposterPyramid" param1="110"/> 
+<property class="UpgradeBlock"> 
+	<property name="ToBlock" value="steelLogSpike6"/> 
+	<property name="Item" value="resourceForgedSteel"/> 
+	<property name="ItemCount" value="20"/> 
+	<property name="UpgradeHitCount" value="4"/> 
+	<property name="ExperienceGain" value="1"/>
+</property> 
+	<property name="DowngradeBlock" value="scrapIronLogSpike4"/> 
+</block> 
+
+<!-- TIER6 LOG SPIKE -->
+<block name="steelLogSpike6">
+<property name="Class" value="TrunkTip"/> 
+	<property name="BlockTag" value="Spike"/> 
+	<property name="CreativeMode" value="None"/> 
+	<property name="Damage" value="7"/> 
+	<property name="Damage_received" value="60"/> 
+	<property name="DisplayType" value="blockHardened"/> 
+	<property name="Material" value="MvibeLL"/> 
+	<property name="Shape" value="New"/> 
+	<property name="LightOpacity" value="6"/> 
+	<property name="Path" value="solid"/> 
+	<property name="Model" value="@:Shapes/cone1m.fbx" /> 
+	<property name="Texture" value="356,355,356,356,356,356"/> 
+	<property name="ImposterExchange" value="imposterPyramid" param1="112"/> 
+	<property name="ImposterDontBlock" value="true"/> 
+	<property name="UseGlobalUV" value="Local"/> 
+	<property class="RepairItems"> 
+	<property name="resourceForgedSteel" value="10"/> 
+	</property> 
+	<property name="CustomUpgradeSound" value="place_block_metal"/> 
+	<property name="DowngradeBlock" value="rScrapIronLogSpike5"/> 
+	<drop event="Destroy" name="resourceScrapIron" count="10,20"/> 
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/> 
+	<property name="EconomicValue" value="160"/> 
+	<property name="Group" value="Tools/Traps"/> 
+	<property name="DescriptionKey" value="woodLogSpike1Desc"/> 
+	<property name="FilterTags" value="MC_building,SC_traps"/> 
+	<property name="SortOrder1" value="70g0"/>
+</block> 
+</append>
+	
+</configs>
+
+

@@ -1,0 +1,15 @@
+<configs>
+
+<!--FIRE IMMUNITY DESERT ZOMBIES-->
+<append xpath="/buffs">
+<buff name="buffnofire" name_key="buffnofire" hidden="true">
+	<stack_type value="effect"/>
+	<duration value="0"/>
+
+	<effect_group>
+		<passive_effect name="BuffResistance" operation="base_add" value="5" buff="buffIsOnFire,buffBurningFlamingArrow,buffBurningMolotov,buffBurningEnvironmentHack,buffBurningEnvironment,buffBurningElement"/><!--,buffBurningFlamingArrow,buffBurningMolotov,buffBurningEnvironmentHack,buffBurningEnvironment,buffBurningElement-->
+	</effect_group>
+</buff>
+</append>
+
+</configs>

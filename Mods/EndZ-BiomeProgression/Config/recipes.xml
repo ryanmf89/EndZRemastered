@@ -1,0 +1,42 @@
+<configs>
+
+<remove xpath="/recipes/recipe[@name='foodBurntSmoothie']"/>
+<remove xpath="/recipes/recipe[@name='foodOasisSmoothie']"/>
+<remove xpath="/recipes/recipe[@name='foodFrostbiteSmoothie']"/>
+<remove xpath="/recipes/recipe[@name='foodAtomicSmoothie']"/>
+
+<append xpath="/recipes">
+<!--BURNT FOREST BIOME SAFETY MOD-->
+<recipe name="modbuffburntforestLL" count="1" craft_time="240" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourcefilterpiecesLL" count="200"/>
+	<ingredient name="resourceLeather" count="35"/>
+	<ingredient name="resourceAcid" count="2"/>
+	<ingredient name="resourceSewingKit" count="5"/>
+</recipe>
+
+<!--DESERT BIOME SAFETY MOD-->
+<recipe name="modbuffdesertheatLL" count="1" craft_time="240" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourcebiomeiceLL" count="200"/>
+	<ingredient name="resourceLeather" count="35"/>
+	<ingredient name="resourceAcid" count="3"/>
+	<ingredient name="resourceSewingKit" count="5"/>
+</recipe>
+
+<!--SNOW BIOME SAFETY MOD-->
+<recipe name="modbufffrozensnowLL" count="1" craft_time="240" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourcesnowLL" count="200"/>
+	<ingredient name="resourceLeather" count="35"/>
+	<ingredient name="resourceAcid" count="4"/>
+	<ingredient name="resourceSewingKit" count="5"/>
+</recipe>
+
+<!--WASTELAND BIOME SAFETY MOD-->
+<recipe name="modbuffradiationwasteLL" count="1" craft_time="240" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceradiofiberLL" count="200"/>
+	<ingredient name="resourceLeather" count="35"/>
+	<ingredient name="resourceAcid" count="5"/>
+	<ingredient name="resourceSewingKit" count="5"/>
+</recipe>
+</append>
+
+</configs>

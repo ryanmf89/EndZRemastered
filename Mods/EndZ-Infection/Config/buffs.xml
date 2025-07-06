@@ -1,0 +1,213 @@
+<configs>
+
+<remove xpath="//buff[@name='buffInfectionCatch']"/>
+<remove xpath="//buff[@name='buffInfectionMain']"/>
+<remove xpath="//buff[@name='buffInfectionGetsWorse']"/>
+<remove xpath="//buff[@name='buffInfectionAddCure']"/>
+<remove xpath="//buff[@name='buffInfectionCureDisplay']"/>
+<remove xpath="//buff[@name='buffInfection01Untreated']"/>
+<remove xpath="//buff[@name='buffInfection01GetBetter']"/>
+<remove xpath="//buff[@name='buffInfection02Untreated']"/>
+<remove xpath="//buff[@name='buffInfection02GetBetter']"/>
+<remove xpath="//buff[@name='buffInfection03Untreated']"/>
+<remove xpath="//buff[@name='buffInfection03GetBetter']"/>
+<remove xpath="//buff[@name='buffInfection04']"/>
+
+<append xpath="/buffs/buff[@name='buffStatusCheck01']">
+    <effect_group>    
+    <requirement name="NotHasBuff" buff="buffseruminfectionCatch"/>
+    <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffseruminfectionCatch"/>        
+</effect_group>      
+<effect_group>
+    <requirement name="NotHasBuff" buff="buffseruminfectionuntreated3"/>        
+    <requirement name="CVarCompare" cvar="infectionCounter" operation="LT" value="@$infectionMaxDuration"/>                    
+</effect_group>        
+</append>
+
+<append xpath="/buffs">
+<buff name="buffseruminfectionCatch" name_key="buffseruminfectionCatch"  hidden="true">
+	<damage_type value="Infection"/>
+	<stack_type value="ignore"/>
+	<duration value=".1"/>
+
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="infectionCounter" operation="set" value=".25">
+			<requirement name="!HasBuff" buff="buffseruminfection"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="infectionCounter" operation="add" value="2.5">
+			<requirement name="HasBuff" buff="buffseruminfection"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffseruminfection"/>
+	</effect_group>
+</buff>
+
+<buff name="buffseruminfection" name_key="Zombie Infection" remove_on_death="false" hidden="true" icon="ui_game_symbol_zinfection">	
+	<damage_type value="Infection"/>
+	<stack_type value="ignore"/>
+	<duration value="0"/>
+	<update_rate value="1"/>
+
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="25200">
+			<requirement name="CVarCompare" cvar="$infectionMaxDuration" operation="Equals" value="0"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionStage2Duration" operation="set" value="50"/> <!-- % of the full buff duration -->
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionStage3Duration" operation="set" value="99"/> <!-- % of the full buff duration -->
+
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionDisplayDivisor" operation="set" value="@$infectionMaxDuration"/>
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionDisplayDivisor" operation="divide" value="100"/>
+
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionStage2Duration" operation="multiply" value="@$infectionDisplayDivisor"/>
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionStage3Duration" operation="multiply" value="@$infectionDisplayDivisor"/>
+
+		<!-- cleanup -->
+		<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="infectionCounter" operation="set" value="0"/>
+		<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".infectionDisplayPerc" operation="set" value="0"/>
+		<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$infectionDisplayDivisor" operation="set" value="0"/>
+		<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$infectionCureCounter" operation="set" value="0"/>
+		<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$infectionStage2Duration" operation="set" value="0"/>
+		<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$infectionStage3Duration" operation="set" value="0"/>
+	</effect_group>
+
+	<effect_group name="main loop">
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="infectionCounter" operation="set" value="@$infectionMaxDuration">
+			<requirement name="CVarCompare" cvar="infectionCounter" operation="GT" value="@$infectionMaxDuration"/>
+		</triggered_effect>
+		
+		<!-- Main counter -->
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".dummy" operation="set" value="@$critHitNaturalHealingRate"/>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".dummy" operation="divide" value="4"/>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="infectionCounter" operation="subtract" value="@.dummy"/>
+
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="infectionCounter" operation="add" value="-3">
+			<requirement name="CVarCompare" cvar="$infectionCureCounter" operation="GT" value="0"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="infectionCounter" operation="set" value="0">
+			<requirement name="CVarCompare" cvar="infectionCounter" operation="LT" value="0"/>
+		</triggered_effect>
+	</effect_group>
+
+	<effect_group name="shut down">
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffseruminfection">
+			<requirement name="CVarCompare" cvar="infectionCounter" operation="LTE" value="0"/>
+			<requirement name="CVarCompare" cvar="$infectionCureCounter" operation="LTE" value="0"/>
+		</triggered_effect>
+	</effect_group>
+
+	<effect_group name="display % values">
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".infectionDisplayPerc" operation="set" value="@infectionCounter"/>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".infectionDisplayPerc" operation="divide" value="@$infectionDisplayDivisor"/>
+	</effect_group>
+
+	<effect_group name="buffs">
+
+	<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffseruminfectionuntreated1">
+		<requirement name="NotHasBuff" buff="buffseruminfectionuntreated1"/>										
+		<requirement name="CVarCompare" cvar="infectionCounter" operation="GT" value="0"/>
+		<requirement name="CVarCompare" cvar="infectionCounter" operation="LT" value="@$infectionStage2Duration"/>
+		<requirement name="CVarCompare" cvar="$infectionCureCounter" operation="LTE" value="0"/>
+	</triggered_effect>
+
+	<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffseruminfectionuntreated2">
+		<requirement name="NotHasBuff" buff="buffseruminfectionuntreated2"/>														
+		<requirement name="CVarCompare" cvar="infectionCounter" operation="GTE" value="@$infectionStage2Duration"/>
+		<requirement name="CVarCompare" cvar="infectionCounter" operation="LT" value="@$infectionStage3Duration"/>
+		<requirement name="CVarCompare" cvar="$infectionCureCounter" operation="LTE" value="0"/>
+	</triggered_effect>
+
+	<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffseruminfectionuntreated3">
+		<requirement name="NotHasBuff" buff="buffseruminfectionuntreated3"/>														
+		<requirement name="CVarCompare" cvar="infectionCounter" operation="GTE" value="@$infectionStage3Duration"/>
+		<requirement name="CVarCompare" cvar="infectionCounter" operation="LT" value="@$infectionMaxDuration"/>
+		<requirement name="CVarCompare" cvar="$infectionCureCounter" operation="LTE" value="0"/>
+	</triggered_effect>		
+	</effect_group>
+	<effect_group name="dontgethit">		
+		<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" buff="buffseruminfectiongetsworse"/>
+	</effect_group>		
+</buff>
+
+<buff name="buffseruminfectiongetsworse" remove_on_death="false" hidden="true">
+	<stack_type value="ignore"/>
+	<duration value="1.1"/>
+	<effect_group>		
+		<passive_effect name="BuffBlink" operation="base_add" value="2" tags="buffseruminfectionuntreated1,buffseruminfectionuntreated2,buffseruminfectionuntreated3"/>
+	</effect_group>
+</buff>
+
+<buff name="buffInfectionAddCureserum" remove_on_death="false" hidden="true">
+	<stack_type value="ignore"/>
+	<duration value="1.1"/>
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="multiply" value="@$infectionMaxDuration"/>
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="divide" value="100"/>
+
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="infectionCounter" operation="subtract" value="@$buffInfectionAddCurePerc"/>
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="set" value="0"/>
+
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="infectionCounter" operation="set" value="@$infectionMaxDuration">
+			<requirement name="CVarCompare" cvar="infectionCounter" operation="GT" value="@$infectionMaxDuration"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffseruminfection"/>			
+	</effect_group>
+</buff>
+
+<buff name="buffseruminfectionuntreated1" name_key="Zombie Infection Stage 1" remove_on_death="false" description_key="Take a Serum to bring your level/percent back down. Stage 2 hits at 50% with base health loss, Stage 3 is 99% and results in death." icon="ui_game_symbol_zinfection">
+	<damage_type value="Disease"/>
+	<stack_type value="ignore"/>
+	<duration value="0"/>
+	<display_value value=".infectionDisplayPerc"/>
+	<display_value_key value="{0:0.0}%"/>
+		
+	<effect_group>
+		<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffseruminfectionuntreated1"/>
+
+		<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffseruminfectionuntreated2"/>
+		<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffseruminfectionuntreated3"/>
+	</effect_group>
+</buff>
+
+<buff name="buffseruminfectionuntreated2" name_key="Zombie Infection Stage 2" remove_on_death="false" description_key="Take a Serum to bring your level/percent back down before reaching 99%, remember Stage 3 is certain death." icon="ui_game_symbol_zinfection" icon_color="242, 242, 17">
+	<damage_type value="Disease"/>
+	<stack_type value="ignore"/>
+	<duration value="0"/>
+	<display_value value=".infectionDisplayPerc"/>
+	<display_value_key value="{0:0.0}%"/>
+	<effect_group>
+		<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffseruminfectionuntreated2"/>
+			
+		<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffseruminfectionuntreated1"/>
+		<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffseruminfectionuntreated3"/>
+	</effect_group>
+
+	<effect_group>
+		<passive_effect name="StaminaChangeOT" operation="perc_add" value="-.15"/>
+		<passive_effect name="HealthMax" operation="perc_add" value="-.25"/>
+	</effect_group>
+</buff>
+
+<buff name="buffseruminfectionuntreated3" name_key="Zombie Infection Stage 3" remove_on_death="false" description_key="Stage 3 is the final stage. You are now dead!" icon="ui_game_symbol_zinfection" icon_color="255,0,0">
+	<damage_type value="Disease"/>
+	<stack_type value="ignore"/>
+	<duration value="0"/>
+	<display_value value=".infectionDisplayPerc"/>
+	<display_value_key value="{0:0.0}%"/>
+	<effect_group>
+		<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffseruminfectionuntreated3"/>
+			
+		<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffseruminfectionuntreated1"/>
+		<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffseruminfectionuntreated2"/>
+	</effect_group>
+	
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="subtract" value="99999999"/>
+		<!-- Clear out counters -->
+		<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="infectionCounter" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="infectionCounterRespawn" operation="set" value="0" />
+	</effect_group>
+</buff>
+</append>
+<!--END OF SERUM INFECTION BUFF-->
+
+</configs>

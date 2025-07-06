@@ -1,0 +1,76 @@
+<configs>
+
+<!--PINE FOREST-->
+<set xpath="//biome[@name='pine_forest']//decoration[@blockname='treeJuniper4m']/@prob">0.09</set>
+<set xpath="//biome[@name='pine_forest']//decoration[@blockname='treeMountainPine12m']/@prob">0.05</set>
+<set xpath="//biome[@name='pine_forest']//decoration[@blockname='treeMountainPine19m']/@prob">0.005</set>
+<set xpath="//biome[@name='pine_forest']//decoration[@blockname='treeMountainPine27m']/@prob">0.009</set>
+<set xpath="//biome[@name='pine_forest']//decoration[@blockname='treeMountainPine31m']/@prob">0.009</set>
+<set xpath="//biome[@name='pine_forest']//decoration[@blockname='treeMountainPineDry21m']/@prob">0.009</set>
+<set xpath="//biome[@name='pine_forest']//decoration[@blockname='treeMountainPine41m']/@prob">0.005</set>
+<set xpath="//biome[@name='pine_forest']//decoration[@blockname='treeOakLrg01']/@prob">0.005</set>
+<set xpath="//biome[@name='pine_forest']//decoration[@blockname='treeOakMed01']/@prob">0.005</set>
+<set xpath="//biome[@name='pine_forest']//decoration[@blockname='treeOakMed02']/@prob">0.005</set>
+<set xpath="//biome[@name='pine_forest']//decoration[@blockname='treeOakSml01']/@prob">0.005</set>
+<set xpath="//biome[@name='pine_forest']//decoration[@blockname='treeFirLrg01']/@prob">0.001</set>
+<set xpath="//biome[@name='pine_forest']//decoration[@blockname='treeMountainPine48m']/@prob">0.004</set>
+<set xpath="//biome[@name='pine_forest']//decoration[@blockname='treeStump']/@prob">.002</set>
+<set xpath="//biome[@name='pine_forest']//decoration[@name='rock_form02']/@prob">.005</set>
+<set xpath="//biome[@name='pine_forest']//decoration[@name='rock_form01']/@prob">.005</set>
+<remove xpath="//biome[@name='pine_forest']//decoration[@blockname='treeTallGrassDiagonal']"/>
+
+<!--DESERT-->
+<append xpath="//biome[@name='desert']//decorations">
+	<decoration type="prefab" name="rock_form02" prob=".5" rotatemax="7"/>
+	<decoration type="prefab" name="rock_form01" prob=".5" rotatemax="7"/>
+</append>
+<remove xpath="//biome[@name='desert']//decoration[@blockname='treeOakMed01']"></remove>
+<remove xpath="//biome[@name='desert']//decoration[@blockname='treeOakSml01']"></remove>
+<remove xpath="//biome[@name='desert']//decoration[@blockname='decoCowSkull']"></remove>
+<set xpath="//biome[@name='desert']//decoration[@blockname='treeDesertShrub']/@prob">.005</set>
+<set xpath="//biome[@name='desert']//decoration[@blockname='treeCactus01']/@prob">.009</set>
+<set xpath="//biome[@name='desert']//decoration[@blockname='treeCactus02']/@prob">.009</set>
+<set xpath="//biome[@name='desert']//decoration[@blockname='treeCactus03']/@prob">.009</set>
+<set xpath="//biome[@name='desert']//decoration[@blockname='treeCactus04']/@prob">.009</set>
+<set xpath="//biome[@name='desert']//decoration[@blockname='treeCactus05']/@prob">.009</set>
+<set xpath="//biome[@name='desert']//decoration[@blockname='treeCactus06']/@prob">.009</set>
+<set xpath="//biome[@name='desert']//decoration[@blockname='driftwood']/@prob">.007</set>
+<set xpath="//biome[@name='desert']//decoration[@blockname='driftwood2']/@prob">.007</set>
+<set xpath="//biome[@name='desert']//decoration[@blockname='driftwood3']/@prob">.007</set>
+
+<!--SNOW-->
+<remove xpath="//biome[@name='snow']//decoration[@blockname='treeSnowyDeadBush']"></remove>
+<remove xpath="//biome[@name='snow']//decoration[@blockname='plantShrubSnow']"></remove>
+<set xpath="//biome[@name='snow']//decoration[@name='rock_form02']/@prob">.05</set>
+<set xpath="//biome[@name='snow']//decoration[@name='rock_form01']/@prob">.05</set>
+<set xpath="//biome[@name='snow']//decoration[@blockname='treeWinterEverGreen']/@prob">0.009</set>
+<set xpath="//biome[@name='snow']//decoration[@blockname='treeWinterPine13m']/@prob">0.009</set>
+<set xpath="//biome[@name='snow']//decoration[@blockname='treeWinterPine19m']/@prob">0.009</set>
+<set xpath="//biome[@name='snow']//decoration[@blockname='treeWinterPine28m']/@prob">0.009</set>
+<set xpath="//biome[@name='snow']//decoration[@blockname='treeStump']/@prob">.002</set>
+	
+<!--WASTELAND-->
+<append xpath="//biome[@name='wasteland']//decorations">
+	<decoration type="prefab" name="rock_form02" prob=".05" rotatemax="7"/>
+	<decoration type="prefab" name="rock_form01" prob=".05" rotatemax="7"/>
+</append>
+<append xpath="//biome[@name='wasteland']//decorations">
+	<decoration type="block" blockname="treeStump" prob=".002" rotatemax="7"/>
+</append>
+<!--set xpath="//biome[@name='wasteland']//decoration[@blockname='treePineBurntLrg']/@prob">.005</set>
+<set xpath="//biome[@name='wasteland']//decoration[@blockname='treePineBurntMed']/@prob">.005</set>
+<set xpath="//biome[@name='wasteland']//decoration[@blockname='treePineBurntFullMed']/@prob">.005</set>
+<set xpath="//biome[@name='wasteland']//decoration[@blockname='brickShapes:brickDestroyed01']/@prob">.0003</set>
+<set xpath="//biome[@name='wasteland']//decoration[@blockname='brickShapes:brickDestroyed02']/@prob">.0003</set>
+<set xpath="//biome[@name='wasteland']//decoration[@blockname='brickShapes:brickDestroyed03']/@prob">.0003</set-->
+
+<set xpath="//biome[@name='wasteland']//decoration[@blockname='treeDeadPineLeaf']/@prob">.005</set>
+<set xpath="//biome[@name='wasteland']//decoration[@blockname='scrapMetalPile']/@prob">.006</set>
+<set xpath="//biome[@name='wasteland']//decoration[@blockname='cinderBlocks01']/@prob">.004</set>
+<set xpath="//biome[@name='wasteland']//decoration[@blockname='cinderBlocks02']/@prob">.004</set>
+<set xpath="//biome[@name='wasteland']//decoration[@blockname='cinderBlocks03']/@prob">.004</set>
+<set xpath="//biome[@name='wasteland']//decoration[@blockname='mineCandyTin']/@prob">.0015</set>
+<set xpath="//biome[@name='wasteland']//decoration[@blockname='mineHubcap']/@prob">.0015</set>
+<set xpath="//biome[@name='wasteland']//decoration[@blockname='hubcapNoMine']/@prob">.0015</set>
+	
+</configs>

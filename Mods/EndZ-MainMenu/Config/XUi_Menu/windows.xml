@@ -1,0 +1,20 @@
+<configs>
+
+<!--changes the menu background-->
+<set xpath="/windows/window[@name='menuBackground']/texture/@texture">@modfolder:Textures/EndZTwoPoint0.png</set><!--SIZE 1920X1080-->
+
+<!--REMOVES MAIN MENU NEWS WINDOW-->
+<remove xpath="/windows/window[@name='newsWindow']"></remove>
+
+<!--REMOVES MAIN MENU LOGO-->
+<remove xpath="/windows/window[@name='mainMenuLogo']"></remove>
+
+<!--NEW MENU OPTIONS-->
+<!--BLOODMOON COUNT WAS 4, 6, 8, 10, 12, 16, 24, 32, 64-->
+<!--set xpath="/windows/window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsBasic']/grid/gameoption[@name='BloodMoonEnemyCount']/@values">
+	4, 6, 8, 10, 12, 16, 24, 32, 64, 96</set>
+
+<set xpath="/windows/window[@name='serverBrowser']/panel[@name='serverfilters']/panel[@controller='TabSelector']/rect[@name='tabsContents']/rect[@tab_key='xuiGameSettingsBasic']/grid/browsergameoptioncombined[@name='BloodMoonEnemyCount']/@values">
+	4, 6, 8, 10, 12, 16, 24, 32, 64, 96</set-->
+
+</configs>

@@ -1,0 +1,986 @@
+<configs>
+
+<!--HEALTH POOLS-->
+<append xpath="/entity_classes/replace_passive_effect">
+	<property name="PFBossHealth"	value="700"/>
+	<property name="PFSuperBossHealth"	value="1000"/>
+	<property name="BFBossHealth"	value="1100"/>
+	<property name="BFSuperBossHealth"	value="1400"/>
+	<property name="DesertBossHealth"	value="1500"/>
+	<property name="DesertSuperBossHealth"	value="1800"/>
+	<property name="SnowBossHealth"	value="1900"/>
+	<property name="SnowSuperBossHealth"	value="2200"/>
+	<property name="WLBossHealth"	value="2300"/>
+	<property name="WLSuperBossHealth"	value="2600"/>
+	<property name="GuardianBossHealth"	value="5000"/>
+</append>
+
+<!--PINEFOREST-->
+<!--GIZMO-->
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossRadPF1" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLPFcyanNav" />
+	<property name="Mesh" value="#@modfolder:Resources/PineForestZombiesBundle.unity3d?EndZgizmo"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="HandItem" value="meleeHandZombieInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^PFBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossSuperRadPF1" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLPFcyanNav" />
+	<property name="Mesh" value="#@modfolder:Resources/PineForestZombiesBundle.unity3d?EndZgizmosuperrad"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="HandItem" value="meleeHandZombieInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^PFSuperBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+<!--END OF GIZMO-->
+
+<!--GONZO-->
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossRadPF2" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLPFcyanNav" />
+	<property name="Mesh" value="#@modfolder:Resources/PineForestZombiesBundle.unity3d?EndZgonzo"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="HandItem" value="meleeHandZombieInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^PFBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossSuperRadPF2" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLPFcyanNav" />
+	<property name="Mesh" value="#@modfolder:Resources/PineForestZombiesBundle.unity3d?EndZgonzosuperrad"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="HandItem" value="meleeHandZombieInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^PFSuperBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+<!--END OF GONZO-->
+
+<!--ORC-->
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossRadPF3" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLPFcyanNav" />
+	<property name="Mesh" value="#@modfolder:Resources/PineForestZombiesBundle.unity3d?EndZpineforestarmororc"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="HandItem" value="meleeHandZombieInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^PFBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossSuperRadPF3" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLPFcyanNav" />
+	<property name="Mesh" value="#@modfolder:Resources/PineForestZombiesBundle.unity3d?EndZpineforestarmororcsuperrad"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="HandItem" value="meleeHandZombieInfernal"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^PFSuperBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+<!--END OF ORC-->
+<!--END OF PINEFOREST-->
+
+<!--DESERT-->
+<!--IMP-->
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossRadDesert1" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLDesertredNav" />
+	<property name="HandItem" value="meleeimpHanddesertzombieLL"/>
+	<property name="Buffs" value="buffnofire"/>
+	<property name="Mesh" value="#@modfolder:Resources/DesertZombieBundle.unity3d?EndZimpferalrad"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="AITask" value="
+	BreakBlock|
+	ApproachDistraction|
+	RangedAttackTarget itemType=1;cooldown=4;duration=3;minRange=1;maxRange=6;unreachableRange=18|
+	DestroyArea|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	Wander|"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^DesertBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossSuperRadDesert1" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLDesertredNav" />
+	<property name="HandItem" value="meleeimpHanddesertzombieLL"/>
+	<property name="Buffs" value="buffnofire"/>
+	<property name="Mesh" value="#@modfolder:Resources/DesertZombieBundle.unity3d?EndZimpsuperrad"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="AITask" value="
+	BreakBlock|
+	ApproachDistraction|
+	RangedAttackTarget itemType=1;cooldown=4;duration=3;minRange=1;maxRange=6;unreachableRange=18|
+	DestroyArea|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	Wander|"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^DesertSuperBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+<!--END OF IMP-->
+
+<!--DESERT ORC-->
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossRadDesert2" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLDesertredNav" />
+	<property name="HandItem" value="meleeimpHanddesertzombieLL"/>
+	<property name="Buffs" value="buffnofire"/>
+	<property name="Mesh" value="#@modfolder:Resources/DesertZombieBundle.unity3d?EndZdesertmonsterorcferalrad"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="AITask" value="
+	BreakBlock|
+	ApproachDistraction|
+	RangedAttackTarget itemType=1;cooldown=4;duration=3;minRange=1;maxRange=6;unreachableRange=18|
+	DestroyArea|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	Wander|"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^DesertBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossSuperRadDesert2" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLDesertredNav" />
+	<property name="HandItem" value="meleeimpHanddesertzombieLL"/>
+	<property name="Buffs" value="buffnofire"/>
+	<property name="Mesh" value="#@modfolder:Resources/DesertZombieBundle.unity3d?EndZdesertmonsterorcsuperrad"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="AITask" value="
+	BreakBlock|
+	ApproachDistraction|
+	RangedAttackTarget itemType=1;cooldown=4;duration=3;minRange=1;maxRange=6;unreachableRange=18|
+	DestroyArea|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	Wander|"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^DesertSuperBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+<!--END OF DESERT ORC-->
+<!--END OF DESERT-->
+
+<!--SNOW-->
+<!--FROZEN THICK-->
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossRadSnow1" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLSnowblueNav" />
+	<property name="HandItem" value="meleeHandZombieInfernal"/>
+	<property name="Mesh" value="#@modfolder:Resources/SnowZombieBundle.unity3d?EndZthick"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^SnowBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossSuperRadSnow1" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLSnowblueNav" />
+	<property name="HandItem" value="meleeHandZombieInfernal"/>
+	<property name="Mesh" value="#@modfolder:Resources/SnowZombieBundle.unity3d?EndZthicksuperrad"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^SnowSuperBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+<!--END OF FROZEN THICK-->
+
+<!--SNOW GUARDIAN-->
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossSuperRadSnow2" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLSnowblueNav" />
+	<property name="HandItem" value="meleeHandZombieInfernal"/>
+	<property name="Mesh" value="#@modfolder:Resources/SnowZombieBundle.unity3d?EndZsnowguardian"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^GuardianBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+<!--END OF SNOW GUARDIAN-->
+<!--END OF SNOW-->
+
+<!--WASTELAND-->
+<!--WASTELAND GUARDIAN-->
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossSuperRadWL0" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLWLpurpleNav" />
+	<property name="HandItem" value="meleeHandinfectedzombieLL"/>
+	<property name="Mesh" value="#@modfolder:Resources/WastelandZombieBundle.unity3d?EndZwastelandguardian"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=5|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^GuardianBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+<!--END OF WASTELAND GUARDIAN-->
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossRadWL1" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLWLpurpleNav" />
+	<property name="HandItem" value="meleeHandinfectedzombieLL"/>
+	<property name="Mesh" value="#@modfolder:Resources/WastelandZombieBundle.unity3d?EndZmutant"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=5|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^WLBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossSuperRadWL1" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLWLpurpleNav" />
+	<property name="HandItem" value="meleeHandinfectedzombieLL"/>
+	<property name="Mesh" value="#@modfolder:Resources/WastelandZombieBundle.unity3d?EndZmutantsuperrad"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=5|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^WLSuperBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossRadWL2" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLWLpurpleNav" />
+	<property name="HandItem" value="meleeHandinfectedzombieLL"/>
+	<property name="Mesh" value="#@modfolder:Resources/WastelandZombieBundle.unity3d?EndZNecromanser"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=5|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^WLBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossSuperRadWL2" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLWLpurpleNav" />
+	<property name="HandItem" value="meleeHandinfectedzombieLL"/>
+	<property name="Mesh" value="#@modfolder:Resources/WastelandZombieBundle.unity3d?EndZNecromansersuperrad"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=5|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^WLSuperBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossRadWL3" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLWLpurpleNav" />
+	<property name="HandItem" value="meleeHandinfectedzombieLL"/>
+	<property name="Mesh" value="#@modfolder:Resources/WastelandZombieBundle.unity3d?endzspikez"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=5|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^WLBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossSuperRadWL3" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLWLpurpleNav" />
+	<property name="HandItem" value="meleeHandinfectedzombieLL"/>
+	<property name="Mesh" value="#@modfolder:Resources/WastelandZombieBundle.unity3d?endzspikezsuperrad"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=5|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^WLSuperBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossRadWL4" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLWLpurpleNav" />
+	<property name="HandItem" value="meleeHandinfectedzombieLL"/>
+	<property name="Mesh" value="#@modfolder:Resources/WastelandZombieBundle.unity3d?Endzsupermutant"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=5|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^WLBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossSuperRadWL4" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLWLpurpleNav" />
+	<property name="HandItem" value="meleeHandinfectedzombieLL"/>
+	<property name="Mesh" value="#@modfolder:Resources/WastelandZombieBundle.unity3d?Endzsupermutantsuperrad"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=5|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^WLSuperBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossRadWL5" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLWLpurpleNav" />
+	<property name="HandItem" value="meleeHandinfectedzombieLL"/>
+	<property name="Mesh" value="#@modfolder:Resources/WastelandZombieBundle.unity3d?zombiesmallbitch"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=5|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^WLBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+<entity_class name="zombieEndZBossSuperRadWL5" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
+	<property name="Prefab" value="Z"/>
+	<property name="NavObject" value="LLWLpurpleNav" />
+	<property name="HandItem" value="meleeHandinfectedzombieLL"/>
+	<property name="Mesh" value="#@modfolder:Resources/WastelandZombieBundle.unity3d?zombiesmallbitchsuperrad"/>
+	<property name="PhysicsBody" value="zombieEndZ"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="500"/>
+	<property name="ExperienceGain" value="4000"/>
+	<property name="DeadBodyHitPoints" value="700"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Dismemberment" value="true"/>			
+	<property name="MoveSpeed" value="0.06"/>
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>		
+	<property name="SizeScale" value="1"/>
+	<property name="LootDropProb" value=".2"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<property name="PainResistPerHit" value=".3"/>
+	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
+	<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=4;duration=5|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+		ApproachSpot|
+		Look|
+		Wander|"/>
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="^WLSuperBossHealth"/>
+	<passive_effect name="BuffResistance" operation="base_set" value=".75" tags="buffInjuryKnockdown01,buffInjuryKnockdown02"/>
+</effect_group>
+</entity_class>
+</append>
+<!--END OF WASTELAND-->
+
+</configs>

@@ -1,0 +1,5 @@
+<configs>
+
+<set xpath="/gameevents/action_sequence[@name='challenge_group_reward_basics']/action/property[@name='skill_points']/@value">12</set>
+
+</configs>

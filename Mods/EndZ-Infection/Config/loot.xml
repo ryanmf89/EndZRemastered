@@ -1,0 +1,28 @@
+<configs>
+
+<append xpath="//lootgroup[@name='groupQuestMedical']">
+	<item name="serumLL" count="1" loot_prob_template="QuestT2Prob"/>
+	<item name="serumLL" count="1" loot_prob_template="QuestT3Prob"/>
+</append>
+
+<append xpath="//lootgroup[@name='groupMedicalAll']">
+	<item name="serumLL" loot_prob_template="veryLow"/>
+</append>
+
+<append xpath="//lootgroup[@name='groupMedicalRare']">
+	<item name="serumLL" loot_prob_template="veryLow"/>
+</append>
+
+<append xpath="//lootgroup[@name='groupChemistryStationLoot02']">
+	<item name="serumLL"/>
+</append>
+
+<append xpath="//lootgroup[@name='airdropMedicine']">
+	<item name="serumLL" count="1"/>
+</append>
+
+<append xpath="//lootgroup[@name='twitch_medicine3']">
+	<item name="serumLL"/>
+</append>
+
+</configs>

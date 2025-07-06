@@ -1,0 +1,6 @@
+<configs>
+
+<!--<remove xpath="/challenges/challenge[@name='healerInfection']"/>-->
+<set xpath="/challenges/challenge[@name='healerInfection']/objective[@type='CureDebuff']/@debuff">buffseruminfection,buffseruminfectionuntreated1,buffseruminfectionuntreated2,buffseruminfectionuntreated3</set>
+
+</configs>
