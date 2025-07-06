@@ -1,3 +1,6 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english
 
 noteDuke01Desc,items,Quest - Note,,,"Just a friendly reminder that you pay on time, every time or there will be consequences. Next time we won't be so nice. Thanks for the gear, but you still owe us. See you soon. -The Duke \n\n([fc0516]BE CAREFUL AT NIGHT![-])"
+
+modendzhelmetlight,item_modifiers,mod,,,"Helmet Light Mod Tier 2"
+modendzhelmetlightDesc,item_modifiers,mod,,,A light source that can be installed into any head armor.\n\nUse the Light Source ([action:permanent:ToggleFlashlight][action:local:ToggleFlashlight]) action to activate.

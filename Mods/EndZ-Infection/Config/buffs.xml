@@ -153,7 +153,7 @@
 	</effect_group>
 </buff>
 
-<buff name="buffseruminfectionuntreated1" name_key="Zombie Infection Stage 1" remove_on_death="false" description_key="Take a Serum to bring your level/percent back down. Stage 2 hits at 50% with base health loss, Stage 3 is 99% and results in death." icon="ui_game_symbol_zinfection">
+<buff name="buffseruminfectionuntreated1" name_key="Zombie Infection Stage 1" remove_on_death="false" description_key="Take a Honey, Herbal Antibiotic, Antibiotic, or Serum to bring your level/percent back down. Stage 2 hits at 50% with base health loss, Stage 3 is 99% and results in death." icon="ui_game_symbol_zinfection">
 	<damage_type value="Disease"/>
 	<stack_type value="ignore"/>
 	<duration value="0"/>
@@ -168,7 +168,7 @@
 	</effect_group>
 </buff>
 
-<buff name="buffseruminfectionuntreated2" name_key="Zombie Infection Stage 2" remove_on_death="false" description_key="Take a Serum to bring your level/percent back down before reaching 99%, remember Stage 3 is certain death." icon="ui_game_symbol_zinfection" icon_color="242, 242, 17">
+<buff name="buffseruminfectionuntreated2" name_key="Zombie Infection Stage 2" remove_on_death="false" description_key="Take a Honey, Herbal Antibiotic, Antibiotic, or Serum to bring your level/percent back down before reaching 99%, remember Stage 3 is certain death." icon="ui_game_symbol_zinfection" icon_color="242, 242, 17">
 	<damage_type value="Disease"/>
 	<stack_type value="ignore"/>
 	<duration value="0"/>

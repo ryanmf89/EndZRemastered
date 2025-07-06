@@ -2,8 +2,8 @@
 
 <append xpath="/entity_classes/entity_class[@name='playerMale']">
 	<effect_group>
-		<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffSuperDarkNight,buffHuntedAtNight,buffZombieAttractor1"/>
-		<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffSuperDarkNight,buffHuntedAtNight,buffZombieAttractor1"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffSuperDarkNight,buffHuntedAtNight"/>
+		<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffSuperDarkNight,buffHuntedAtNight"/>
 	</effect_group>
 </append>
 

@@ -1668,9 +1668,10 @@
 	<property name="Damage" value="6"/> 
 	<property name="Damage_received" value="40"/> 
 	<property name="DisplayType" value="blockHardened"/> 
-	<property name="Material" value="MmoonrockLL"/> 
+	<property name="Material" value="Msteel"/> 
 	<property name="Texture" value="307"/> 
 	<property name="ImposterExchange" value="imposterPyramid" param1="87"/> 
+	<property name="MaxDamage" value="10000"/>
 	<property class="RepairItems"> 
 	<property name="resourceScrapIron" value="40"/> 
 </property> 
@@ -1710,7 +1711,7 @@
 	<property name="Damage" value="7"/> 
 	<property name="Damage_received" value="60"/> 
 	<property name="DisplayType" value="blockHardened"/> 
-	<property name="Material" value="MvibeLL"/> 
+	<property name="Material" value="Msteel"/> 
 	<property name="Shape" value="New"/> 
 	<property name="LightOpacity" value="6"/> 
 	<property name="Path" value="solid"/> 
@@ -1719,6 +1720,7 @@
 	<property name="ImposterExchange" value="imposterPyramid" param1="112"/> 
 	<property name="ImposterDontBlock" value="true"/> 
 	<property name="UseGlobalUV" value="Local"/> 
+	<property name="MaxDamage" value="30000"/>
 	<property class="RepairItems"> 
 	<property name="resourceForgedSteel" value="10"/> 
 	</property> 

@@ -1,0 +1,5 @@
+<configs>
+
+<remove xpath="/windows/window[@name='CharacterFrameWindow']/rect[@visible='{showcharactersdcs}']/panel[@name='previewFrameSDCS']/rect[@pos='3,-3']/equipment_weather_stack[@name='biomeBadgeSlot']"/>
+
+</configs>

@@ -5,7 +5,7 @@
 <buff name="buffSuperDarkNight" hidden="true">
 	<stack_type value="ignore"/>
 	<effect_group>
-		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Vibrant" intensity="1" fade="5">
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Vibrant" intensity=".9" fade="5">
 			<requirement name="IsNight"/>
 		</triggered_effect>		
 					
@@ -27,31 +27,34 @@
 </buff>
 </append>
 
-<!--SPAWNS ZOMBIES ON PLAYER AT NIGHT AT A RANDOM ROLL OF 50% CHANCE EVERY 2.5 MINUTES FOR A TOTAL OF 6 IN GAME HOURS ON 60 MINUTE DAYS-->
+<!--SPAWNS ZOMBIES ON PLAYER AT NIGHT AT A RANDOM ROLL CHANCE EVERY-->
 <append xpath="/buffs/buff[@name='buffStatusCheck01']">
 	<effect_group>
 		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffZombieAttractor">
 			<requirement name="IsNight"/>
-		</triggered_effect>	
+		</triggered_effect>
 		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffZombieAttractor">
 			<requirement name="IsDay"/>
-		</triggered_effect>	
+		</triggered_effect>
 		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffZombieAttractor">
 			<requirement name="IsIndoors"/>
-		</triggered_effect>		
+		</triggered_effect>
 	</effect_group>        
 </append>
 
 <append xpath="buffs">
 <buff name="buffZombieAttractor" hidden="true">
 	<stack_type value="ignore"/>
-	<update_rate value="150"/><!--150SECONDS IS 2.5 MINUTES, 16 MINUTES IN GAME ON 60 MINUTE DAYS-->
+	<update_rate value="300"/><!--300SECONDS IS 5 MINUTES, 16 MINUTES IN GAME AT NIGHT ON 60 MINUTE DAYS-->
 	<effect_group name="Spawn Night Zombies">
-		<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="lush_biomes_horde"/><!--VANILLA USES horde_zombies AS A GAMEEVENT-->
-		
-		<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="lush_biomes_horde">
-			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="25"/>
+		<triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" target="self" event="lush_biomes_horde">
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+			<requirement name="IsNight"/>
 		</triggered_effect>		
+		<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="lush_biomes_horde"><!--VANILLA USES horde_zombies AS A GAMEEVENT-->
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2"/>
+			<requirement name="IsNight"/>
+		</triggered_effect>			
 	</effect_group>	
 </buff>
 </append>
