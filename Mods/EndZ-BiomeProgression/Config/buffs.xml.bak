@@ -83,7 +83,7 @@
 	<requirement name="!HasBuff" buff="buffnobiomebuffondeath"/>
 	<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value="2"/>
 	
-	<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="5" fade="2" effect_name="Hot"/>
+	<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="2" fade="2" effect_name="Hot"/>
 	
 	<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="2" effect_name="Hot"/>
 	
@@ -109,7 +109,7 @@
 	<requirement name="!HasBuff" buff="buffnobiomebuffondeath"/>
 	<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value="2"/>
 	
-	<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="4" fade="2" effect_name="Cold2"/>
+	<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="2" fade="2" effect_name="Cold2"/>
 	<triggered_effect trigger="onSelfBuffUpdate" action="AttachParticleEffectToEntity" particle="p_weatherEffects_freezingBreath" local_rotation="90,0,0" sound="player#cold" parent_transform="Camera"/>
 	
 	<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="2" effect_name="Cold2"/>

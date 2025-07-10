@@ -1,0 +1,12 @@
+<configs>
+
+<!--TREE MASTER-->
+<set xpath="/blocks/block[@name='treeMaster']/drop[@event='Harvest']/@prob">.2</set>
+
+<!--TREE STUMP-->
+<set xpath="/blocks/block[@name='treeStump']/drop[@event='Destroy']/@prob">.4</set>
+
+<!--TREE STUMP POI-->
+<set xpath="/blocks/block[@name='treeStumpPOI']/drop[@event='Destroy']/@prob">.4</set>
+
+</configs>

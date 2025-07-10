@@ -42,6 +42,7 @@
     <Deterministic>false</Deterministic>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Features\BloodMoonTweaks\Harmony\AIDirectorBloodMoonParty.cs" />
     <Compile Include="Features\Caves\Harmony\PathPatcher.cs" />
     <Compile Include="Features\Caves\Scripts\SCoreCavesSplat3.cs" />
     <Compile Include="Features\Caves\Scripts\SCoreCavesTexture.cs" />
@@ -162,10 +163,14 @@
     <Compile Include="Features\ParticlesOnBlocks\Harmony\Blocks.cs" />
     <Compile Include="Features\PlayerMetrics\KillTracking\Scripts\SCoreKillTracker.cs" />
     <Compile Include="Features\PlayerMetrics\SCoreMetrics.cs" />
+    <Compile Include="Features\Recipe\Harmony\XUiCRecipeStackPatches.cs" />
+    <Compile Include="Features\Recipe\Scripts\MinEventAction\MinEventActionAddAdditionalOutput.cs" />
+    <Compile Include="Features\Recipe\Scripts\RecipeManager.cs" />
     <Compile Include="Features\RemoteCrafting\Harmony\DropBoxToContainers.cs" />
     <Compile Include="Features\RemoteCrafting\Harmony\IngredientsFromContainers.cs" />
     <Compile Include="Features\RemoteCrafting\Harmony\ItemActionRepairPatches.cs" />
     <Compile Include="Features\RemoteCrafting\Scripts\BlockDropBoxContainer.cs" />
+    <Compile Include="Features\RemoteCrafting\Scripts\RemoteCraftingManager.cs" />
     <Compile Include="Features\RemoteCrafting\Scripts\RemoteCraftingUtils.cs" />
     <Compile Include="Features\RemoteCrafting\Scripts\XUiC\XUiC_BroadcastButton.cs" />
     <Compile Include="Features\SCoreOptions\Scripts\ProcessOptions.cs" />
@@ -180,6 +185,7 @@
     <Compile Include="Features\TemplateManager\Interface\ITemplateManager.cs" />
     <Compile Include="Features\Trader\Harmony\TraderInfoPatches.cs" />
     <Compile Include="Features\Trader\Scripts\TraderCurrencyManager.cs" />
+    <Compile Include="Features\Trader\Scripts\TraderUtils.cs" />
     <Compile Include="Features\VersionCheck\Scripts\VersionCheck.cs" />
     <Compile Include="Features\WeaponCameraSway\Harmony\vp_FPCamera.cs" />
     <Compile Include="Features\WeaponCameraSway\Harmony\vp_FPWeapon.cs" />
@@ -233,6 +239,7 @@
     <Compile Include="Harmony\ItemActions\ItemActionMelee.cs" />
     <Compile Include="Harmony\ItemActions\ItemActionRepairLimiter.cs" />
     <Compile Include="Harmony\ItemActions\ItemClass.cs" />
+    <Compile Include="Harmony\ItemActions\ItemClassUtils.cs" />
     <Compile Include="Harmony\Localization\IncludeFilename.cs" />
     <Compile Include="Harmony\Menu_ClearCache.cs" />
     <Compile Include="Harmony\MiniTurret\shouldIgnoreTarget.cs" />

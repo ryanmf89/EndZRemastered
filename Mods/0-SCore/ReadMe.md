@@ -31,6 +31,108 @@ This release of 0-SCore introduces significant enhancements across several core 
 
 
 [ Change Log ]
+Version: 2.0.22.1718
+
+	[ Recipes ]
+		- Added support for generateing a MinEvenParams package, which allows more MinEvents to be used on the onSelfItemCrafted.
+		- These seem to only trigger when looking in a workstation and an item is creted.
+		- Now will respect requirements.
+		Examples:
+
+		<effect_group name="Sphere Testing">
+		    <triggered_effect trigger="onSelfItemCrafted" action="AddAdditionalOutput, SCore" item="resourceYuccaFibers" count="2"/>
+
+		    <triggered_effect trigger="onSelfItemCrafted" action="AddAdditionalOutput, SCore" item="ammoRocketHE" count="2">
+			    <requirement name="HasBuff" buff="god"/>
+		    </triggered_effect>
+
+		    <triggered_effect trigger="onSelfItemCrafted" action="PlaySound" sound="player#painsm">
+			    <requirement name="!HasBuff" buff="god"/>
+		    </triggered_effect>
+		    
+		    <triggered_effect trigger="onSelfItemCrafted" action="AddBuff" buff="buffDrugEyeKandy"/>
+
+	[ EntityAliveSDX ]
+		- Changed a walk type from 4 to 21 for crawler.
+
+Version: 2.0.21.1719
+	[ Fire Manager ]
+		- Fixed a Crash To Desktop ( CTD ) when adding fire particles off main thread.
+		- Added support for random fire particles, using "," as a delimiter.
+
+	[ Drop Box ]
+		- Fixed another 2 issues with Drop Box eating items when nearby storage was opened.
+
+	[ A Better Life ]
+		- Fixed entityclasse references for Fish
+
+	[ Recipes ]
+		- Added a new feature to trigger multiple outputs when crafting a recipe.
+		- Example: in addition to ammo45ACPCase, this will also produce grass fibres and duct tape.
+    <recipe name="ammo45ACPCase" count="30" craft_time="5" craft_area="MillingMachine" tags="workbenchCrafting,PerkHOHMachineGuns">
+        <ingredient name="resourceBrassIngot" count="5"/>
+        <effect_group name="Additional Output">
+			<triggered_effect trigger="onSelfItemCrafted" action="AddAdditionalOutput, SCore" item="resourceYuccaFibers" count="2"/>
+			<triggered_effect trigger="onSelfItemCrafted" action="AddAdditionalOutput, SCore" item="resourceDuctTape" count="1"/>
+		</effect_group>
+    </recipe>
+
+		- Note: The AddAdditionalOutput MinEvent is only usable by this recipes hook. It will do nothing in any other context.
+		
+Version: 2.0.20.1639
+	[ ItemAction Repair ]
+		- Fixed multiple null references when attempting to repair an item while the player was wearing it. 
+
+	[ Challenges ]
+		- Fixed an issue with the StartFire challenge when there was no fire manager.
+		- Fixed an issue with ExtinguishFire
+
+	[ Drop Box ]
+		- Fixed an issue where the DropBox was distributing items to containers that was opened by another player, and disappearing.
+
+	[ Trader Currency ]
+		- Fixed an issue where the currency wouldn't refresh.
+
+	[ ItemActionMelee ]
+		- Added two events for when a zombie misses its hit.
+			onSelfPrimaryActionEnd
+			onSelfPrimaryActionMissEntity
+
+
+Version: 2.0.19.1555
+	[ Blocks.xml ]
+		- Updated a reference to a vanilla block for a mesh
+
+	[ Shared Reading ]
+		- Fixed an issue where a connecting player would not share their reading with a player that is hosting.
+
+	[ Blooms Family Farm ]
+		- Added conditional for NPC farm to only be available if NPC Core is loaded.
+
+	[ Blood Moon Tweak ]
+		- Added new property to AdvancedZombieFeatures configuration block that allows you to increase the default enemy active during blood moons
+		- Previously, it was fixed to max out at 30.
+                <!-- Vanilla is default to 30. -1 disables this patch. -->
+                <propert name="EnemyActiveMax" value="-1" />
+
+	[ SCoreLocalization Helper ]
+		- Fixed a dumb implementation in a less dumb way.
+
+EnemyActiveMax
+
+Version: 2.0.17.1140
+	[ TileEntity IsAlwaysActive ]
+		- Fixed an issue where isAlwaysActive was blocking regular tile entities from showing they are Active.
+
+Version: 2.0.16.2016
+	[ Fire Manager ]
+		- Fixed an issue where Challenge Objectives related to Fire would null ref if used.
+
+Version: 2.0.15.1644
+	[ EntityAliveSDX , EntityNPCBandit ]
+		- Removed the Walk Type 8 filter from the Crouch after stun reset.
+		- Fixed an issue where the NPC wouldn't use the right/left hand as they were supposed too for the various weapons.
+
 Version: 2.0.14.1511
 	[ Block ]
 		- Updated block Model reference to support new format.

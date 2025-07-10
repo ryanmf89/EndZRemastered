@@ -1,15 +1,15 @@
 <configs>
 
 <append xpath="//biome[@name='desert' or @name='pine_forest']/decorations">
-    <decoration type="block" blockname="moonrockboulderLL" prob=".003"/>
+    <decoration type="block" blockname="moonrockboulderLL" prob=".0002"/>
 </append>
 
 <append xpath="//biome[@name='desert' or @name='snow' or @name='pine_forest']/decorations">
-    <decoration type="block" blockname="brassboulderLL" prob=".002"/>
+    <decoration type="block" blockname="brassboulderLL" prob=".0005"/>
 </append>
 
 <append xpath="//biome[@name='wasteland']/decorations">
-    <decoration type="block" blockname="vibeboulderLL" prob=".009"/>
+    <decoration type="block" blockname="vibeboulderLL" prob=".0005"/>
 </append>
 
 </configs>

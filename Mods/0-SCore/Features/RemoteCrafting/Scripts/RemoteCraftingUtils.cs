@@ -185,12 +185,10 @@ namespace SCore.Features.RemoteCrafting.Scripts {
         }
 
         public static bool IsLootContainerOpenByAnotherPlayer(TileEntity  tileEntity, EntityAlive player) {
-            if (!tileEntity.TryGetSelfOrFeature<ITileEntityLootable>(out var tileEntityLootable))
-                return true;
-            if (player is not EntityPlayerLocal entityPlayerLocal) return false;
+            if (!tileEntity.TryGetSelfOrFeature<ITileEntityLootable>(out var tileEntityLootable)) return true;
             var openTileEntityID = GameManager.Instance.GetEntityIDForLockedTileEntity(tileEntity);
-            
-            if (!tileEntityLootable.IsUserAccessing()) return false;
+            if (openTileEntityID == -1) return false;
+            if (tileEntityLootable.IsUserAccessing()) return false;
             // Check to see if we have it opened.
             return player.entityId != openTileEntityID;
         }
@@ -206,7 +204,6 @@ namespace SCore.Features.RemoteCrafting.Scripts {
                 {
                     continue;
                 }
-
                 items.AddRange(lootTileEntity.items);
             }
 
@@ -268,12 +265,14 @@ namespace SCore.Features.RemoteCrafting.Scripts {
             foreach (var tileEntity in tileEntities)
             {
                 if (!tileEntity.TryGetSelfOrFeature<ITileEntityLootable>(out var lootTileEntity)) continue;
+                if ( IsLootContainerOpenByAnotherPlayer(tileEntity, player)) continue;
                 if (CheckTileEntity(itemStack, lootTileEntity)) return true;
             }
 
             return false;
         }
 
+      
         private static bool CheckTileEntity(ItemStack itemStack, ITileEntityLootable lootTileEntity) {
             if (lootTileEntity.IsUserAccessing()) return false;
 

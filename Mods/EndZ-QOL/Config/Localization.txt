@@ -50,3 +50,12 @@ perkDaringAdventurerRank5LongDesc,progression,perk Int,,,"You are the daring adv
 
 woodLogSpike1,blocks,Block,,,Wood Log Spike
 woodLogSpike1Desc,blocks,Block,,,"This log spike is super sharp. Causes bleeding damage to entities. \nCan be upgraded 5 times from the craftable spike after putting in place."
+
+modDyelimegreenLL,item_modifiers,mod,,,Dye: EndZ Lime Green
+modDyeredLL,item_modifiers,mod,,,Dye: EndZ Red
+modDyeyellowLL,item_modifiers,mod,,,Dye: EndZ Yellow
+modDyepinkLL,item_modifiers,mod,,,Dye: EndZ Pink
+modDyepurpleLL,item_modifiers,mod,,,Dye: EndZ Purple
+modDyeblueLL,item_modifiers,mod,,,Dye: EndZ Blue
+modDyeblackLL,item_modifiers,mod,,,Dye: EndZ Black
+modDyeorangeLL,item_modifiers,mod,,,Dye: EndZ Orange
