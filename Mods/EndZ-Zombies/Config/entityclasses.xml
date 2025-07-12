@@ -3,15 +3,15 @@
 <!--HEALTH POOLS-->
 <append xpath="/entity_classes/replace_passive_effect">
 	<property name="PFBossHealth"	value="700"/>
-	<property name="PFSuperBossHealth"	value="1000"/>
-	<property name="BFBossHealth"	value="1100"/>
-	<property name="BFSuperBossHealth"	value="1400"/>
-	<property name="DesertBossHealth"	value="1500"/>
-	<property name="DesertSuperBossHealth"	value="1800"/>
-	<property name="SnowBossHealth"	value="1900"/>
-	<property name="SnowSuperBossHealth"	value="2200"/>
-	<property name="WLBossHealth"	value="2300"/>
-	<property name="WLSuperBossHealth"	value="2600"/>
+	<property name="PFSuperBossHealth"	value="800"/>
+	<property name="BFBossHealth"	value="1000"/>
+	<property name="BFSuperBossHealth"	value="1100"/>
+	<property name="DesertBossHealth"	value="1300"/>
+	<property name="DesertSuperBossHealth"	value="1400"/>
+	<property name="SnowBossHealth"	value="1600"/>
+	<property name="SnowSuperBossHealth"	value="1700"/>
+	<property name="WLBossHealth"	value="1900"/>
+	<property name="WLSuperBossHealth"	value="2100"/>
 	<property name="GuardianBossHealth"	value="5000"/>
 </append>
 

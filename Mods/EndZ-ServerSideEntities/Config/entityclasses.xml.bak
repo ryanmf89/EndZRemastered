@@ -33,7 +33,7 @@
 	<property name="MatColor" value="LLyellow"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombieInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -52,7 +52,7 @@
 	<property name="MatColor" value="LLyellow"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombieInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -90,7 +90,7 @@
 	<property name="MatColor" value="LLyellow"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFrostclaw"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -109,7 +109,7 @@
 	<property name="MatColor" value="LLyellow"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -130,7 +130,7 @@
 	<property name="MatColor" value="LLpink"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -149,7 +149,7 @@
 	<property name="MatColor" value="LLpink"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -168,7 +168,7 @@
 	<property name="MatColor" value="LLpink"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -187,7 +187,7 @@
 	<property name="MatColor" value="LLpink"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -208,7 +208,7 @@
 	<property name="MatColor" value="LLred"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -227,7 +227,7 @@
 	<property name="MatColor" value="LLred"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -246,7 +246,7 @@
 	<property name="MatColor" value="LLred"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -265,7 +265,7 @@
 	<property name="MatColor" value="LLred"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -286,7 +286,7 @@
 	<property name="MatColor" value="LLcyan"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -305,7 +305,7 @@
 	<property name="MatColor" value="LLcyan"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -324,7 +324,7 @@
 	<property name="MatColor" value="LLcyan"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -343,7 +343,7 @@
 	<property name="MatColor" value="LLcyan"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -364,7 +364,7 @@
 	<property name="MatColor" value="LLpurple"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -383,7 +383,7 @@
 	<property name="MatColor" value="LLpurple"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieCop"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -402,7 +402,7 @@
 	<property name="MatColor" value="LLpurple"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -421,7 +421,7 @@
 	<property name="MatColor" value="LLpurple"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -440,7 +440,7 @@
 	<property name="MatColor" value="LLpurple"/>
 	<property name="Tags" value="entity,zombie,walker,feral,infernal"/>
 	<property name="ExperienceGain" value="4000"/>
-	<property name="HandItem" value="meleeHandZombieFeral"/>
+	<property name="HandItem" value="meleeHandZombiePlagueSpitterInfernal"/>
 	<property name="MoveSpeedPattern" value="^infernalMoveSpeedPattern"/>
 	<property name="LootDropProb" value=".5"/>
 	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>

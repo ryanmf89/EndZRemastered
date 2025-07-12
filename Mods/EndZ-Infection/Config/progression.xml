@@ -1,0 +1,62 @@
+<configs>
+
+<remove xpath="/progression/perks/perk[@name='perkFortitudeMastery']"/>
+
+<insertAfter xpath="/progression/perks/perk[@name='perkPainTolerance']">
+<perk name="perkFortitudeMastery" max_level="4" parent="skillFortitudeSurvival" name_key="perkFortitudeMasteryName" desc_key="perkFortitudeMasteryDesc" icon="ui_game_symbol_fortitude_mastery">
+	<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="7" desc_key="reqFortitudeLevel07"/></level_requirements>
+	<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="8" desc_key="reqFortitudeLevel08"/></level_requirements>
+	<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="9" desc_key="reqFortitudeLevel09"/></level_requirements>
+	<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="10" desc_key="reqFortitudeLevel10"/></level_requirements>
+	<!--level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="10" desc_key="reqFortitudeLevel10"/></level_requirements-->
+
+<effect_group name="LEVEL 1">
+	<!-- Killing an enemy will instantly stop a bleeding injury without using a bandage -->
+	<triggered_effect trigger="onSelfKilledOther" action="RemoveBuff" buff="buffInjuryBleeding">
+		<requirement name="ProgressionLevel" progression_name="perkFortitudeMastery" operation="GTE" value="1"/>
+	</triggered_effect>
+	<triggered_effect trigger="onSelfKilledOther" action="RemoveBuff" buff="buffLaceration">
+		<requirement name="ProgressionLevel" progression_name="perkFortitudeMastery" operation="GTE" value="1"/>
+	</triggered_effect>
+</effect_group>
+<!--LEVEL 2 INFECTION IMMUNITY REMOVED-->
+<effect_group name="LEVEL 2">
+	<!-- After recovering from an infection you are immune to further infection for 2 real world hours -->
+	<!-- See buffInfectionImmunity and related infection buffs -->
+</effect_group>
+		
+<effect_group name="LEVEL 3 PART 1">
+<!--CHANGED TO LEVEL 2-->
+	<!-- Fist weapons have a 5% chance to gain silver "fillings" from zombie kills -->
+	<requirement name="ProgressionLevel" progression_name="perkFortitudeMastery" operation="GTE" value="2"/>
+	<requirement name="ItemHasTags" tags="perkBrawler"/>
+	<requirement name="EntityTagCompare" target="other" tags="walker,crawler"/>
+	<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+	<triggered_effect trigger="onSelfKilledOther" action="AddBuff" buff="buffPerkTheDentistSilver"/>
+</effect_group>
+<effect_group name="LEVEL 3 PART 2">
+	<!-- Fist weapons have a 5% chance to gain gold "fillings" from zombie kills -->
+	<requirement name="ProgressionLevel" progression_name="perkFortitudeMastery" operation="GTE" value="2"/>
+	<requirement name="ItemHasTags" tags="perkBrawler"/>
+	<requirement name="EntityTagCompare" target="other" tags="walker,crawler"/>
+	<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="GTE" value="95"/>
+	<triggered_effect trigger="onSelfKilledOther" action="AddBuff" buff="buffPerkTheDentistGold"/>
+</effect_group>
+		
+<!--CHANGED TO LEVEL 3 AND 4-->
+<effect_group name="LEVEL 4 AND 5">
+	<!-- Permanently adds an additional max health -->
+	<passive_effect name="HealthMax" operation="base_add" level="3,4" value="50,100"/>
+</effect_group>
+
+<effect_group>
+	<effect_description level="1" desc_key="perkFortitudeMasteryRank1Desc" long_desc_key="perkFortitudeMasteryRank1LongDesc"/>
+	<effect_description level="2" desc_key="perkFortitudeMasteryRank2Desc" long_desc_key="perkFortitudeMasteryRank2LongDesc"/>
+	<effect_description level="3" desc_key="perkFortitudeMasteryRank3Desc" long_desc_key="perkFortitudeMasteryRank3LongDesc"/>
+	<effect_description level="4" desc_key="perkFortitudeMasteryRank4Desc" long_desc_key="perkFortitudeMasteryRank4LongDesc"/>
+	<!--effect_description level="5" desc_key="perkFortitudeMasteryRank5Desc" long_desc_key="perkFortitudeMasteryRank5LongDesc"/-->
+</effect_group>
+</perk>
+</insertAfter>
+
+</configs>

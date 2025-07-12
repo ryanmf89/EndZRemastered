@@ -18,28 +18,26 @@
 		-to get a super heat mod for the desert you kill zombies in the burnt forest to get dry ice
 		-to get the frozen north mod you kill zombies in the desert to get piles of hot sand
 		-to get the radiation ready mod you kill zombies in the snow to get radioactive fibers
-		-use those materials to craft your mods that equip to your armor 
+		-use those materials to craft your mods that equip to your armor
 
 -EndZ-Infection
+	-This is a premanant infection! IT CANNOT BE CURED only managed.
 	-You have a continual infection that you need to combat with honey, herbal antibiotics, antibiotics, or serum
 	-dont let the infection get to bad or it will have very negative player effects
 
 -EndZ-LushBiomes
-	-Generated worlds are a must in order to get the lush biomes to work. A generated world is provided with the mod download
+	-Generated worlds are a must in order to get the lush biomes to work.
 	-nights are worse now! just be careful.
 
 -EndZ-MainMenu
 	-Changes the Main Menu Background
-
--EndZ-POIS
-	-Holds Endz poi's
 
 -EndZ-QOL
 	-tons of QOL Features
 	-stacking, recipe reworks, perk adjustments etc. just lots of changes.
 
 -EndZ-ScentOfPrey
-	-meat and animal fat may attract unwanted attention. just look out.
+	-meat and animal fat may attract unwanted attention.
 
 -EndZ-ScoreChanges
 	-traders are destroyable, buildable, and you can kill traders.
@@ -68,12 +66,9 @@
 	-brass nodes spawn throughout the lands
 	-vibranium nodes spawn only wasteland
 
--EndZ-Worlds
-	-EndZ generated worlds
-
 -EndZ-ZombieTracker
 	-compass trackers for zombies
 	-color based pending the type of zombie
 
 -EndZ-Launcher
-  -this modlet is not needed for manual installs
+  	-this modlet is not needed for manual installs

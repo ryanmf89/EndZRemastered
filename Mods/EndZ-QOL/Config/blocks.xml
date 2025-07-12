@@ -1599,7 +1599,8 @@
 	<property name="ImposterExchange" value="imposterPyramid" param1="10"/> 
 	<property name="ImposterDontBlock" value="true"/> 
 	<property name="FuelValue" value="300"/> 
-	<property class="RepairItems"> 
+	<property name="MaxDamage" value="1000"/>
+<property class="RepairItems"> 
 	<property name="resourceWood" value="10"/> 
 </property> 
 <property class="UpgradeBlock"> 
@@ -1623,11 +1624,13 @@
 <!-- TIER2 LOG SPIKE -->
 <block name="rWoodLogSpike2"> 
 	<property name="Extends" value="woodLogSpike1"/> 
+	<property name="Material" value="MtrapSpikesIron"/>
 	<property name="CreativeMode" value="None"/> 
 	<property name="Damage" value="4"/> 
 	<property name="Damage_received" value="20"/> 
 	<property name="Texture" value="379"/> 
 	<property name="ImposterExchange" value="imposterPyramid" param1="119"/> 
+	<property name="MaxDamage" value="2000"/>
 <property class="UpgradeBlock"> 
 	<property name="ToBlock" value="rWoodMetalLogSpike3"/> 
 	<property name="Item" value="resourceScrapIron"/> 
@@ -1645,10 +1648,11 @@
 	<property name="CreativeMode" value="None"/> 
 	<property name="Damage" value="5"/> 
 	<property name="Damage_received" value="30"/> 
-	<property name="Material" value="Mmetal"/> 
+	<property name="Material" value="MtrapSpikesIron"/>
 	<property name="Texture" value="380"/> 
 	<property name="ImposterExchange" value="imposterPyramid" param1="120"/> 
-	<property class="RepairItems"> 
+	<property name="MaxDamage" value="3000"/>
+<property class="RepairItems"> 
 	<property name="resourceScrapIron" value="20"/> 
 </property> 
 <property class="UpgradeBlock"> 
@@ -1668,10 +1672,10 @@
 	<property name="Damage" value="6"/> 
 	<property name="Damage_received" value="40"/> 
 	<property name="DisplayType" value="blockHardened"/> 
-	<property name="Material" value="Msteel"/> 
+	<property name="Material" value="MtrapSpikesIron"/> 
 	<property name="Texture" value="307"/> 
 	<property name="ImposterExchange" value="imposterPyramid" param1="87"/> 
-	<property name="MaxDamage" value="10000"/>
+	<property name="MaxDamage" value="5000"/>
 	<property class="RepairItems"> 
 	<property name="resourceScrapIron" value="40"/> 
 </property> 
@@ -1688,11 +1692,13 @@
 <!-- TIER5 LOG SPIKE -->
 <block name="rScrapIronLogSpike5"> 
 	<property name="Extends" value="scrapIronLogSpike4"/> 
+	<property name="Material" value="MtrapSpikesIron"/>
 	<property name="CreativeMode" value="None"/> 
 	<property name="Damage" value="7"/> 
 	<property name="Damage_received" value="50"/> 
 	<property name="Texture" value="352"/> 
 	<property name="ImposterExchange" value="imposterPyramid" param1="110"/> 
+	<property name="MaxDamage" value="7000"/>
 <property class="UpgradeBlock"> 
 	<property name="ToBlock" value="steelLogSpike6"/> 
 	<property name="Item" value="resourceForgedSteel"/> 
@@ -1711,7 +1717,7 @@
 	<property name="Damage" value="7"/> 
 	<property name="Damage_received" value="60"/> 
 	<property name="DisplayType" value="blockHardened"/> 
-	<property name="Material" value="Msteel"/> 
+	<property name="Material" value="MtrapSpikesIron"/> 
 	<property name="Shape" value="New"/> 
 	<property name="LightOpacity" value="6"/> 
 	<property name="Path" value="solid"/> 
@@ -1720,7 +1726,7 @@
 	<property name="ImposterExchange" value="imposterPyramid" param1="112"/> 
 	<property name="ImposterDontBlock" value="true"/> 
 	<property name="UseGlobalUV" value="Local"/> 
-	<property name="MaxDamage" value="30000"/>
+	<property name="MaxDamage" value="10000"/>
 	<property class="RepairItems"> 
 	<property name="resourceForgedSteel" value="10"/> 
 	</property> 

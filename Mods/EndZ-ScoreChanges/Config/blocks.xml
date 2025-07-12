@@ -10,6 +10,7 @@
 <!--CRAFT FROM CONTAINERS 20 BLOCKS AWAY INCLUDING THE STORAGE CONTAINER. GOES BASED OFF PLAYER LOCATION NOT BLOCK LOCATION, NOT REPAIR, THROUGH SCORE-->
 <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedRecipes']/property[@name='ReadFromContainers']/@value">true</set>
 <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedRecipes']/property[@name='Distance']/@value">20</set>
+
 <!--STORAGE CONTAINER FOR INSTANT TRANSFERS-->
 <append xpath="/blocks">	
 <block name="cntIronWritableDropBox">
@@ -69,6 +70,8 @@
 
 <!--SPAWNS UNDERGROUND CAVES-->
 <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='CaveConfiguration']/property[@name='CaveEnabled']/@value">true</set>
+<!--GENRATES CAVE LOG WHEN ENABLED TRUE, DEFAULT IS false-->
+<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='CaveConfiguration']/property[@name='Logging']/@value">true</set>
 
 <!--FIRE SPREAD MOD FOR ENDZ, THROUGH SCORE FILES-->
 <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FireManagement']/property[@name='FireEnable']/@value">true</set>

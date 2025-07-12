@@ -183,7 +183,7 @@
 	<property name="StabilitySupport" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
 	<property name="DowngradeBlock" value="vibeboulderLLRespawner"/>
-	<drop event="Harvest" name="resourcescrapvibeLL" count="1" tag="resourcescrapvibeLL"/>
+	<drop event="Harvest" name="resourcescrapvibeLL" count="1" tag="resourcescrapvibeLL,oreWoodHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="resourcescrapvibeLL" count="0" prob="1" stick_chance="0"/>
 	<property name="SortOrder1" value="B275"/>

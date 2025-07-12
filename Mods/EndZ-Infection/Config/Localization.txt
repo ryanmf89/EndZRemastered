@@ -2,3 +2,12 @@ Key,File,Type,UsedInMainMenu,NoTranslate,english
 
 serumLL,items,Food,,,"Serum"
 serumLLDesc,items,Food,,,"Helps cure the infection at 11% each vile."
+
+perkFortitudeMasteryRank2Desc,progression,perk For,,,"The Dentist"
+perkFortitudeMasteryRank2LongDesc,progression,perk For,,,"Turns out the undead have more than just bad breath, they've got valuable dental work too!\nFist weapons have a 10% chance to gain silver or gold teeth fillings from zombie kills."
+
+perkFortitudeMasteryRank3Desc,progression,perk For,,,"Resilience"
+perkFortitudeMasteryRank3LongDesc,progression,perk For,,,"Nothing can shake your will to survive.\nPermanently adds 50 max health."
+
+perkFortitudeMasteryRank4Desc,progression,perk For,,,"Unbreakable"
+perkFortitudeMasteryRank4LongDesc,progression,perk For,,,"Your fortitude makes you harder to break.\nPermanently adds an additional 50 max health."

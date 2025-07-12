@@ -363,7 +363,7 @@
 </recipe>
 
 <recipe name="resourceCement" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering">
-	<ingredient name="resourceRockSmall" count="1"/>
+	<ingredient name="resourceRockSmall" count="2"/>
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" />
 	</effect_group>
